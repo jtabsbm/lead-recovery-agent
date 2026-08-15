@@ -1,118 +1,97 @@
 # Lead Recovery Agent
 
-> An autonomous AI agent that recovers missed leads for home-service businesses — built for the **All Things Agentic Hackathon**.
+> An autonomous AI agent that recovers missed leads for home-service businesses — one engine, four platform editions (Gemini, Strands SDK, CockroachDB, OpenSearch).
 
-**Team:** James Thompson (solo)  
-**Track:** The Taskmaster  
-**Demo:** [Live Interactive Demo](./demo.html)  
-**Code:** https://github.com/TyrannicAwe/lead-recovery-agent  
-**Video:** (to be recorded — script at `demo-video-script.md`)
+**Team:** James Thompson (solo)
+**Hackathon:** All Things Agentic 2026 — Track: The Taskmaster
+**Demo:** [Interactive dashboard](./demo.html) · [Architecture](./architecture.png)
+**Status:** Live — classifying leads with **Gemini 3.5 Flash** at 0.9+ average confidence
 
-## The Problem
+## Quick start (a stranger can run this)
 
-Home-service businesses (HVAC, plumbing, electrical, roofing) lose revenue every day from missed calls and unanswered web inquiries. A missed call at 6:01 PM might not get returned until the next morning — by then, the customer has called someone else.
+```bash
+git clone https://github.com/TyrannicAwe/lead-recovery-agent
+cd lead-recovery-agent
 
-**The stat:** 62% of inbound calls to local businesses go unanswered, and 85% of callers don't leave a voicemail. Each missed call is a job that was already paid for through marketing.
+# Option A — no API key needed (keyword fallback classifier)
+python3 gemini_lead_agent.py
 
-## The Solution
+# Option B — live Gemini classification (get a free key at https://aistudio.google.com/app/apikey)
+export GEMINI_API_KEY="your-key"
+python3 gemini_lead_agent.py
+```
 
-Lead Recovery Agent is an autonomous AI agent that:
+**Expected output:** a status board of 12 synthetic leads, each classified
+(category, urgency, confidence), routed (escalated / booked / responded / spam),
+with sample draft replies and a daily owner report. JSON output lands in
+`gemini-agent-output.json`.
 
-1. **Ingests** missed leads from multiple sources (missed calls, web forms, after-hours inquiries, chat)
-2. **Classifies** each lead using natural-language understanding (quote request, scheduling, urgent, complaint, spam, etc.)
-3. **Generates** an approved draft response using business-specific templates
-4. **Routes** the lead to the correct next action (book appointment, escalate to human, discard spam)
-5. **Logs** everything to a status board with daily reports
+No pip installs required for the Gemini edition — it talks REST to the Gemini
+API with the Python standard library. The model chain auto-probes
+`gemini-3.5-flash → gemini-3.5-flash-lite → gemini-3-flash-preview → gemini-flash-latest`
+and falls back to keywords if no key/network is available.
 
-The agent runs autonomously in the background — exactly what "agentic AI" means. It doesn't wait for a human to ask it to do something. It detects a missed lead, processes it, and takes action.
+### Strands SDK edition (fully local, no cloud)
+
+```bash
+# requires: pip install strands-agents ollama ; ollama pull qwen2.5:7b
+python3 strands_lead_agent.py
+```
+
+Deterministic @tool pipeline (ingest → classify → route → report) + an LLM
+question-answering phase on the populated store, running on local Ollama.
+
+### CockroachDB memory edition
+
+```bash
+# requires: pip install psycopg2-binary ; a free CRDB Cloud serverless cluster
+export DATABASE_URL="postgresql://..."
+python3 crdb_lead_agent.py
+```
+
+Every lead, classification, routing decision, and event lives in CockroachDB —
+the process is stateless, memory survives restarts.
+
+## The problem
+
+Home-service businesses (HVAC, plumbing, electrical, roofing) lose revenue every
+day from missed calls and unanswered web inquiries. A missed call at 6:01 PM
+often isn't returned until morning — by then the customer has hired someone else.
+
+## What the agent does
+
+1. **Ingest** leads from web forms, missed-call events, voicemail transcripts, email
+2. **Classify** with natural-language understanding: quote request, scheduling,
+   complaint, urgent emergency, spam, out-of-scope — confidence-scored
+3. **Draft** a recovery reply in the business's approved tone, asking the exact
+   missing qualifying questions
+4. **Route**: book, escalate (gas smell / no-AC-with-infant flags immediately),
+   or discard spam
+5. **Report**: daily owner summary of recovered vs missed
+
+Every draft waits for owner review before sending — the AI runs the desk,
+humans stay in command. The agent never invents prices, availability, or
+diagnoses.
+
+## Why Gemini 3.5
+
+- "Commercial refrigeration repair" is correctly out-of-scope for a residential
+  HVAC shop (keyword matchers get this wrong)
+- "Furnace out — do you service La Mesa?" is a booking, not an info request
+- 12/12 benchmark leads classified correctly at ~0.93 average confidence,
+  vs 8/12 for the keyword fallback
 
 ## Architecture
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    LEAD SOURCES                          │
-│  Missed Calls │ Web Forms │ Email │ Chat │ After Hours   │
-└──────────┬──────────────────────────────────────────────┘
-           │
-           ▼
-┌─────────────────────────────────────────────────────────┐
-│              LEAD RECOVERY AGENT                         │
-│                                                          │
-│  ┌─────────┐  ┌──────────┐  ┌─────────┐  ┌──────────┐  │
-│  │ Ingest  │→│ Classify │→│ Respond │→│  Route   │  │
-│  │ Module  │  │ Engine   │  │ Engine  │  │ Engine   │  │
-│  └─────────┘  └──────────┘  └─────────┘  └──────────┘  │
-│                      │                                   │
-│                      ▼                                   │
-│              ┌───────────────┐                           │
-│              │  Status Board  │                          │
-│              │  + Reports     │                          │
-│              └───────────────┘                           │
-└─────────────────────────────────────────────────────────┘
-           │                              │
-           ▼                              ▼
-┌──────────────────┐          ┌──────────────────────┐
-│  ROUTING OUTPUT   │          │  HUMAN ESCALATION     │
-│  ✓ Booked         │          │  ⚠️ Emergency call     │
-│  ✓ Response sent  │          │  ⚠️ Complaint → owner  │
-│  ✓ Spam filtered  │          │  ⚠️ Out of scope       │
-│  ✓ Closed         │          │                       │
-└──────────────────┘          └──────────────────────┘
-```
+See [architecture.png](./architecture.png) — one core pipeline, four platform
+wrappers, human review gate before any customer contact.
 
-## How It Uses Gemini + Google Cloud
+## Real-world validation
 
-- **Gemini** for natural-language lead classification and response generation (replacing the keyword-based prototype with true NL understanding)
-- **Google Cloud Functions** for serverless lead ingestion webhooks
-- **Cloud Firestore** for the lead status board and reporting
-- **Agent Development Kit (ADK)** for multi-step agent orchestration
-- **Cloud Scheduler** for after-hours monitoring
-
-## Key Features
-
-- **Autonomous**: Runs without human prompts — detects and processes leads automatically
-- **Multi-source**: Handles missed calls, web forms, email, chat, and after-hours inquiries
-- **Safety-first**: Urgent and complaint cases are ALWAYS escalated to humans, never auto-resolved
-- **Spam filtering**: Automatically detects and discards spam
-- **Approved templates**: All responses use business-approved language — no hallucinated pricing or promises
-- **Daily reports**: Summary of leads, response times, bookings, and escalations
-- **Zero-CRM**: Works with existing tools (phone, email, calendar, spreadsheet)
-
-## Triage Categories
-
-| Category | What it catches | Default action |
-|---|---|---|
-| Quote request | Pricing, estimates | Collect missing info → schedule estimate |
-| Scheduling | Appointments, booking | Confirm availability → book |
-| Service area | Location eligibility | Confirm or redirect |
-| Missing info | Vague inquiries | Request specifics |
-| Complaint | Dissatisfaction | **Escalate to owner** |
-| Urgent/Escalate | No AC, gas smell, safety | **Immediate human call** |
-| No-fit | Out of scope | Polite redirect |
-| Spam | Unsolicited commercial | Discard |
-
-## Tech Stack
-
-- **AI**: Google Gemini (NL classification + response generation)
-- **Framework**: Google Agent Development Kit (ADK)
-- **Cloud**: Google Cloud Functions, Firestore, Cloud Scheduler
-- **Frontend**: HTML/CSS/JS (interactive demo)
-- **Backend**: Python (prototype), Cloud Functions (production)
-
-## Files
-
-- `lead_recovery_agent.py` — Python prototype with full agent logic
-- `demo.html` — Interactive web demo (no dependencies, runs locally)
-- `agent-demo-output.json` — Sample output from the prototype
-
-## What's Next
-
-- Integrate Gemini API for NL-based classification (replacing keywords)
-- Add Google Calendar integration for real booking
-- Deploy as Cloud Function with webhook for real phone systems
-- Add SMS/email delivery for approved responses
-- Build multi-business support with per-client configurations
+This is an operating business, not just a demo: 36 San Diego-area home-service
+companies contacted in week one with a productized offer ($750 pilot /
+$2,500/mo core). Lead categories and reply templates come from that pipeline.
 
 ## License
 
-MIT — Built for All Things Agentic Hackathon 2026
+MIT
