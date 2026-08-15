@@ -1,22 +1,42 @@
 # Pending Actions for James Thompson
-# Updated: Aug 14, 2026 ~8:35 PM PDT
+# Updated: Aug 14, 2026 ~9:05 PM PDT
 
-## Highest-Value One-Click Actions (in priority order)
+## 🔴 URGENT — Time-Sensitive (this weekend)
 
-1. **Gmail re-login** → https://mail.google.com — unlocks: reply checking, 13 queued outreach emails (8 bounce-fix + 5 new prospects), platform verification links
-2. **DataAnnotation via Google OAuth** → https://app.dataannotation.tech/worker_signup → "Continue with Google" → pick absbm14@gmail.com → click "Continue" on the consent screen ($25–$150+/hr; Starter Assessment follows)
-3. **Devpost/GCP credit form** → https://forms.gle/5PtXmw1dSbDnpYke9 — username: **absbm14** (already filled by us; needs final submit + possible login). $150 Google Cloud credits, deadline Aug 28 noon PT
-4. **gcloud auth login** (terminal) → unlocks real Gemini API for the hackathon agent using the $1,000 GenAI credit
-5. **Contra signup** → contra.com → password + phone + terms + email verification → paste listing from contra-profile-content.md
-6. **Outlier** → https://outlier.ai → signup + ID verification (1-3 day review) + skill assessments
+### 1. CockroachDB cluster (~4 min) — unlocks $8,750 Aug 18 submission
+→ https://cockroachlabs.cloud/signup → GitHub or email → free Serverless cluster → copy connection string
+Full steps: crdb-cluster-setup.md
 
-## Hackathon Registration Status
-- All Things Agentic (Aug 31, $50K grand prize): **REGISTERED** ✓
-- Devpost profile: **absbm14** — 4 hackathons joined (registration agent confirming which)
-- Build with Gemini XPRIZE: shows Aug 17 deadline — registration agent checking urgently
-- Agents for Humans (Sep 14, $10K), Agentic Cinema (Sep 7): registration in progress
+### 2. Kaggle phone verification (~2 min) — unlocks $50K AI Agent Security comp
+→ https://www.kaggle.com/verification (logged in as jamestt2026)
+Enter phone → receive SMS → enter code. Competition already joined.
 
-## Already Running Automatically
-- Daily scout 8 AM · Reply checker 9 AM/1 PM/5 PM (queued: 13 emails)
-- Pipeline: 55 prospects (30 contacted, 25 research-ready) across SD/LA/OC/Riverside
-- GitHub: TyrannicAwe/lead-recovery-agent + TyrannicAwe/zero-cash-revenue-engine (pushes working)
+### 3. DrivenData email verification — unlocks $50K Trace the Ace comp
+→ Check absbm14@gmail.com for "K-12 AI" verification email → click link
+Account created: username jamesthompson (pending email confirm)
+
+### 4. Gmail re-login — unlocks 13 queued outreach emails
+→ https://mail.google.com
+
+## 🟡 This Week
+
+### 5. GCP credit form (Aug 28 deadline) — $150 Google Cloud credits
+→ https://forms.gle/5PtXmw1dSbDnpYke9 — Devpost username: absbm14
+
+### 6. DataAnnotation — $25-150/hr
+→ https://app.dataannotation.tech/worker_signup → "Continue with Google" → consent "Continue" click
+
+### 7. gcloud auth login — real Gemini API for hackathon agents
+→ terminal: `gcloud auth login` (CLI already fixed)
+
+### 8. Contra signup — paste listing from contra-profile-content.md
+### 9. Outlier — https://outlier.ai signup + ID verification
+
+## ✅ Completed Tonight (no action needed)
+- 8 hackathons registered on Devpost (username: absbm14)
+- Kaggle account created (jamestt2026) + AI Agent Security joined
+- DrivenData account created (email verification pending)
+- 4 hackathon agent editions built & verified (Gemini, Strands/local-Ollama, CRDB, OpenSearch skill)
+- Competition + bug bounty research (live-verified) in current-opportunities.md
+- Contra listing content + canonical pricing reconciled
+- All code pushed: github.com/TyrannicAwe/zero-cash-revenue-engine

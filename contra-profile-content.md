@@ -86,12 +86,16 @@ Every missed call and unanswered web form is a job you already paid to attract �
 
 **Service title:** Missed-Lead Recovery & Callback System for Home-Service Businesses
 
-**Pricing tiers:**
-| Tier | Price | What's included |
+## Pricing (canonical — matches offer.md and revenue calculator)
+
+| Offer | Price | When to use |
 |---|---|---|
-| Starter Recovery | $250/mo | Up to 50 missed leads/mo, 3-touch callback (phone+text+email), weekly report, tracking sheet, trade-specific scripts |
-| Growth Recovery | $500/mo | Up to 150 leads/mo, 5-touch sequence, CRM integration, branded scripts, same-day execution, weekly dashboard, monthly strategy call |
-| Full-Service Recovery + Nurturing | $900/mo | Unlimited leads, 7-touch sequence, 30-day nurturing, full CRM setup/management, bi-weekly calls, ROI reporting |
+| Pilot / Starter Recovery Sprint | **$750** one-time | 14-day sprint: intake audit + 3 lead sources + 100 callbacks + playbook |
+| Core / Growth Recovery Engine | **$2,500/mo** | Full recovery system, weekday coverage, CRM integration, weekly reports |
+| Premium / Full-Stack Revenue Recovery | **$5,000/mo** | 7-day coverage, multi-channel, lead scoring, SLA, dedicated manager |
+| Prospect Sprint (add-on) | **$500** | 30 verified prospects + 10 opening lines + 3-message sequence |
+
+(Path to target: 12 × $2,500/mo = $30,000/mo ≈ $1,000/day.)
 
 **Signup status:** Blocked at password+phone step (redirects through app.dataannotation.tech auth). James completes: password, phone number, terms consent, email verification → then paste this content during onboarding.
 
