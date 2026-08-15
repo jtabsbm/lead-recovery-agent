@@ -10,10 +10,11 @@ Updated: 2026-08-14 (Day 1)
 | 5 | OpenSearch Agent Skills | **Aug 17, 11:59pm PT** | $5,000 | ✅ REGISTERED — [issue #114](https://github.com/opensearch-project/opensearch-agent-skills/issues/114) | LeadFinder Ops skill — needs skill code by deadline! |
 
 ## URGENT (3 days): OpenSearch
-- Registration issue posted. Submission = the actual agent skill code.
-- Rules: US residents 18+ in tech; judged Aug 17–30.
-- TODO by Aug 17: build `leadfinder-ops` SKILL.md + search tool script in the
-  opensearch-agent-skills format (see repo's existing skills for the pattern).
+- ✅ Registration issue #114 posted
+- ✅ Skill built: `hackathon/opensearch-skill/skills/leadfinder-ops/` (SKILL.md + stdlib CLI + 2 references + tests)
+- ✅ Validated: 6/6 unit tests + 8/8 mock-server e2e tests pass
+- ✅ **Submitted as PR #116**: https://github.com/opensearch-project/opensearch-agent-skills/pull/116
+- Remaining: watch for maintainer feedback before Aug 17 11:59pm PT
 
 ## Deadlines calendar
 - **Aug 17** — OpenSearch submission code (3 days!)
