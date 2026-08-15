@@ -76,3 +76,23 @@ Every missed call and unanswered web form is a job you already paid to attract �
 - Sales operations
 - Appointment setting
 - Process improvement
+
+
+---
+
+## Full Listing Pack (prepared 2026-08-14 by research subagent — use if preferred over the above)
+
+**Profile bio:** I help San Diego home-service businesses recover revenue from missed leads and unanswered calls. As the founder of CallbackOps, I specialize in rapid follow-up systems that reconnect contractors with potential customers who slipped through the cracks — whether that was a missed call, an unanswered form submission, or a lead that went cold. With deep knowledge of the local home-service market — HVAC, plumbing, roofing, electrical, and landscaping — I build callback workflows that turn lost opportunities into booked jobs. My approach combines persistent, professional outreach with CRM-driven tracking so no lead is ever truly lost. If your business is losing jobs because calls go unanswered or leads cool off before follow-up, I can plug the gap and recover that revenue fast.
+
+**Service title:** Missed-Lead Recovery & Callback System for Home-Service Businesses
+
+**Pricing tiers:**
+| Tier | Price | What's included |
+|---|---|---|
+| Starter Recovery | $250/mo | Up to 50 missed leads/mo, 3-touch callback (phone+text+email), weekly report, tracking sheet, trade-specific scripts |
+| Growth Recovery | $500/mo | Up to 150 leads/mo, 5-touch sequence, CRM integration, branded scripts, same-day execution, weekly dashboard, monthly strategy call |
+| Full-Service Recovery + Nurturing | $900/mo | Unlimited leads, 7-touch sequence, 30-day nurturing, full CRM setup/management, bi-weekly calls, ROI reporting |
+
+**Signup status:** Blocked at password+phone step (redirects through app.dataannotation.tech auth). James completes: password, phone number, terms consent, email verification → then paste this content during onboarding.
+
+**DataAnnotation shortcut:** Google OAuth reached the consent screen — one "Continue" click from James completes signup (bypasses reCAPTCHA entirely). Starter Assessment follows.
