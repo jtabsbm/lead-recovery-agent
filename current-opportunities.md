@@ -55,3 +55,20 @@ All data verified by live page fetches today (subagent research + direct checks)
 4. **Trace the Ace DrivenData (Aug 27)**: tabular ML, 2 weeks
 5. **All Things Agentic Aug 31**: Gemini agent READY — submit
 6. **Agentic Cinema Sep 9 / Agents for Humans Sep 14**: agents READY — submit
+
+
+## Exact Deadlines (verified from Kaggle rules pages, 2026-08-14)
+
+| Competition | Entry deadline | Final submission | Status |
+|---|---|---|---|
+| AI Agent Security ($50K) | **Aug 25** | Sep 1 | JOINED (phone verify pending) |
+| Pokémon TCG AI Battle ($240K) | Sep 6 | Sep 13 | JOINED |
+| ARC-AGI-3 ($850K) | Oct 26 | Nov 2 | JOINED |
+| ARC-AGI-2 ($700K) | Oct 26 | Nov 2 | JOINED |
+| ARC Paper Track ($450K) | ~Oct | Nov | JOINED |
+| CUHK-X Small Model ($10K) | ~mid-Sep | ~mid-Sep | JOINED |
+| Solar Filament Segmentation ($3K) | ~mid-Nov | ~mid-Nov | JOINED |
+| RSNA Knee ($77K) | Oct 15 | Oct 22 | not joined yet |
+| Kaggriculture ($50K) | ~mid-Oct | ~mid-Oct | not joined yet |
+
+Kaggle account: jamestt2026 (all JOINED above). Phone verification still required before any submission counts.
