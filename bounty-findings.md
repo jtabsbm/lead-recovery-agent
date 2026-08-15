@@ -70,6 +70,11 @@ Policy verified 2026-08-15. 55 assets (50 in-scope). Bounties: Low $10–$200 (c
 
 ---
 
+## PoC status (Aug 15, afternoon)
+- **O-2 PoC BUILT**: `recon/clickjacking-poc.html` — target re-verified today: HTTP 200 with NO XFO/CSP-frame-ancestors/HSTS. Load the PoC locally; if the SPA login form renders + accepts input in-frame, O-2 is report-ready.
+- **B-1 forensics done**: geneva-staging.com is REGISTERED until 2027-03-31 (Amazon Registrar, Route53 NS). No claimable CNAME → this is a dangling-asset report (their $100 fixed section), NOT a takeover. Report as-is, honestly framed, all 4 hosts in one report.
+- **Submission blocker**: H1 account needs TOTP re-setup (2FA secret lost in .env wipe). James: 1 min at hackerone.com → Settings → Security → re-enable 2FA.
+
 ## Totals
 - **OPPO (oppo_bbp): 3 candidate findings** (O-1, O-2, O-3)
 - **Bumble: 1 candidate finding** (B-1, covering 4 in-scope hostnames)

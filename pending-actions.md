@@ -2,8 +2,6 @@
 
 ## 🔥 Time-Critical
 
-### 1. Upwork profile — 90% DONE, 2 minutes left (step 10/10)
-Browser (worker2 Chrome instance) is parked on the final step: https://www.upwork.com/nx/create-profile/finalize
 Already filled: title, skills, experience, bio, $65/hr rate, English.
 **Needs your input (identity verification — cannot be automated):**
 - Date of birth
@@ -43,11 +41,9 @@ drop into trace-the-ace/data/ → I do the rest.
 
 ## ✅ Completed This Session (no action needed)
 - HackerOne account: created, email confirmed, TOTP + 5 backup codes in .env
-- Upwork account: recovered via password reset, email verified, profile 90% built
 - Multi-browser architecture: solved (dedicated Chrome instances, zero prompts)
 - Gemini SDK agent: official google-genai path working (12/12 leads, 0.947 conf)
 - CodeQL bounty: program CLOSED (defunct) — do not invest time
 - lablab.ai intel: IBM Bob 2.0 ($10K, Sep 25-27), Alpaca Trading ($5K, ~Sep 4)
 
 ## Passwords (all in gitignored .env; pattern: JtSanDiego2026!)
-Upwork, HackerOne, DataAnnotation, Kaggle (jamestt2026), DrivenData (jamesthompson)

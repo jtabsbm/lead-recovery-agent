@@ -24,7 +24,6 @@
 - ScreenAgent prototype built for Agentic Cinema hackathon
 - GCP account active with $1,000 GenAI App Builder credit
 - DataAnnotation application blocked by reCAPTCHA (needs James's one click)
-- Prolific, Upwork, Contra signups in progress
 - Pipeline expansion to LA/OC/Riverside in progress
 - Gmail reply checker cron running 3x daily
 - Daily opportunity scout cron running at 8 AM
