@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lead Recovery Agent — Architecture</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0d1117; color: #e8e8e8; font-family: -apple-system, BlinkMacSystemFont, sans-serif; display: grid; place-items: center; min-height: 100vh; padding: 40px; }
+.diagram { width: 900px; max-width: 100%; }
+h1 { text-align: center; font-size: 24px; margin-bottom: 30px; color: #58a6ff; }
+.layer { display: flex; justify-content: center; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
+.box { border: 1px solid #30363d; border-radius: 10px; padding: 14px 20px; text-align: center; background: #161b22; min-width: 120px; }
+.box.source { border-color: #bc8cff; color: #bc8cff; }
+.box.agent { border-color: #2ea043; color: #2ea043; background: rgba(46,160,67,.05); }
+.box.output { border-color: #58a6ff; color: #58a6ff; }
+.box.escalate { border-color: #f85149; color: #f85149; }
+.box-label { font-size: 13px; font-weight: 700; }
+.box-sub { font-size: 10px; color: #8a8a8a; margin-top: 3px; }
+.arrow { text-align: center; color: #484f58; font-size: 20px; margin: 4px 0; }
+.agent-box { border: 2px solid #2ea043; border-radius: 14px; padding: 20px; background: rgba(46,160,67,.03); margin: 8px 0; }
+.agent-steps { display: flex; justify-content: space-between; gap: 8px; }
+.agent-step { flex: 1; border: 1px solid #30363d; border-radius: 8px; padding: 10px; text-align: center; font-size: 12px; background: #161b22; }
+.agent-step strong { color: #2ea043; display: block; font-size: 11px; text-transform: uppercase; }
+.gcp { text-align: center; margin-top: 16px; padding: 12px; border: 1px dashed #30363d; border-radius: 10px; font-size: 12px; color: #8a8a8a; }
+.gcp strong { color: #d29922; }
+</style>
+</head>
+<body>
+<div class="diagram">
+  <h1>Lead Recovery Agent — Architecture</h1>
+
+  <div class="layer">
+    <div class="box source"><div class="box-label">Missed Calls</div><div class="box-sub">Phone system webhook</div></div>
+    <div class="box source"><div class="box-label">Web Forms</div><div class="box-sub">Website / landing page</div></div>
+    <div class="box source"><div class="box-label">After Hours</div><div class="box-sub">Voicemail / email</div></div>
+    <div class="box source"><div class="box-label">Chat</div><div class="box-sub">Live chat widget</div></div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="agent-box">
+    <div class="layer">
+      <div class="box agent"><div class="box-label">Lead Recovery Agent</div><div class="box-sub">Autonomous · Background</div></div>
+    </div>
+    <div class="arrow">↓</div>
+    <div class="agent-steps">
+      <div class="agent-step"><strong>1. Ingest</strong>Capture lead from source</div>
+      <div class="agent-step"><strong>2. Classify</strong>Gemini NL understanding</div>
+      <div class="agent-step"><strong>3. Respond</strong>Approved template draft</div>
+      <div class="agent-step"><strong>4. Route</strong>Book / escalate / discard</div>
+      <div class="agent-step"><strong>5. Log</strong>Status board + reports</div>
+    </div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="layer">
+    <div class="box output"><div class="box-label">✓ Booked</div><div class="box-sub">Appointment scheduled</div></div>
+    <div class="box output"><div class="box-label">✓ Responded</div><div class="box-sub">Draft for owner review</div></div>
+    <div class="box output"><div class="box-label">✓ Spam Filtered</div><div class="box-sub">Auto-discarded</div></div>
+    <div class="box escalate"><div class="box-label">⚠ Human Escalation</div><div class="box-sub">Emergency / complaint</div></div>
+  </div>
+
+  <div class="gcp">
+    <strong>Powered by:</strong> Google Gemini (NL classification) · Google ADK (agent orchestration) · Cloud Functions (webhooks) · Firestore (status board) · Cloud Scheduler (after-hours monitoring)
+  </div>
+</div>
+</body>
+</html>

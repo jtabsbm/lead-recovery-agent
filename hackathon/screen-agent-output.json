@@ -1,0 +1,95 @@
+{
+  "project_name": "The Meeting \u2014 Short Film",
+  "summary": {
+    "total_scenes": 4,
+    "total_pages": 0.5,
+    "total_characters": 2,
+    "total_locations": 3,
+    "total_shots": 27
+  },
+  "characters": [
+    "JAMES",
+    "SARAH"
+  ],
+  "locations": [
+    "CITY ROOFTOP",
+    "COFFEE SHOP",
+    "SARAH'S APARTMENT"
+  ],
+  "scenes": [
+    {
+      "number": 1,
+      "heading": "INT. COFFEE SHOP - MORNING",
+      "pages": 0.2,
+      "minutes": 0.2,
+      "characters": [
+        "SARAH",
+        "JAMES"
+      ],
+      "shot_count": 8
+    },
+    {
+      "number": 2,
+      "heading": "INT. SARAH'S APARTMENT - NIGHT",
+      "pages": 0.1,
+      "minutes": 0.1,
+      "characters": [
+        "SARAH"
+      ],
+      "shot_count": 6
+    },
+    {
+      "number": 3,
+      "heading": "EXT. CITY ROOFTOP - SUNSET",
+      "pages": 0.1,
+      "minutes": 0.1,
+      "characters": [
+        "SARAH",
+        "JAMES"
+      ],
+      "shot_count": 6
+    },
+    {
+      "number": 4,
+      "heading": "EXT. CITY ROOFTOP - NIGHT",
+      "pages": 0.1,
+      "minutes": 0.1,
+      "characters": [
+        "SARAH",
+        "JAMES"
+      ],
+      "shot_count": 7
+    }
+  ],
+  "continuity_issues": [
+    {
+      "type": "time_inconsistency",
+      "location": "CITY ROOFTOP",
+      "scene_1": 3,
+      "time_1": "SUNSET",
+      "scene_2": 4,
+      "time_2": "NIGHT",
+      "note": "Same location, different time \u2014 verify continuity"
+    }
+  ],
+  "budget_estimate": {
+    "project": "The Meeting \u2014 Short Film",
+    "total_scenes": 4,
+    "total_pages": 0.5,
+    "estimated_runtime_minutes": 0.5,
+    "total_shots": 27,
+    "estimated_shoot_days": 1,
+    "cost_breakdown": {
+      "crew": 2500,
+      "locations": 1500,
+      "equipment": 800,
+      "post_production": 250
+    },
+    "estimated_total": 5050,
+    "cost_saving_suggestions": [
+      "Combine scenes at the same location to reduce company moves",
+      "Shoot coverage for multiple scenes at once when in the same location",
+      "Consider which scenes can be simplified to fewer shots"
+    ]
+  }
+}

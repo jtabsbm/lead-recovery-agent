@@ -1,0 +1,255 @@
+{
+  "agent": "LeadRecoveryAgent v1.0",
+  "business": "Northside HVAC",
+  "status_board": [
+    {
+      "id": "d7a5fa10",
+      "source": "web_form",
+      "caller_name": "Sarah Mitchell",
+      "contact": "sarah@email.com",
+      "message": "My AC stopped working and it's 95 degrees inside. I have a baby and need someone today!",
+      "received_at": "2026-08-14T17:00:54.765783",
+      "status": "escalated",
+      "urgency": "emergency",
+      "category": "urgent_escalate",
+      "missing_info": [],
+      "suggested_action": "ESCALATE: Immediate human call required",
+      "draft_reply": "Hi Sarah Mitchell, this sounds urgent. I've flagged this for Northside HVAC's on-call technician \u2014 expect a call within 30 minutes. Please have your address ready.",
+      "booked_time": "",
+      "escalation_reason": "Emergency keyword detected: '95 degrees'",
+      "response_sent_at": "2026-08-14T17:00:54.765849"
+    },
+    {
+      "id": "f738003a",
+      "source": "web_form",
+      "caller_name": "John Davis",
+      "contact": "jdavis@email.com",
+      "message": "How much for a new AC unit? My house is about 1800 sq ft.",
+      "received_at": "2026-08-14T17:00:54.765799",
+      "status": "responded",
+      "urgency": "normal",
+      "category": "quote_request",
+      "missing_info": [
+        "address/service area",
+        "current system brand/model"
+      ],
+      "suggested_action": "COLLECT: Request missing details, then schedule estimate",
+      "draft_reply": "Hi John Davis, thanks for reaching out! To give you an accurate quote we'd need a few more details: address/service area, current system brand/model. Would you like to schedule a free estimate?",
+      "booked_time": "",
+      "escalation_reason": "",
+      "response_sent_at": "2026-08-14T17:00:54.765860"
+    },
+    {
+      "id": "16d16054",
+      "source": "missed_call",
+      "caller_name": "Maria Garcia",
+      "contact": "(619) 555-0142",
+      "message": "Missed call from Maria Garcia at (619) 555-0142",
+      "received_at": "2026-08-14T17:00:54.765802",
+      "status": "responded",
+      "urgency": "normal",
+      "category": "missing_information",
+      "missing_info": [
+        "service type needed",
+        "address/area",
+        "preferred time"
+      ],
+      "suggested_action": "COLLECT: Request more details",
+      "draft_reply": "Hi Maria Garcia, thanks for your inquiry. Could you provide a few more details so we can help you: service type needed, address/area, preferred time?",
+      "booked_time": "",
+      "escalation_reason": "",
+      "response_sent_at": "2026-08-14T17:00:54.765867"
+    },
+    {
+      "id": "f4506dfb",
+      "source": "web_form",
+      "caller_name": "Tom Wilson",
+      "contact": "tom@email.com",
+      "message": "Do you service La Mesa? My furnace won't turn on.",
+      "received_at": "2026-08-14T17:00:54.765812",
+      "status": "booked",
+      "urgency": "normal",
+      "category": "service_area_question",
+      "missing_info": [],
+      "suggested_action": "CONFIRM: In service area, book appointment",
+      "draft_reply": "Hi Tom Wilson, yes \u2014 San Diego, La Mesa is within our service area. We'd be happy to help. When would you like us to come by?",
+      "booked_time": "Next available appointment (pending confirmation)",
+      "escalation_reason": "",
+      "response_sent_at": "2026-08-14T17:00:54.765873"
+    },
+    {
+      "id": "7114f356",
+      "source": "web_form",
+      "caller_name": "Lisa Chen",
+      "contact": "lchen@email.com",
+      "message": "Your technician was here last week and the problem came back. I'm not happy.",
+      "received_at": "2026-08-14T17:00:54.765817",
+      "status": "escalated",
+      "urgency": "high",
+      "category": "complaint",
+      "missing_info": [],
+      "suggested_action": "ESCALATE: Route to owner/manager",
+      "draft_reply": "Hi Lisa Chen, I'm sorry to hear about this. I've flagged your message for the owner directly \u2014 expect a personal call within 2 business hours.",
+      "booked_time": "",
+      "escalation_reason": "",
+      "response_sent_at": "2026-08-14T17:00:54.765877"
+    },
+    {
+      "id": "f8053b8f",
+      "source": "web_form",
+      "caller_name": "Bob Smith",
+      "contact": "bob@email.com",
+      "message": "I just moved to the area and want to set up annual maintenance.",
+      "received_at": "2026-08-14T17:00:54.765820",
+      "status": "closed",
+      "urgency": "normal",
+      "category": "no_fit",
+      "missing_info": [],
+      "suggested_action": "REDIRECT: Outside service area",
+      "draft_reply": "Hi Bob Smith, thanks for reaching out. Unfortunately, we don't currently handle no_fit in San Diego, La Mesa. We'd recommend checking with a specialist in that field.",
+      "booked_time": "",
+      "escalation_reason": "",
+      "response_sent_at": "2026-08-14T17:00:54.765884"
+    },
+    {
+      "id": "4f40f4cb",
+      "source": "web_form",
+      "caller_name": "Unknown",
+      "contact": "spam@bot.com",
+      "message": "Get free Viagra pills!!! Click here for casino bonus!!!",
+      "received_at": "2026-08-14T17:00:54.765824",
+      "status": "spam",
+      "urgency": "normal",
+      "category": "spam",
+      "missing_info": [],
+      "suggested_action": "DISCARD: Spam detected",
+      "draft_reply": "(No reply \u2014 flagged as spam)",
+      "booked_time": "",
+      "escalation_reason": "",
+      "response_sent_at": ""
+    },
+    {
+      "id": "13ec8747",
+      "source": "web_form",
+      "caller_name": "Mike Johnson",
+      "contact": "mike@email.com",
+      "message": "I need commercial refrigeration repair for my restaurant.",
+      "received_at": "2026-08-14T17:00:54.765829",
+      "status": "closed",
+      "urgency": "normal",
+      "category": "no_fit",
+      "missing_info": [],
+      "suggested_action": "REDIRECT: commercial refrigeration not in scope",
+      "draft_reply": "Hi Mike Johnson, thanks for reaching out. Unfortunately, we don't currently handle no_fit in San Diego, La Mesa. We'd recommend checking with a specialist in that field.",
+      "booked_time": "",
+      "escalation_reason": "",
+      "response_sent_at": "2026-08-14T17:00:54.765894"
+    },
+    {
+      "id": "154eddd9",
+      "source": "after_hours",
+      "caller_name": "Jennifer Park",
+      "contact": "(858) 555-0199",
+      "message": "My heater stopped working at 11pm, I have elderly parents visiting",
+      "received_at": "2026-08-14T17:00:54.765833",
+      "status": "escalated",
+      "urgency": "emergency",
+      "category": "urgent_escalate",
+      "missing_info": [],
+      "suggested_action": "ESCALATE: Immediate human call required",
+      "draft_reply": "Hi Jennifer Park, this sounds urgent. I've flagged this for Northside HVAC's on-call technician \u2014 expect a call within 30 minutes. Please have your address ready.",
+      "booked_time": "",
+      "escalation_reason": "Emergency keyword detected: 'elderly'",
+      "response_sent_at": "2026-08-14T17:00:54.765898"
+    },
+    {
+      "id": "4e0d0a50",
+      "source": "web_form",
+      "caller_name": "David Brown",
+      "contact": "david@email.com",
+      "message": "Price list please",
+      "received_at": "2026-08-14T17:00:54.765837",
+      "status": "responded",
+      "urgency": "normal",
+      "category": "quote_request",
+      "missing_info": [
+        "address/service area",
+        "system size or property details",
+        "current system brand/model"
+      ],
+      "suggested_action": "COLLECT: Request missing details, then schedule estimate",
+      "draft_reply": "Hi David Brown, thanks for reaching out! To give you an accurate quote we'd need a few more details: address/service area, system size or property details, current system brand/model. Would you like to schedule a free estimate?",
+      "booked_time": "",
+      "escalation_reason": "",
+      "response_sent_at": "2026-08-14T17:00:54.765903"
+    }
+  ],
+  "daily_report": {
+    "report_date": "2026-08-14",
+    "business": "Northside HVAC",
+    "summary": {
+      "total_leads": 10,
+      "by_category": {
+        "urgent_escalate": 2,
+        "quote_request": 2,
+        "missing_information": 1,
+        "service_area_question": 1,
+        "complaint": 1,
+        "no_fit": 2,
+        "spam": 1
+      },
+      "by_status": {
+        "escalated": 3,
+        "responded": 3,
+        "booked": 1,
+        "closed": 2,
+        "spam": 1
+      }
+    },
+    "metrics": {
+      "qualified_conversations": 3,
+      "appointments_booked": 1,
+      "escalations": 3,
+      "spam_filtered": 1,
+      "avg_response_time_seconds": 0.0
+    },
+    "unresolved": [
+      {
+        "id": "d7a5fa10",
+        "name": "Sarah Mitchell",
+        "category": "urgent_escalate",
+        "action": "ESCALATE: Immediate human call required"
+      },
+      {
+        "id": "f738003a",
+        "name": "John Davis",
+        "category": "quote_request",
+        "action": "COLLECT: Request missing details, then schedule estimate"
+      },
+      {
+        "id": "16d16054",
+        "name": "Maria Garcia",
+        "category": "missing_information",
+        "action": "COLLECT: Request more details"
+      },
+      {
+        "id": "7114f356",
+        "name": "Lisa Chen",
+        "category": "complaint",
+        "action": "ESCALATE: Route to owner/manager"
+      },
+      {
+        "id": "154eddd9",
+        "name": "Jennifer Park",
+        "category": "urgent_escalate",
+        "action": "ESCALATE: Immediate human call required"
+      },
+      {
+        "id": "4e0d0a50",
+        "name": "David Brown",
+        "category": "quote_request",
+        "action": "COLLECT: Request missing details, then schedule estimate"
+      }
+    ]
+  }
+}

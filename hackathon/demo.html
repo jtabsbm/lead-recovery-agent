@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lead Recovery Agent — Live Demo</title>
+  <style>
+    :root {
+      --ink: #e8e8e8; --muted: #8a8a8a; --paper: #0d1117; --surface: #161b22;
+      --line: #30363d; --green: #2ea043; --green-dark: #1a7f37;
+      --orange: #d29922; --red: #f85149; --blue: #58a6ff; --purple: #bc8cff;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
+      --mono: 'SF Mono', 'Fira Code', ui-monospace, monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 14px; line-height: 1.5; }
+    .app { display: grid; grid-template-columns: 340px 1fr; height: 100vh; overflow: hidden; }
+    
+    /* Sidebar */
+    .sidebar { background: var(--surface); border-right: 1px solid var(--line); display: flex; flex-direction: column; overflow: hidden; }
+    .sidebar-header { padding: 20px; border-bottom: 1px solid var(--line); }
+    .logo { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+    .logo-icon { width: 32px; height: 32px; background: var(--green); border-radius: 8px; display: grid; place-items: center; font-size: 16px; font-weight: 900; color: white; }
+    .logo-text { font-size: 16px; font-weight: 700; }
+    .logo-sub { font-size: 11px; color: var(--muted); }
+    .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 16px 20px; border-bottom: 1px solid var(--line); }
+    .stat { text-align: center; }
+    .stat-num { font-size: 22px; font-weight: 700; color: var(--ink); }
+    .stat-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+    .lead-list { flex: 1; overflow-y: auto; }
+    .lead-item { padding: 14px 20px; border-bottom: 1px solid var(--line); cursor: pointer; transition: background .15s; }
+    .lead-item:hover { background: rgba(255,255,255,.03); }
+    .lead-item.active { background: rgba(88,166,255,.1); border-left: 3px solid var(--blue); padding-left: 17px; }
+    .lead-name { font-weight: 600; font-size: 13px; display: flex; justify-content: space-between; align-items: center; }
+    .lead-time { font-size: 11px; color: var(--muted); }
+    .lead-preview { font-size: 12px; color: var(--muted); margin-top: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .lead-badges { display: flex; gap: 6px; margin-top: 6px; }
+    .badge { font-size: 10px; padding: 2px 8px; border-radius: 99px; font-weight: 600; }
+    .badge-emergency { background: rgba(248,81,73,.15); color: var(--red); }
+    .badge-high { background: rgba(210,153,34,.15); color: var(--orange); }
+    .badge-normal { background: rgba(46,160,67,.15); color: var(--green); }
+    .badge-escalated { background: rgba(248,81,73,.15); color: var(--red); }
+    .badge-booked { background: rgba(88,166,255,.15); color: var(--blue); }
+    .badge-responded { background: rgba(46,160,67,.15); color: var(--green); }
+    .badge-spam { background: rgba(138,138,138,.15); color: var(--muted); }
+    .badge-closed { background: rgba(138,138,138,.15); color: var(--muted); }
+    
+    /* Main panel */
+    .main { display: flex; flex-direction: column; overflow: hidden; }
+    .main-header { padding: 16px 24px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; }
+    .main-title { font-size: 15px; font-weight: 600; }
+    .main-content { flex: 1; overflow-y: auto; padding: 24px; }
+    
+    /* Simulator */
+    .simulator { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+    .simulator-title { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 12px; }
+    .sim-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+    .sim-row.full { grid-template-columns: 1fr; }
+    .sim-input { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; color: var(--ink); font: inherit; font-size: 13px; outline: none; }
+    .sim-input:focus { border-color: var(--blue); }
+    .sim-input::placeholder { color: var(--muted); }
+    textarea.sim-input { resize: vertical; min-height: 60px; font-family: var(--mono); }
+    .sim-btn { background: var(--green); color: white; border: none; border-radius: 8px; padding: 10px 20px; font: inherit; font-weight: 600; cursor: pointer; font-size: 13px; }
+    .sim-btn:hover { background: var(--green-dark); }
+    
+    /* Lead detail */
+    .detail-section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+    .detail-label { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
+    .detail-value { font-size: 14px; }
+    .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .draft-box { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 14px; font-family: var(--mono); font-size: 13px; color: var(--green); white-space: pre-wrap; margin-top: 8px; }
+    .action-box { background: rgba(88,166,255,.05); border: 1px solid rgba(88,166,255,.2); border-radius: 8px; padding: 12px 14px; margin-top: 8px; font-size: 13px; }
+    .action-box.escalate { background: rgba(248,81,73,.05); border-color: rgba(248,81,73,.2); color: var(--red); }
+    .empty { text-align: center; padding: 60px 20px; color: var(--muted); }
+    .empty-icon { font-size: 48px; margin-bottom: 12px; opacity: .3; }
+    
+    /* Flow diagram */
+    .flow { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 20px; }
+    .flow-step { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; font-size: 12px; }
+    .flow-arrow { color: var(--muted); font-size: 14px; }
+    .flow-step.active { border-color: var(--green); color: var(--green); }
+    
+    @media (max-width: 768px) { .app { grid-template-columns: 1fr; } .sidebar { display: none; } }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar: Lead List -->
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon">↗</div>
+          <div>
+            <div class="logo-text">Lead Recovery Agent</div>
+            <div class="logo-sub">Northside HVAC · Live Demo</div>
+          </div>
+        </div>
+      </div>
+      <div class="stats" id="stats">
+        <div class="stat"><div class="stat-num" id="stat-total">0</div><div class="stat-label">Total Leads</div></div>
+        <div class="stat"><div class="stat-num" id="stat-booked">0</div><div class="stat-label">Booked</div></div>
+        <div class="stat"><div class="stat-num" id="stat-escalated">0</div><div class="stat-label">Escalated</div></div>
+        <div class="stat"><div class="stat-num" id="stat-spam">0</div><div class="stat-label">Spam Filtered</div></div>
+      </div>
+      <div class="lead-list" id="lead-list">
+        <div class="empty" style="padding:30px 20px;">
+          <div style="font-size:24px;opacity:.3;margin-bottom:8px;">📭</div>
+          <div style="font-size:12px;">No leads yet. Simulate one below.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Panel -->
+    <div class="main">
+      <div class="main-header">
+        <div class="main-title">Lead Recovery Agent — Autonomous Lead Recovery for Home-Service Businesses</div>
+        <div style="display:flex;gap:4px;font-size:11px;color:var(--muted);">
+          <span style="color:var(--green);">●</span> Agent Online
+        </div>
+      </div>
+      <div class="main-content">
+        <!-- Flow -->
+        <div class="flow">
+          <div class="flow-step active">1. Ingest</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step active">2. Classify</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step active">3. Draft Reply</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step active">4. Route</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step active">5. Log</div>
+        </div>
+
+        <!-- Simulator -->
+        <div class="simulator">
+          <div class="simulator-title">📥 Simulate Incoming Lead</div>
+          <div class="sim-row">
+            <input class="sim-input" id="sim-name" placeholder="Caller name (e.g. Sarah Mitchell)">
+            <input class="sim-input" id="sim-contact" placeholder="Phone or email">
+          </div>
+          <div class="sim-row full">
+            <select class="sim-input" id="sim-source">
+              <option value="web_form">Web Form</option>
+              <option value="missed_call">Missed Call</option>
+              <option value="after_hours">After Hours</option>
+              <option value="chat">Chat</option>
+            </select>
+          </div>
+          <div class="sim-row full">
+            <textarea class="sim-input" id="sim-message" placeholder="Message (e.g. My AC stopped working and it's 95 degrees!)"></textarea>
+          </div>
+          <button class="sim-btn" onclick="processLead()">⚡ Process Lead</button>
+          <button class="sim-btn" style="background:var(--surface);border:1px solid var(--line);color:var(--ink);margin-left:8px;" onclick="loadDemo()">Load Demo Leads</button>
+        </div>
+
+        <!-- Lead Detail -->
+        <div id="lead-detail">
+          <div class="empty">
+            <div class="empty-icon">🤖</div>
+            <div>The Lead Recovery Agent is ready.</div>
+            <div style="font-size:12px;margin-top:6px;">Simulate an incoming lead or load demo leads to see the agent in action.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ─── Agent Logic (mirrors Python prototype) ───────────────────────────────
+    const CONFIG = {
+      name: "Northside HVAC",
+      serviceArea: ["San Diego", "La Mesa", "Chula Vista", "Kearny Mesa", "Santee"],
+      exclusions: ["commercial refrigeration", "new construction"],
+      emergencyKeywords: ["no ac", "gas smell", "carbon monoxide", "leak", "fire", "smoke", "95 degrees", "freezing", "infant", "elderly", "baby"],
+    };
+
+    const TEMPLATES = {
+      quote_request: "Hi {name}, thanks for reaching out! To give you an accurate quote we'd need a few more details: {missing}. Would you like to schedule a free estimate?",
+      scheduling: "Hi {name}, thanks for contacting {business}! We'd be happy to help. What day and time works best for you?",
+      service_area_question: "Hi {name}, yes — {area} is within our service area. We'd be happy to help. When would you like us to come by?",
+      missing_information: "Hi {name}, thanks for your inquiry. Could you provide a few more details so we can help you: {missing}?",
+      complaint: "Hi {name}, I'm sorry to hear about this. I've flagged your message for the owner directly — expect a personal call within 2 business hours.",
+      urgent_escalate: "Hi {name}, this sounds urgent. I've flagged this for {business}'s on-call technician — expect a call within 30 minutes. Please have your address ready.",
+      no_fit: "Hi {name}, thanks for reaching out. Unfortunately, we don't currently handle {exclusion} in that area. We'd recommend checking with a specialist.",
+      spam: null,
+    };
+
+    let leads = [];
+    let activeLead = null;
+    let leadIdCounter = 0;
+
+    function classify(msg) {
+      const m = msg.toLowerCase();
+      for (const kw of CONFIG.emergencyKeywords) if (m.includes(kw)) return { category: 'urgent_escalate', urgency: 'emergency', escalate: `Emergency keyword: '${kw}'` };
+      for (const w of ['unhappy','complaint','problem came back','not satisfied','terrible','worst','angry']) if (m.includes(w)) return { category: 'complaint', urgency: 'high' };
+      for (const w of ['viagra','casino','crypto','click here','free money','lottery']) if (m.includes(w)) return { category: 'spam', urgency: 'normal' };
+      if (['quote','estimate','price','how much','cost','pricing'].some(w => m.includes(w))) return { category: 'quote_request', urgency: 'normal', missing: ['address/service area','current system brand/model'] };
+      if (['appointment','schedule','book','come out','available','when can'].some(w => m.includes(w))) return { category: 'scheduling', urgency: 'normal' };
+      if (['do you service','do you cover','area','location','near me','come to'].some(w => m.includes(w))) {
+        const inArea = CONFIG.serviceArea.some(a => m.includes(a.toLowerCase()));
+        return inArea ? { category: 'service_area_question', urgency: 'normal' } : { category: 'no_fit', urgency: 'normal' };
+      }
+      for (const ex of CONFIG.exclusions) if (m.includes(ex)) return { category: 'no_fit', urgency: 'normal' };
+      return { category: 'missing_information', urgency: 'normal', missing: ['service type needed','address/area','preferred time'] };
+    }
+
+    function generateReply(lead) {
+      if (lead.category === 'spam') return '(No reply — flagged as spam)';
+      const tpl = TEMPLATES[lead.category] || '(No template — escalate to human)';
+      return tpl.replace('{name}', lead.name || 'there').replace('{business}', CONFIG.name)
+        .replace('{missing}', (lead.missing || []).join(', ') || 'your contact details')
+        .replace('{area}', CONFIG.serviceArea.slice(0,2).join(', ')).replace('{exclusion}', lead.category);
+    }
+
+    function route(lead) {
+      if (['urgent_escalate','complaint'].includes(lead.category)) return 'escalated';
+      if (lead.category === 'spam') return 'spam';
+      if (lead.category === 'no_fit') return 'closed';
+      if (['scheduling','service_area_question'].includes(lead.category)) return 'booked';
+      return 'responded';
+    }
+
+    function processLead() {
+      const name = document.getElementById('sim-name').value.trim() || 'Unknown';
+      const contact = document.getElementById('sim-contact').value.trim() || 'N/A';
+      const source = document.getElementById('sim-source').value;
+      const message = document.getElementById('sim-message').value.trim();
+      if (!message) { alert('Please enter a message'); return; }
+
+      const result = classify(message);
+      const lead = {
+        id: 'L' + (++leadIdCounter).toString().padStart(3,'0'),
+        name, contact, source, message,
+        receivedAt: new Date().toLocaleTimeString(),
+        ...result,
+        reply: generateReply({ ...result, name }),
+        status: route({ category: result.category }),
+      };
+      leads.unshift(lead);
+      activeLead = lead;
+      document.getElementById('sim-name').value = '';
+      document.getElementById('sim-contact').value = '';
+      document.getElementById('sim-message').value = '';
+      render();
+    }
+
+    function loadDemo() {
+      const demos = [
+        { name: 'Sarah Mitchell', contact: 'sarah@email.com', source: 'web_form', message: 'My AC stopped working and it\'s 95 degrees inside. I have a baby and need someone today!' },
+        { name: 'John Davis', contact: 'jdavis@email.com', source: 'web_form', message: 'How much for a new AC unit? My house is about 1800 sq ft.' },
+        { name: 'Maria Garcia', contact: '(619) 555-0142', source: 'missed_call', message: 'Missed call from Maria Garcia' },
+        { name: 'Tom Wilson', contact: 'tom@email.com', source: 'web_form', message: 'Do you service La Mesa? My furnace won\'t turn on.' },
+        { name: 'Lisa Chen', contact: 'lchen@email.com', source: 'web_form', message: 'Your technician was here last week and the problem came back. I\'m not happy.' },
+        { name: 'Bob Smith', contact: 'bob@email.com', source: 'web_form', message: 'I just moved to the area and want to set up annual maintenance.' },
+        { name: 'Spam Bot', contact: 'spam@bot.com', source: 'web_form', message: 'Get free Viagra pills!!! Click here for casino bonus!!!' },
+        { name: 'Mike Johnson', contact: 'mike@email.com', source: 'web_form', message: 'I need commercial refrigeration repair for my restaurant.' },
+        { name: 'Jennifer Park', contact: '(858) 555-0199', source: 'after_hours', message: 'My heater stopped working at 11pm, I have elderly parents visiting' },
+        { name: 'David Brown', contact: 'david@email.com', source: 'web_form', message: 'Price list please' },
+      ];
+      leads = [];
+      leadIdCounter = 0;
+      demos.forEach(d => {
+        const result = classify(d.message);
+        const lead = { id: 'L' + (++leadIdCounter).toString().padStart(3,'0'), receivedAt: new Date(Date.now() - Math.random()*3600000).toLocaleTimeString(), ...d, ...result, reply: generateReply({ ...result, name: d.name }), status: route({ category: result.category }) };
+        leads.unshift(lead);
+      });
+      activeLead = leads[0];
+      render();
+    }
+
+    function render() {
+      // Stats
+      document.getElementById('stat-total').textContent = leads.length;
+      document.getElementById('stat-booked').textContent = leads.filter(l => l.status === 'booked').length;
+      document.getElementById('stat-escalated').textContent = leads.filter(l => l.status === 'escalated').length;
+      document.getElementById('stat-spam').textContent = leads.filter(l => l.status === 'spam').length;
+
+      // Lead list
+      const list = document.getElementById('lead-list');
+      if (leads.length === 0) {
+        list.innerHTML = '<div class="empty" style="padding:30px 20px;"><div style="font-size:24px;opacity:.3;">📭</div><div style="font-size:12px;">No leads yet.</div></div>';
+      } else {
+        list.innerHTML = leads.map(l => `
+          <div class="lead-item ${activeLead && activeLead.id === l.id ? 'active' : ''}" onclick="selectLead('${l.id}')">
+            <div class="lead-name">${l.name} <span class="lead-time">${l.receivedAt}</span></div>
+            <div class="lead-preview">${l.message.slice(0,60)}</div>
+            <div class="lead-badges">
+              <span class="badge badge-${l.urgency}">${l.urgency}</span>
+              <span class="badge badge-${l.status}">${l.status}</span>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // Detail
+      const detail = document.getElementById('lead-detail');
+      if (!activeLead) {
+        detail.innerHTML = '<div class="empty"><div class="empty-icon">🤖</div><div>The Lead Recovery Agent is ready.</div></div>';
+      } else {
+        const l = activeLead;
+        const isEscalate = l.status === 'escalated';
+        detail.innerHTML = `
+          <div class="detail-section">
+            <div class="detail-grid">
+              <div><div class="detail-label">Lead ID</div><div class="detail-value" style="font-family:var(--mono);">${l.id}</div></div>
+              <div><div class="detail-label">Received</div><div class="detail-value">${l.receivedAt}</div></div>
+              <div><div class="detail-label">Name</div><div class="detail-value">${l.name}</div></div>
+              <div><div class="detail-label">Contact</div><div class="detail-value">${l.contact}</div></div>
+              <div><div class="detail-label">Source</div><div class="detail-value">${l.source}</div></div>
+              <div><div class="detail-label">Urgency</div><div class="detail-value"><span class="badge badge-${l.urgency}">${l.urgency}</span></div></div>
+            </div>
+          </div>
+          <div class="detail-section">
+            <div class="detail-label">Original Message</div>
+            <div class="detail-value" style="margin-top:6px;font-style:italic;">"${l.message}"</div>
+          </div>
+          <div class="detail-section">
+            <div class="detail-label">Agent Classification</div>
+            <div class="detail-value" style="margin-top:6px;">
+              <strong>Category:</strong> ${l.category}<br>
+              ${l.missing ? `<strong>Missing info:</strong> ${l.missing.join(', ')}<br>` : ''}
+              ${l.escalate ? `<strong>Escalation reason:</strong> ${l.escalate}<br>` : ''}
+            </div>
+          </div>
+          <div class="detail-section">
+            <div class="detail-label">Suggested Action</div>
+            <div class="action-box ${isEscalate ? 'escalate' : ''}">
+              ${isEscalate ? '⚠️ ESCALATE: ' : '✓ '}${l.status === 'booked' ? 'BOOKED: Next available appointment' : l.status === 'escalated' ? 'Immediate human call required' : l.status === 'spam' ? 'Discard — spam detected' : l.status === 'closed' ? 'Closed — outside scope' : 'Response drafted for owner approval'}
+            </div>
+          </div>
+          <div class="detail-section">
+            <div class="detail-label">Draft Reply (for owner review)</div>
+            <div class="draft-box">${l.reply}</div>
+          </div>
+        `;
+      }
+    }
+
+    function selectLead(id) { activeLead = leads.find(l => l.id === id); render(); }
+    render();
+  </script>
+</body>
+</html>
