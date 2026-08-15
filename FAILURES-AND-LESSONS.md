@@ -1,6 +1,6 @@
-# Failures, Errors & Stopping Points — Running Log
+# Failures, Errors & Stopping Points — Running Log (CANONICAL)
 
-**Purpose:** Every wall we hit, what caused it, how we got past it (or why we stopped). This is the institutional memory that turns each failure into a playbook entry. Newest sections last within each category. Updated continuously.
+**Purpose:** Every wall we hit, what caused it, how we got past it (or why we stopped). This is the institutional memory that turns each failure into a playbook entry. **Every session: read this first, append new failures before ending.** (Merged 2026-08-15 from two parallel session ledgers; single source of truth now.)
 
 **Legend:** 🧱 = hard wall (needs James) · 🔧 = worked around · 📉 = dead end, abandoned · ⏸️ = waiting/pending
 
