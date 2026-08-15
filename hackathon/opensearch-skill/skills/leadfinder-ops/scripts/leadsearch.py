@@ -142,7 +142,8 @@ def cmd_missed(window: str, emergency: bool) -> int:
     print(f"unanswered leads in last {window}: {total}")
     for h in hits:
         s = h["_source"]
-        age_days = (datetime.now(timezone.utc) - datetime.strptime(s["received_at"][:19], "%Y-%m-%dT%H:%M:%S")).days
+        received = datetime.strptime(s["received_at"][:19], "%Y-%m-%dT%H:%M:%S").replace(tzinfo=timezone.utc)
+        age_days = (datetime.now(timezone.utc) - received).days
         flag = " \u26a0\ufe0f URGENT" if s.get("category") == "urgent" else ""
         print(f"  [{s['received_at'][:10]}] {s.get('customer_name','?'):20s} {s.get('source','?'):12s} "
               f"{age_days}d old{flag}\n    {s.get('message','')[:100]}")
