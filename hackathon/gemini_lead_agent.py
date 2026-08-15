@@ -31,96 +31,99 @@ from typing import Optional
 from enum import Enum
 
 # ─── Gemini Integration ────────────────────────────────────────────────────────
+#
+# Uses the Gemini REST API directly (no SDK dependency). The legacy
+# google-generativeai SDK is deprecated and older model names are retired;
+# direct REST with a current model is the durable path.
 
-try:
-    import google.generativeai as genai
-    GEMINI_AVAILABLE = True
-except ImportError:
-    GEMINI_AVAILABLE = False
-    print("Warning: google-generativeai not installed. Install with: pip install google-generativeai")
-    print("Falling back to keyword-based classification.\n")
+GEMINI_MODELS = ["gemini-3-flash-preview", "gemini-flash-latest", "gemini-flash-lite-latest"]
+
 
 class GeminiClassifier:
-    """Uses Gemini for natural-language lead classification."""
-    
+    """Classifies leads with Gemini via the REST API; keyword fallback on any failure."""
+
     SYSTEM_PROMPT = """You are a lead classification agent for a home-service business (HVAC, plumbing, electrical, roofing).
-    
+
     Your job is to analyze incoming lead messages and return a JSON object with:
     - category: one of [quote_request, scheduling, service_area_question, missing_information, complaint, urgent_escalate, no_fit, spam]
     - urgency: one of [low, normal, high, emergency]
     - missing_info: list of specific information needed from the customer
     - draft_reply: a professional response using the business's approved tone
     - confidence: 0.0 to 1.0
-    
+
     Rules:
     - NEVER invent prices, availability, or technical diagnoses
-    - URGENT keywords: no AC, gas smell, leak, fire, smoke, extreme heat/cold, infant, elderly, medical
+    - URGENT keywords: no AC, gas smell, leak, fire, smoke, extreme heat/cold, infant, elderly, medical equipment
     - COMPLAINT keywords: unhappy, not satisfied, problem came back, terrible, angry
     - SPAM: viagra, casino, crypto, free money, lottery, promotional links
     - Always be professional and brief in the draft reply
     - If the message is too vague, classify as missing_information
     - If outside service area or scope, classify as no_fit
-    
+
     Return ONLY valid JSON, no markdown formatting.
     """
-    
+
     def __init__(self, api_key: str = None):
         self.model = None
         self.available = False
-        
-        if not GEMINI_AVAILABLE:
+        self._key = api_key or os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+        if not self._key:
+            print("Gemini: no API key set (GEMINI_API_KEY) — keyword fallback active")
             return
-            
-        api_key = api_key or os.environ.get('GEMINI_API_KEY') or os.environ.get('GOOGLE_API_KEY')
-        if not api_key:
-            # Try to use Application Default Credentials (GCP)
-            try:
-                genai.configure()
-                self.model = genai.GenerativeModel(
-                    'gemini-1.5-flash',
-                    system_instruction=self.SYSTEM_PROMPT,
-                    generation_config={"response_mime_type": "application/json"}
-                )
-                self.available = True
-                print("✓ Gemini connected via Application Default Credentials")
-            except Exception as e:
-                print(f"✗ Gemini not available: {e}")
-            return
-            
-        try:
-            genai.configure(api_key=api_key)
-            self.model = genai.GenerativeModel(
-                'gemini-1.5-flash',
-                system_instruction=self.SYSTEM_PROMPT,
-                generation_config={"response_mime_type": "application/json"}
-            )
+        if self._probe():
             self.available = True
-            print("✓ Gemini connected via API key")
-        except Exception as e:
-            print(f"✗ Gemini not available: {e}")
-    
-    def classify(self, message: str, business_name: str = "Northside HVAC", 
+            print(f"✓ Gemini connected via REST ({self.model})")
+
+    def _call(self, prompt: str, timeout: int = 60):
+        import urllib.request
+        import urllib.error
+        url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
+               f"{self.model}:generateContent?key={self._key}")
+        body = {
+            "system_instruction": {"parts": [{"text": self.SYSTEM_PROMPT}]},
+            "contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2},
+        }
+        req = urllib.request.Request(url, data=json.dumps(body).encode(),
+                                     headers={"Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            d = json.loads(r.read().decode())
+        return json.loads(d["candidates"][0]["content"]["parts"][0]["text"])
+
+    def _probe(self) -> bool:
+        """Find a working model from the candidate list with one cheap call."""
+        import urllib.request
+        import urllib.error
+        for m in GEMINI_MODELS:
+            self.model = m
+            try:
+                out = self._call('Lead message: "hello are you open today?"', timeout=30)
+                if "category" in out:
+                    return True
+            except Exception:
+                continue
+        return False
+
+    def classify(self, message: str, business_name: str = "Northside HVAC",
                  service_area: list = None) -> dict:
         """Classify a lead message using Gemini NL understanding."""
-        
         if not self.available:
             return self._fallback_classify(message)
-        
-        context = f"""
-        Business: {business_name}
-        Service area: {', '.join(service_area or ['San Diego'])}
-        
-        Lead message: "{message}"
-        """
-        
+
+        context = (f"Business: {business_name}\n"
+                   f"Service area: {', '.join(service_area or ['San Diego'])}\n\n"
+                   f'Lead message: "{message}"')
         try:
-            response = self.model.generate_content(context)
-            result = json.loads(response.text)
-            result['model'] = 'gemini-1.5-flash'
-            result['tokens_used'] = response.usage_metadata.total_token_count if hasattr(response, 'usage_metadata') else 0
+            result = self._call(context)
+            result.setdefault("category", "missing_information")
+            result.setdefault("urgency", "normal")
+            result.setdefault("missing_info", [])
+            result.setdefault("draft_reply", "")
+            result.setdefault("confidence", 0.7)
+            result["model"] = self.model
             return result
         except Exception as e:
-            print(f"Gemini error: {e}, falling back to keywords")
+            print(f"Gemini error: {str(e)[:120]} — falling back to keywords")
             return self._fallback_classify(message)
     
     def _fallback_classify(self, message: str) -> dict:
@@ -300,7 +303,7 @@ class GeminiLeadRecoveryAgent:
         return {
             "report_date": datetime.now().strftime("%Y-%m-%d %H:%M"),
             "business": self.business_name,
-            "model": "Gemini 1.5 Flash" if self.classifier.available else "Keyword Fallback",
+            "model": (self.classifier.model or "keyword-fallback") if self.classifier.available else "Keyword Fallback",
             "summary": {
                 "total_leads": len(self.leads),
                 "by_category": by_category,
