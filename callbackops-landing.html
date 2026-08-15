@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CallbackOps helps home-service companies recover missed calls and web leads with a measured, human-reviewed workflow.">
+  <title>CallbackOps — Recover the leads you already paid for</title>
+  <style>
+    :root {
+      --ink: #16201d;
+      --muted: #68736e;
+      --paper: #f5f5ef;
+      --surface: #fffefa;
+      --line: #d8ddd5;
+      --sage: #dce9df;
+      --green: #1d5b48;
+      --green-dark: #123d32;
+      --orange: #ed8b47;
+      --shadow: 0 18px 55px rgba(20, 45, 36, .12);
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: 'Avenir Next', Avenir, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: var(--sans);
+      line-height: 1.5;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    .nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 26px 0 18px; font-size: 13px; letter-spacing: .04em;
+    }
+    .wordmark { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -.03em; font-size: 18px; }
+    .mark { width: 28px; height: 28px; display: grid; place-items: center; border: 2px solid var(--green); border-radius: 50%; color: var(--green); font-size: 12px; font-weight: 900; }
+    .nav a { text-decoration: none; color: var(--muted); }
+    .navlinks { display: flex; gap: 24px; align-items: center; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 46px;
+      border: 1px solid var(--green); border-radius: 999px; padding: 0 20px;
+      background: var(--green); color: white; text-decoration: none; font-weight: 800;
+      cursor: pointer; font-family: inherit; transition: transform .2s ease, background .2s ease;
+    }
+    .button:hover { background: var(--green-dark); transform: translateY(-2px); }
+    .button.secondary { background: transparent; color: var(--green); }
+    .button.secondary:hover { background: var(--sage); }
+    .hero { padding: 70px 0 84px; display: grid; grid-template-columns: 1.02fr .98fr; gap: 70px; align-items: center; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .16em; font-weight: 800; color: var(--green); font-size: 11px; }
+    h1 { font-family: var(--serif); font-size: clamp(48px, 6vw, 86px); line-height: .98; letter-spacing: -.065em; margin: 18px 0 24px; max-width: 720px; font-weight: 500; }
+    .hero-copy { max-width: 600px; font-size: 19px; color: var(--muted); text-wrap: pretty; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .micro { margin-top: 18px; color: var(--muted); font-size: 12px; }
+    .diagram { position: relative; min-height: 470px; background: var(--green-dark); border-radius: 30px; padding: 28px; overflow: hidden; box-shadow: var(--shadow); color: white; }
+    .diagram:before { content: ''; position: absolute; inset: -20% 25% auto -18%; height: 330px; background: rgba(237,139,71,.32); border-radius: 50%; filter: blur(2px); }
+    .diagram-head { position: relative; display: flex; justify-content: space-between; align-items: start; }
+    .diagram-title { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: #bcd5c9; }
+    .status { color: #ddf0df; font-size: 12px; display: flex; align-items: center; gap: 7px; }
+    .status i { display: block; width: 8px; height: 8px; border-radius: 50%; background: #79d798; box-shadow: 0 0 0 5px rgba(121,215,152,.15); }
+    .flow { position: relative; display: grid; gap: 14px; margin-top: 44px; }
+    .flow-card { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); border-radius: 18px; padding: 18px; display: grid; grid-template-columns: auto 1fr auto; gap: 14px; align-items: center; backdrop-filter: blur(8px); }
+    .flow-card .icon { width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: #f1b17f; color: var(--green-dark); font-weight: 900; }
+    .flow-card h3 { margin: 0; font-size: 15px; }
+    .flow-card p { margin: 3px 0 0; color: #c6d9d0; font-size: 12px; }
+    .pill { border: 1px solid rgba(255,255,255,.25); border-radius: 999px; padding: 5px 9px; color: #e9f5ed; font-size: 10px; white-space: nowrap; }
+    .connector { width: 1px; height: 20px; background: rgba(255,255,255,.35); margin-left: 37px; }
+    .quote { position: relative; margin-top: 43px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.18); color: #dcebe1; font-family: var(--serif); font-size: 19px; line-height: 1.25; }
+    .strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 18px 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; color: var(--muted); font-size: 13px; }
+    .strip div { display: flex; gap: 10px; align-items: center; }
+    .strip b { color: var(--green); font-size: 18px; }
+    section { padding: 108px 0; }
+    .section-label { color: var(--orange); font-weight: 800; text-transform: uppercase; letter-spacing: .16em; font-size: 11px; margin-bottom: 15px; }
+    h2 { font-family: var(--serif); font-size: clamp(38px, 4.5vw, 63px); line-height: 1.02; font-weight: 500; letter-spacing: -.05em; margin: 0; max-width: 720px; }
+    .intro { color: var(--muted); max-width: 580px; font-size: 17px; margin: 22px 0 0; }
+    .split { display: grid; grid-template-columns: .82fr 1.18fr; gap: 76px; align-items: start; }
+    .list { border-top: 1px solid var(--line); margin-top: 5px; }
+    .list-item { display: grid; grid-template-columns: 52px 1fr; gap: 16px; padding: 23px 0; border-bottom: 1px solid var(--line); }
+    .list-num { color: var(--orange); font-family: var(--serif); font-size: 24px; }
+    .list-item h3 { margin: 0 0 6px; font-size: 16px; }
+    .list-item p { margin: 0; color: var(--muted); font-size: 14px; }
+    .light { background: var(--surface); }
+    .offer-grid { margin-top: 48px; display: grid; grid-template-columns: 1.15fr .85fr; gap: 22px; }
+    .offer-main, .price-card { border: 1px solid var(--line); border-radius: 24px; padding: 30px; background: var(--paper); }
+    .offer-main h3, .price-card h3 { margin: 0; font-size: 24px; letter-spacing: -.03em; }
+    .offer-main p { color: var(--muted); max-width: 580px; }
+    .checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 30px; margin-top: 24px; }
+    .checklist div { font-size: 13px; display: flex; gap: 8px; }
+    .checklist span { color: var(--green); font-weight: 900; }
+    .price-card { background: var(--green-dark); color: white; display: flex; flex-direction: column; justify-content: space-between; min-height: 310px; }
+    .price-card .label { color: #f6bd8d; text-transform: uppercase; letter-spacing: .14em; font-size: 10px; font-weight: 800; }
+    .price { font-family: var(--serif); font-size: 48px; line-height: 1; margin: 28px 0 8px; }
+    .price-note { color: #c6d9d0; font-size: 13px; }
+    .price-card .button { background: #f6bd8d; color: var(--green-dark); border-color: #f6bd8d; }
+    .price-card .button:hover { background: #ffd0aa; }
+    .audit { display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: start; }
+    .formbox { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: 0 10px 40px rgba(20,45,36,.06); }
+    label { display: grid; gap: 7px; font-size: 12px; color: var(--muted); font-weight: 700; }
+    input, textarea { width: 100%; border: 1px solid var(--line); background: white; color: var(--ink); border-radius: 12px; padding: 13px 14px; font: inherit; outline: none; }
+    input:focus, textarea:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(29,91,72,.13); }
+    textarea { resize: vertical; min-height: 84px; }
+    .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+    .field-full { grid-column: 1 / -1; }
+    .form-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    .generated { display: none; margin-top: 18px; padding: 16px; border-radius: 14px; background: #edf5ed; border: 1px solid #c9dfcd; white-space: pre-wrap; color: var(--green-dark); font-size: 13px; }
+    .generated.visible { display: block; }
+    .fineprint { color: var(--muted); font-size: 11px; margin-top: 13px; }
+    .faq { max-width: 770px; margin: 44px auto 0; border-top: 1px solid var(--line); }
+    details { border-bottom: 1px solid var(--line); padding: 20px 0; }
+    summary { cursor: pointer; font-weight: 800; list-style: none; display: flex; justify-content: space-between; gap: 24px; }
+    summary::-webkit-details-marker { display: none; }
+    summary:after { content: '+'; color: var(--orange); font-size: 22px; line-height: 1; }
+    details[open] summary:after { content: '−'; }
+    details p { color: var(--muted); max-width: 650px; font-size: 14px; margin: 12px 0 0; }
+    footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: 12px; display: flex; justify-content: space-between; gap: 20px; }
+    @media (max-width: 820px) {
+      .hero, .split, .offer-grid, .audit { grid-template-columns: 1fr; gap: 38px; }
+      .hero { padding-top: 45px; }
+      .diagram { min-height: 420px; }
+      section { padding: 76px 0; }
+      .strip { grid-template-columns: 1fr; gap: 10px; }
+      .navlinks a:not(.button) { display: none; }
+    }
+    @media (max-width: 520px) {
+      .wrap { width: min(100% - 28px, 1120px); }
+      h1 { font-size: 54px; }
+      .fields, .checklist { grid-template-columns: 1fr; }
+      .field-full { grid-column: auto; }
+      .flow-card { grid-template-columns: auto 1fr; }
+      .flow-card .pill { grid-column: 2; justify-self: start; }
+      footer { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *:before, *:after { scroll-behavior: auto !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="wordmark" href="#top" aria-label="CallbackOps home"><span class="mark">↗</span> callbackops</a>
+    <nav class="navlinks" aria-label="Primary navigation">
+      <a href="#offer">The offer</a>
+      <a href="#audit">Get an audit</a>
+      <a class="button" href="#audit">Start a conversation</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">Missed-lead recovery for home-service teams</div>
+        <h1>Recover the jobs you already paid to attract.</h1>
+        <p class="hero-copy">CallbackOps helps HVAC, plumbing, electrical, and repair teams respond to missed calls and web inquiries, qualify the request, and book or route the next step—without forcing a new CRM.</p>
+        <div class="actions">
+          <a class="button" href="#audit">Request a 10-minute audit</a>
+          <a class="button secondary" href="#offer">See the pilot</a>
+        </div>
+        <p class="micro">Manual-first. Human-reviewed. Built around the tools you already own.</p>
+      </div>
+      <div class="diagram" aria-label="Illustration of the missed-lead recovery flow">
+        <div class="diagram-head"><div class="diagram-title">The recovery loop</div><div class="status"><i></i> ready to route</div></div>
+        <div class="flow">
+          <div class="flow-card"><div class="icon">01</div><div><h3>Call missed</h3><p>Lead is logged with source and time.</p></div><span class="pill">captured</span></div>
+          <div class="connector"></div>
+          <div class="flow-card"><div class="icon">02</div><div><h3>Response approved</h3><p>Minimum questions, no invented promises.</p></div><span class="pill">reviewed</span></div>
+          <div class="connector"></div>
+          <div class="flow-card"><div class="icon">03</div><div><h3>Next step booked</h3><p>Calendar, callback, or human handoff.</p></div><span class="pill">routed</span></div>
+        </div>
+        <div class="quote">“Every lead gets a next action—and every exception gets a human.”</div>
+      </div>
+    </section>
+
+    <div class="wrap strip" aria-label="Service principles">
+      <div><b>01</b> No ads required to test the process</div>
+      <div><b>02</b> Client-owned tools and data</div>
+      <div><b>03</b> Measured before automated</div>
+    </div>
+
+    <section class="wrap split" id="offer">
+      <div>
+        <div class="section-label">Start with the leak you already have</div>
+        <h2>One small operating system for the calls that fall through.</h2>
+        <p class="intro">The first version is intentionally simple: a clear script, a lead board, a booking path, and a report the owner can understand in five minutes.</p>
+      </div>
+      <div class="list">
+        <div class="list-item"><div class="list-num">01</div><div><h3>Capture the gap</h3><p>Log missed calls and web inquiries with the source, time, and current status.</p></div></div>
+        <div class="list-item"><div class="list-num">02</div><div><h3>Qualify without overpromising</h3><p>Ask only approved questions about job type, location, urgency, and preferred time.</p></div></div>
+        <div class="list-item"><div class="list-num">03</div><div><h3>Route the next step</h3><p>Book, callback, or escalate. Uncertainty goes to a human instead of a guess.</p></div></div>
+        <div class="list-item"><div class="list-num">04</div><div><h3>Report what happened</h3><p>Make response time, qualified conversations, bookings, and exceptions visible.</p></div></div>
+      </div>
+    </section>
+
+    <section class="light" id="pilot">
+      <div class="wrap">
+        <div class="section-label">Founding pilot</div>
+        <h2>A paid test, not a leap of faith.</h2>
+        <div class="offer-grid">
+          <div class="offer-main">
+            <h3>14 days to establish a baseline and a repeatable workflow.</h3>
+            <p>We start with one service area, one intake path, and one approved booking or callback flow. Any paid messaging, CRM, or phone usage stays in your account and is paid by your business.</p>
+            <div class="checklist">
+              <div><span>✓</span> lead-status board</div>
+              <div><span>✓</span> approved response script</div>
+              <div><span>✓</span> qualification checklist</div>
+              <div><span>✓</span> daily exception report</div>
+              <div><span>✓</span> weekly conversion summary</div>
+              <div><span>✓</span> human handoff rules</div>
+            </div>
+          </div>
+          <div class="price-card">
+            <div><div class="label">Founding clients 01—03</div><div class="price">$1,500<span style="font: 16px var(--sans);"> / month</span></div><div class="price-note">Setup is agreed after the first verified result. No ad spend required.</div></div>
+            <a class="button" href="#audit">Request the audit</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap audit" id="audit">
+      <div>
+        <div class="section-label">A useful first step</div>
+        <h2>Give us one observable problem. We’ll map the next action.</h2>
+        <p class="intro">Use the form to generate a ready-to-send audit request. This page is prefilled for James Thompson and San Diego; review each observation before sending.</p>
+      </div>
+      <div class="formbox">
+        <form id="auditForm">
+          <div class="fields">
+            <label>Business name<input name="business" required placeholder="Acme Heating & Air"></label>
+            <label>Your name<input name="name" required value="James Thompson" placeholder="James Thompson"></label>
+            <label>City / metro<input name="metro" required value="San Diego" placeholder="San Diego"></label>
+            <label>Your public contact<input name="contact" required value="absbm14@gmail.com" placeholder="absbm14@gmail.com"></label>
+            <label class="field-full">Specific public observation<textarea name="observation" required placeholder="Example: the website form confirms submission but does not mention a response window."></textarea></label>
+          </div>
+          <div class="form-actions"><button class="button" type="submit">Generate audit message</button><button class="button secondary" type="button" id="copyBtn" disabled>Copy message</button></div>
+          <div class="generated" id="generated" role="status" aria-live="polite"></div>
+          <div class="fineprint">This tool creates a draft only. Review it, verify the observation, and send it manually. Do not use it for bulk messaging.</div>
+        </form>
+      </div>
+    </section>
+
+    <section class="light">
+      <div class="wrap">
+        <div class="section-label">Questions owners ask</div>
+        <h2>Clear boundaries make the pilot easier to trust.</h2>
+        <div class="faq">
+          <details><summary>Do you replace our receptionist?</summary><p>No. The first version is a recovery and overflow layer. Uncertain requests are routed to the existing team, and the client approves every customer-facing script.</p></details>
+          <details><summary>Can you guarantee more revenue?</summary><p>No. The service guarantees a defined process and reporting cadence, not a specific number of jobs. The pilot makes the baseline and outcome visible so the owner can decide.</p></details>
+          <details><summary>Do we need another software subscription?</summary><p>Not to test the workflow. Start with the tools the business already owns and a client-approved tracking sheet. Add paid tools only when the client chooses to fund them.</p></details>
+          <details><summary>What happens with emergencies or sensitive requests?</summary><p>They pause the workflow and go to the designated human escalation contact. The service does not diagnose, quote, or invent availability.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap"><span>callbackops · starter asset</span><span>Outreach: <a href="mailto:absbm14@gmail.com">absbm14@gmail.com</a> · fallback: <a href="mailto:absbm12@gmail.com">absbm12@gmail.com</a></span></footer>
+
+  <script>
+    const form = document.getElementById('auditForm');
+    const generated = document.getElementById('generated');
+    const copyBtn = document.getElementById('copyBtn');
+    let currentMessage = '';
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(form);
+      const business = data.get('business').trim();
+      const name = data.get('name').trim();
+      const metro = data.get('metro').trim();
+      const contact = data.get('contact').trim();
+      const observation = data.get('observation').trim();
+      currentMessage = `Subject: quick missed-call idea for ${business}\n\nHi ${name},\n\nI was looking at ${business} while researching ${metro} home-service companies. I noticed ${observation}\n\nI build a small missed-lead recovery workflow: when a call or web inquiry is missed, the lead is logged, the approved response is sent, and the next step is booked or routed to your team. It can start with your existing tools and human review—no ads and no software purchase required to test the process.\n\nWould a 10-minute review of your current missed-call flow be useful? If it is not relevant, reply “no” and I will not follow up.\n\n${name}\n${contact}`;
+      generated.textContent = currentMessage;
+      generated.classList.add('visible');
+      copyBtn.disabled = false;
+    });
+    copyBtn.addEventListener('click', async () => {
+      if (!currentMessage) return;
+      try {
+        await navigator.clipboard.writeText(currentMessage);
+        copyBtn.textContent = 'Copied';
+        setTimeout(() => { copyBtn.textContent = 'Copy message'; }, 1600);
+      } catch (error) {
+        copyBtn.textContent = 'Select text above';
+      }
+    });
+  </script>
+</body>
+</html>

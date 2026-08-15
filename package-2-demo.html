@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inbox-to-Action Response Desk — Demo</title>
+  <style>
+    :root {
+      --ink: #16201d; --muted: #68736e; --paper: #f5f5ef; --surface: #fffefa;
+      --line: #d8ddd5; --sage: #dce9df; --green: #1d5b48; --green-dark: #123d32;
+      --orange: #ed8b47; --red: #c0524a; --amber: #e0a030;
+      --sans: 'Avenir Next', Avenir, ui-sans-serif, system-ui, sans-serif;
+      --mono: 'SF Mono', 'Fira Code', ui-monospace, monospace;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); line-height: 1.5; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
+    header { padding: 28px 0 14px; display: flex; justify-content: space-between; align-items: center; }
+    .brand { font-weight: 800; font-size: 16px; }
+    .badge { background: var(--green); color: white; padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 800; }
+    h1 { font-size: clamp(32px, 4vw, 48px); line-height: 1.05; letter-spacing: -.04em; margin: 20px 0 12px; max-width: 700px; }
+    .sub { color: var(--muted); font-size: 17px; max-width: 600px; margin-bottom: 40px; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 28px; margin-bottom: 24px; }
+    .card h2 { margin: 0 0 8px; font-size: 20px; }
+    .card .meta { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--line); color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: .05em; font-size: 11px; }
+    td { padding: 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .tag { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+    .tag-quote { background: #e8f0fe; color: #1a5276; }
+    .tag-urgent { background: #fde8e8; color: var(--red); }
+    .tag-scheduling { background: var(--sage); color: var(--green-dark); }
+    .tag-missing { background: #fef3e8; color: var(--amber); }
+    .tag-complaint { background: #fde8e8; color: var(--red); }
+    .tag-spam { background: #eee; color: var(--muted); }
+    .tag-nofit { background: #eee; color: var(--muted); }
+    .draft { font-family: var(--mono); font-size: 12px; color: var(--green-dark); background: var(--sage); padding: 8px 10px; border-radius: 8px; }
+    .escalate { font-size: 11px; color: var(--red); font-weight: 700; }
+    .pricing { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+    .price-card { border: 1px solid var(--line); border-radius: 16px; padding: 24px; background: var(--paper); }
+    .price-card.dark { background: var(--green-dark); color: white; }
+    .price-card h3 { margin: 0 0 8px; font-size: 18px; }
+    .price-card .price { font-size: 36px; font-weight: 800; }
+    .price-card ul { padding-left: 18px; font-size: 13px; line-height: 1.8; margin: 12px 0; }
+    @media (max-width: 700px) { .pricing { grid-template-columns: 1fr; } table { font-size: 11px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">CallbackOps — Demo Deliverable</div>
+      <span class="badge">SAMPLE — FICTIONAL DATA</span>
+    </header>
+
+    <h1>Inbox-to-Action Response Desk</h1>
+    <p class="sub">Every inquiry gets a category, urgency flag, suggested next action, and a human-review-ready draft reply. This demo uses 20 synthetic inquiries for a fictional "Northside HVAC" to show the triage output.</p>
+
+    <div class="card">
+      <h2>Triage output — sample inquiries for Northside HVAC</h2>
+      <div class="meta">20 synthetic inquiries shown. Each row shows the triage category, urgency, missing info, suggested action, and a draft reply ready for owner approval.</div>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Inquiry (synthetic)</th>
+            <th>Category</th>
+            <th>Urgency</th>
+            <th>Missing info</th>
+            <th>Suggested action</th>
+            <th>Draft reply (for owner review)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>"My AC stopped working and it's 95 degrees. I need someone today."</td>
+            <td><span class="tag tag-urgent">Urgent/Escalate</span></td>
+            <td style="color:var(--red);font-weight:700;">HIGH</td>
+            <td>Address, system type</td>
+            <td class="escalate">⚠️ Escalate to human call immediately</td>
+            <td class="draft">Hi, this sounds urgent. I've flagged this for Northside's on-call technician — expect a call within 30 minutes. Please have your address ready.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>"How much for a new AC unit? My house is about 1800 sq ft."</td>
+            <td><span class="tag tag-quote">Quote request</span></td>
+            <td>Normal</td>
+            <td>System brand, existing ductwork, # of floors</td>
+            <td>Request missing info → schedule site visit</td>
+            <td class="draft">Hi, thanks for reaching out! To give you an accurate quote we'd need to know a few more details: your current system brand, whether ductwork is already in place, and how many floors. Would you like to schedule a free site visit?</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>"Do you service La Mesa? My furnace won't turn on."</td>
+            <td><span class="tag tag-scheduling">Scheduling</span></td>
+            <td>Normal</td>
+            <td>Confirm La Mesa is in service area</td>
+            <td>Confirm service area → book appointment</td>
+            <td class="draft">Hi, yes — La Mesa is within our service area. We'd be happy to help with your furnace. What day and time works best for a visit?</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>"Your technician was here last week and the problem came back. I'm not happy."</td>
+            <td><span class="tag tag-complaint">Complaint</span></td>
+            <td style="color:var(--red);font-weight:700;">HIGH</td>
+            <td>Work order #, technician name</td>
+            <td class="escalate">⚠️ Escalate to owner/manager</td>
+            <td class="draft">Hi, I'm sorry to hear the issue returned. I've flagged this for the owner directly — expect a personal call within 2 business hours. Could you share the work order number if you have it?</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>"I just moved to the area and want to set up annual maintenance."</td>
+            <td><span class="tag tag-scheduling">Scheduling</span></td>
+            <td>Low</td>
+            <td>System type, last service date</td>
+            <td>Book maintenance appointment</td>
+            <td class="draft">Welcome to the neighborhood! We'd love to set up your annual maintenance. To get started, what type of system do you have (central AC, heat pump, etc.) and when was it last serviced?</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>"Price list please"</td>
+            <td><span class="tag tag-missing">Missing information</span></td>
+            <td>Low</td>
+            <td>Service type, system details</td>
+            <td>Request specifics</td>
+            <td class="draft">Hi, we don't have a standard price list since pricing depends on your system and needs. Could you tell us what service you're looking for? We'll provide a quote right away.</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>"Get free Viagra pills!!! Click here!!!"</td>
+            <td><span class="tag tag-spam">Spam</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td>Discard / mark spam</td>
+            <td class="draft" style="color:var(--muted);font-style:italic;">(No reply — flagged as spam)</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>"I need commercial HVAC maintenance for a 20,000 sq ft office building in Kearny Mesa."</td>
+            <td><span class="tag tag-quote">Quote request</span></td>
+            <td>Normal</td>
+            <td>Building specs, existing contract, equipment age</td>
+            <td>Route to commercial team → schedule site walk</td>
+            <td class="draft">Hi, thanks for the commercial inquiry. For a building that size we'd want to schedule a site walk to assess the equipment and your needs. Are you currently under a maintenance contract, and if so when does it expire?</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="color:var(--muted);font-size:12px;margin-top:16px;">Showing 8 of 20 sample inquiries. Full deliverable covers the client's triage taxonomy, 8 response templates, follow-up queue, and escalation SOP.</p>
+    </div>
+
+    <div class="card">
+      <h2>Triage taxonomy (8 categories)</h2>
+      <div class="meta">Client approves and customizes these categories before processing begins.</div>
+      <table>
+        <thead><tr><th>Category</th><th>What it catches</th><th>Default action</th></tr></thead>
+        <tbody>
+          <tr><td>Quote request</td><td>Pricing, estimates, proposals</td><td>Collect missing info → schedule site visit or send estimate</td></tr>
+          <tr><td>Scheduling</td><td>Appointment requests, rescheduling, service-area questions</td><td>Confirm availability → book or route to calendar</td></tr>
+          <tr><td>Service-area question</td><td>Location eligibility, coverage area</td><td>Confirm or redirect</td></tr>
+          <tr><td>Missing information</td><td>Vague or incomplete inquiries</td><td>Request specifics → re-classify</td></tr>
+          <tr><td>Complaint</td><td>Dissatisfaction, repeat issues, refund requests</td><td>Escalate to owner/manager — never auto-resolve</td></tr>
+          <tr><td>Urgent/Escalate</td><td>No AC in heat, gas smell, safety concerns</td><td>Immediate human call — never auto-resolve</td></tr>
+          <tr><td>No-fit</td><td>Out of scope, wrong trade, wrong area</td><td>Polite redirect or no reply</td></tr>
+          <tr><td>Spam</td><td>Unsolicited commercial messages</td><td>Discard</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Pricing</h2>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>Pilot</h3>
+          <div class="price">$650</div>
+          <ul>
+            <li>One CSV/email export</li>
+            <li>Up to 50 inquiries</li>
+            <li>Full triage + draft replies</li>
+            <li>8 response templates</li>
+            <li>20-case evaluation report</li>
+            <li>30-min handoff</li>
+          </ul>
+        </div>
+        <div class="price-card dark">
+          <h3>Standard</h3>
+          <div class="price">$1,100</div>
+          <ul>
+            <li>One channel, up to 250 inquiries</li>
+            <li>Reusable local processing script</li>
+            <li>Operating procedure document</li>
+            <li>Custom triage taxonomy</li>
+            <li>Follow-up queue + escalation SOP</li>
+            <li>30-min handoff + 1 revision</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p style="color:var(--muted);font-size:12px;margin-bottom:40px;">This is a demonstration using synthetic data. Real deliverables process the client's actual inquiry exports (CSV/PDF/Markdown) with their approved taxonomy and templates. No messages are auto-sent — the owner reviews and approves every reply. Urgent and complaint cases are always escalated to a human, never resolved by AI alone.</p>
+  </div>
+</body>
+</html>

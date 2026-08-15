@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verified Prospect + Personalization Sprint — Demo</title>
+  <style>
+    :root {
+      --ink: #16201d; --muted: #68736e; --paper: #f5f5ef; --surface: #fffefa;
+      --line: #d8ddd5; --sage: #dce9df; --green: #1d5b48; --green-dark: #123d32;
+      --orange: #ed8b47; --sans: 'Avenir Next', Avenir, ui-sans-serif, system-ui, sans-serif;
+      --mono: 'SF Mono', 'Fira Code', ui-monospace, monospace;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); line-height: 1.5; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
+    header { padding: 28px 0 14px; display: flex; justify-content: space-between; align-items: center; }
+    .brand { font-weight: 800; font-size: 16px; letter-spacing: -.02em; }
+    .badge { background: var(--green); color: white; padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 800; }
+    h1 { font-size: clamp(32px, 4vw, 48px); line-height: 1.05; letter-spacing: -.04em; margin: 20px 0 12px; max-width: 700px; }
+    .sub { color: var(--muted); font-size: 17px; max-width: 600px; margin-bottom: 40px; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 28px; margin-bottom: 24px; }
+    .card h2 { margin: 0 0 8px; font-size: 20px; }
+    .card .meta { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--line); color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: .05em; font-size: 11px; }
+    td { padding: 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    tr:hover td { background: var(--sage); }
+    .source { color: var(--green); font-size: 11px; text-decoration: none; }
+    .source:hover { text-decoration: underline; }
+    .opening { font-family: var(--mono); font-size: 12px; color: var(--green-dark); background: var(--sage); padding: 8px 10px; border-radius: 8px; }
+    .cta { display: inline-flex; align-items: center; background: var(--green); color: white; text-decoration: none; padding: 12px 24px; border-radius: 999px; font-weight: 800; margin-top: 16px; }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px; }
+    .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; text-align: center; }
+    .stat .num { font-size: 32px; font-weight: 800; color: var(--green); }
+    .stat .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+    .seq { margin-top: 16px; }
+    .seq-item { padding: 14px; border-left: 3px solid var(--green); margin-bottom: 12px; background: var(--surface); border-radius: 0 12px 12px 0; }
+    .seq-item .step { font-weight: 800; font-size: 13px; color: var(--green); }
+    .seq-item .body { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    @media (max-width: 700px) { .stats { grid-template-columns: 1fr 1fr; } table { font-size: 11px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">CallbackOps — Demo Deliverable</div>
+      <span class="badge">SAMPLE — FICTIONAL DATA</span>
+    </header>
+
+    <h1>Verified Prospect + Personalization Sprint</h1>
+    <p class="sub">A sample deliverable for a fictional niche (commercial cleaning in Austin, TX) showing exactly what a client receives. Every row has a source URL, a factual observation, and a ready-to-send opening line.</p>
+
+    <div class="stats">
+      <div class="stat"><div class="num">10</div><div class="label">Verified prospects</div></div>
+      <div class="stat"><div class="num">10</div><div class="label">Opening lines</div></div>
+      <div class="stat"><div class="num">3</div><div class="label">Email sequence</div></div>
+      <div class="stat"><div class="num">100%</div><div class="label">Source-cited</div></div>
+    </div>
+
+    <div class="card">
+      <h2>Prospect batch — Austin commercial cleaning</h2>
+      <div class="meta">Fictional sample for demonstration. Each row links to a source URL. Real deliverables use the client's target niche and metro.</div>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Company</th>
+            <th>Observation (from public site)</th>
+            <th>Opening line</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>SparkleClean Austin</td>
+            <td>Website lists "Request a Quote" form but no response-time commitment.</td>
+            <td class="opening">Hi — noticed your quote form doesn't mention a response window. Most cleaning leads go cold in 2 hours; I build intake tracking that catches that.</td>
+            <td><a class="source" href="#">source ↗</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Lone Star Janitorial</td>
+            <td>Homepage shows phone CTA only; no online booking or contact form.</td>
+            <td class="opening">Hi — your site routes everything through phone calls. If a call is missed, is there a fallback? I help log and recover those.</td>
+            <td><a class="source" href="#">source ↗</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Austin Pro Cleaners</td>
+            <td>Site mentions 24/7 service but contact page only lists business hours.</td>
+            <td class="opening">Hi — you advertise 24/7 service but your contact page shows limited hours. How are after-hours inquiries handled today?</td>
+            <td><a class="source" href="#">source ↗</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Hill Country Cleaning Co.</td>
+            <td>Google Business Profile has 47 reviews but website has no review integration or testimonial page.</td>
+            <td class="opening">Hi — you have strong reviews on Google but nothing on your site. I help service businesses turn review momentum into booked jobs.</td>
+            <td><a class="source" href="#">source ↗</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Capital City Commercial Cleaning</td>
+            <td>Website offers "Free Consultation" but no scheduling link or calendar.</td>
+            <td class="opening">Hi — your free consultation offer is great, but there's no booking link. I set up simple intake so consultations don't slip through.</td>
+            <td><a class="source" href="#">source ↗</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="color:var(--muted);font-size:12px;margin-top:16px;">Showing 5 of 10 sample rows. Full deliverable includes 30–75 prospects depending on tier.</p>
+    </div>
+
+    <div class="card">
+      <h2>Three-message outreach sequence</h2>
+      <div class="meta">Ready to paste with client-specific placeholders. Client reviews and sends — nothing is auto-sent.</div>
+      <div class="seq">
+        <div class="seq-item">
+          <div class="step">Message 1 — Opening (personalized)</div>
+          <div class="body">Hi {{FIRST_NAME}}, I noticed {{OBSERVATION}}. I help {{NICHE}} companies recover missed leads and book more appointments using tools they already own. Would a 10-minute review be useful? If not, reply "no" and I won't follow up.</div>
+        </div>
+        <div class="seq-item">
+          <div class="step">Message 2 — Follow-up (2 business days later)</div>
+          <div class="body">Hi {{FIRST_NAME}}, following up once. The reason I reached out is {{OBSERVATION}}. I can send a one-page sample audit showing exactly what I'd measure — no access to your systems needed. If this isn't a priority, just say so.</div>
+        </div>
+        <div class="seq-item">
+          <div class="step">Message 3 — Final (4 business days later)</div>
+          <div class="body">Hi {{FIRST_NAME}}, last note from me. I'm closing this out unless missed-lead recovery is worth discussing. If you want the sample audit later, reply "audit." Otherwise, no response needed.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Pricing</h2>
+      <table>
+        <thead><tr><th>Tier</th><th>Deliverables</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Pilot</strong></td><td>30 verified prospects, 10 opening lines, 3-message sequence, 2-day delivery</td><td><strong>$500</strong></td></tr>
+          <tr><td><strong>Standard</strong></td><td>75 prospects, 25 opening lines, 1 niche/region, 1 revision</td><td><strong>$900</strong></td></tr>
+          <tr><td><strong>Custom</strong></td><td>150+ prospects, multi-niche, ongoing batches</td><td>Quoted</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="color:var(--muted);font-size:12px;margin-bottom:40px;">This is a demonstration sample using fictional data. Real deliverables contain verified, source-cited prospects for the client's specific niche and metro. No outreach is sent by the operator — the client reviews and sends all messages.</p>
+  </div>
+</body>
+</html>
