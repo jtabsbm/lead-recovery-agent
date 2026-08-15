@@ -1,0 +1,105 @@
+{
+  "by_category": {
+    "urgent_escalate": 1,
+    "quote_request": 1,
+    "complaint": 1,
+    "spam": 1,
+    "missing_information": 1
+  },
+  "by_status": {
+    "escalated": 2,
+    "responded": 2,
+    "spam": 1
+  },
+  "stats": {
+    "total": 5,
+    "qualified": 2,
+    "booked": 0,
+    "escalated": 2,
+    "spam": 1
+  },
+  "leads": [
+    {
+      "id": "aa83d07e",
+      "name": "Sarah Mitchell",
+      "contact": "sarah@email.com",
+      "message": "My AC stopped working and it's 95 degrees inside. I have a baby and need someone today!",
+      "source": "web_form",
+      "received_at": "2026-08-14T20:16:55.488378",
+      "category": "urgent_escalate",
+      "urgency": "emergency",
+      "missing_info": [
+        "callback number",
+        "address"
+      ],
+      "draft_reply": "This sounds urgent \u2014 Northside HVAC has been flagged for an immediate call. Please expect contact within 30 minutes.",
+      "action": "",
+      "status": "escalated"
+    },
+    {
+      "id": "1edc18b0",
+      "name": "John Davis",
+      "contact": "jdavis@email.com",
+      "message": "How much for a new AC unit? My house is about 1800 sq ft.",
+      "source": "web_form",
+      "received_at": "2026-08-14T20:16:55.488398",
+      "category": "quote_request",
+      "urgency": "normal",
+      "missing_info": [
+        "address",
+        "system details"
+      ],
+      "draft_reply": "Thanks for reaching out! To give an accurate quote we need a few more details \u2014 what's the address and system type?",
+      "action": "",
+      "status": "responded"
+    },
+    {
+      "id": "4b1aa586",
+      "name": "Lisa Chen",
+      "contact": "lchen@email.com",
+      "message": "Your technician was here last week and the problem came back. I'm not happy.",
+      "source": "web_form",
+      "received_at": "2026-08-14T20:16:55.488410",
+      "category": "complaint",
+      "urgency": "high",
+      "missing_info": [
+        "work order number"
+      ],
+      "draft_reply": "Sorry to hear this \u2014 your message has been routed directly to the owner.",
+      "action": "",
+      "status": "escalated"
+    },
+    {
+      "id": "32bd00e2",
+      "name": "Spam Bot",
+      "contact": "spam@bot.com",
+      "message": "Get free Viagra pills!!! Click here for casino bonus!!!",
+      "source": "web_form",
+      "received_at": "2026-08-14T20:16:55.488417",
+      "category": "spam",
+      "urgency": "normal",
+      "missing_info": [],
+      "draft_reply": "",
+      "action": "",
+      "status": "spam"
+    },
+    {
+      "id": "ce20157b",
+      "name": "Tom Wilson",
+      "contact": "tom@email.com",
+      "message": "Can you install a smart thermostat? I already bought the unit.",
+      "source": "web_form",
+      "received_at": "2026-08-14T20:16:55.488425",
+      "category": "missing_information",
+      "urgency": "normal",
+      "missing_info": [
+        "service type",
+        "address",
+        "preferred time"
+      ],
+      "draft_reply": "Thanks for your inquiry \u2014 could you share a few more details so we can help?",
+      "action": "",
+      "status": "responded"
+    }
+  ]
+}

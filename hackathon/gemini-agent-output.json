@@ -1,7 +1,7 @@
 {
-  "report_date": "2026-08-14 17:42",
+  "report_date": "2026-08-14 20:12",
   "business": "Northside HVAC",
-  "model": "Keyword Fallback",
+  "model": "Gemini 1.5 Flash",
   "summary": {
     "total_leads": 12,
     "by_category": {
@@ -29,16 +29,16 @@
     "spam_filtered": 1,
     "avg_confidence": 0.758,
     "total_tokens_used": 0,
-    "avg_response_ms": 0
+    "avg_response_ms": 3799
   },
   "leads": [
     {
-      "id": "e3c69abd",
+      "id": "9bc1fb71",
       "source": "web_form",
       "caller_name": "Sarah Mitchell",
       "contact": "sarah@email.com",
       "message": "My AC stopped working and it's 95 degrees inside. I have a baby and need someone today!",
-      "received_at": "2026-08-14T17:42:51.408106",
+      "received_at": "2026-08-14T20:12:08.576418",
       "status": "escalated",
       "category": "urgent_escalate",
       "urgency": "emergency",
@@ -50,15 +50,15 @@
       "model_used": "keyword-fallback",
       "tokens_used": 0,
       "suggested_action": "\u26a0\ufe0f ESCALATE: Immediate human call required",
-      "response_time_ms": 0
+      "response_time_ms": 6140
     },
     {
-      "id": "372342c0",
+      "id": "fcb786e1",
       "source": "web_form",
       "caller_name": "John Davis",
       "contact": "jdavis@email.com",
       "message": "How much for a new AC unit? My house is about 1800 sq ft.",
-      "received_at": "2026-08-14T17:42:51.408121",
+      "received_at": "2026-08-14T20:12:08.576433",
       "status": "responded",
       "category": "quote_request",
       "urgency": "normal",
@@ -71,15 +71,15 @@
       "model_used": "keyword-fallback",
       "tokens_used": 0,
       "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
-      "response_time_ms": 0
+      "response_time_ms": 2938
     },
     {
-      "id": "33fcd137",
+      "id": "fa68b1c6",
       "source": "missed_call",
       "caller_name": "Maria Garcia",
       "contact": "(619) 555-0142",
       "message": "Missed call \u2014 no voicemail left",
-      "received_at": "2026-08-14T17:42:51.408126",
+      "received_at": "2026-08-14T20:12:08.576437",
       "status": "responded",
       "category": "missing_information",
       "urgency": "normal",
@@ -93,15 +93,15 @@
       "model_used": "keyword-fallback",
       "tokens_used": 0,
       "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
-      "response_time_ms": 0
+      "response_time_ms": 2965
     },
     {
-      "id": "f42c2360",
+      "id": "b67bf64a",
       "source": "web_form",
       "caller_name": "Tom Wilson",
       "contact": "tom@email.com",
       "message": "Do you service La Mesa? My furnace won't turn on.",
-      "received_at": "2026-08-14T17:42:51.408133",
+      "received_at": "2026-08-14T20:12:08.576444",
       "status": "responded",
       "category": "missing_information",
       "urgency": "normal",
@@ -115,15 +115,15 @@
       "model_used": "keyword-fallback",
       "tokens_used": 0,
       "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
-      "response_time_ms": 0
+      "response_time_ms": 2812
     },
     {
-      "id": "b5e67f66",
+      "id": "eb97979b",
       "source": "web_form",
       "caller_name": "Lisa Chen",
       "contact": "lchen@email.com",
       "message": "Your technician was here last week and the problem came back. I'm not happy.",
-      "received_at": "2026-08-14T17:42:51.408137",
+      "received_at": "2026-08-14T20:12:08.576448",
       "status": "escalated",
       "category": "complaint",
       "urgency": "high",
@@ -135,15 +135,15 @@
       "model_used": "keyword-fallback",
       "tokens_used": 0,
       "suggested_action": "\u26a0\ufe0f ESCALATE: Immediate human call required",
-      "response_time_ms": 0
+      "response_time_ms": 2967
     },
     {
-      "id": "d06df3c6",
+      "id": "f1f338f9",
       "source": "web_form",
       "caller_name": "Bob Smith",
       "contact": "bob@email.com",
       "message": "I just moved to the area and want to set up annual maintenance.",
-      "received_at": "2026-08-14T17:42:51.408141",
+      "received_at": "2026-08-14T20:12:08.576452",
       "status": "responded",
       "category": "missing_information",
       "urgency": "normal",
@@ -157,15 +157,15 @@
       "model_used": "keyword-fallback",
       "tokens_used": 0,
       "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
-      "response_time_ms": 0
+      "response_time_ms": 3198
     },
     {
-      "id": "5939843a",
+      "id": "61d190a0",
       "source": "web_form",
       "caller_name": "Spam Bot",
       "contact": "spam@bot.com",
       "message": "Get free Viagra pills!!! Click here for casino bonus!!!",
-      "received_at": "2026-08-14T17:42:51.408144",
+      "received_at": "2026-08-14T20:12:08.576455",
       "status": "spam",
       "category": "spam",
       "urgency": "normal",
@@ -175,15 +175,15 @@
       "model_used": "keyword-fallback",
       "tokens_used": 0,
       "suggested_action": "DISCARD: Spam detected",
-      "response_time_ms": 0
+      "response_time_ms": 9285
     },
     {
-      "id": "de2d2115",
+      "id": "e75c63c5",
       "source": "web_form",
       "caller_name": "Mike Johnson",
       "contact": "mike@email.com",
       "message": "I need commercial refrigeration repair for my restaurant.",
-      "received_at": "2026-08-14T17:42:51.408152",
+      "received_at": "2026-08-14T20:12:08.576463",
       "status": "responded",
       "category": "missing_information",
       "urgency": "normal",
@@ -197,15 +197,15 @@
       "model_used": "keyword-fallback",
       "tokens_used": 0,
       "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
-      "response_time_ms": 0
+      "response_time_ms": 3280
     },
     {
-      "id": "e1f9863f",
+      "id": "c806087b",
       "source": "after_hours",
       "caller_name": "Jennifer Park",
       "contact": "(858) 555-0199",
       "message": "My heater stopped working at 11pm, I have elderly parents visiting",
-      "received_at": "2026-08-14T17:42:51.408157",
+      "received_at": "2026-08-14T20:12:08.576468",
       "status": "escalated",
       "category": "urgent_escalate",
       "urgency": "emergency",
@@ -217,15 +217,15 @@
       "model_used": "keyword-fallback",
       "tokens_used": 0,
       "suggested_action": "\u26a0\ufe0f ESCALATE: Immediate human call required",
-      "response_time_ms": 0
+      "response_time_ms": 3075
     },
     {
-      "id": "061160a7",
+      "id": "3587aa63",
       "source": "web_form",
       "caller_name": "David Brown",
       "contact": "david@email.com",
       "message": "Price list please",
-      "received_at": "2026-08-14T17:42:51.408160",
+      "received_at": "2026-08-14T20:12:08.576471",
       "status": "responded",
       "category": "quote_request",
       "urgency": "normal",
@@ -238,15 +238,15 @@
       "model_used": "keyword-fallback",
       "tokens_used": 0,
       "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
-      "response_time_ms": 0
+      "response_time_ms": 2995
     },
     {
-      "id": "2fd48bf5",
+      "id": "a5cc3c80",
       "source": "web_form",
       "caller_name": "Alex Rivera",
       "contact": "alex@email.com",
       "message": "I have a gas leak near my furnace, I can smell it!",
-      "received_at": "2026-08-14T17:42:51.408164",
+      "received_at": "2026-08-14T20:12:08.576475",
       "status": "escalated",
       "category": "urgent_escalate",
       "urgency": "emergency",
@@ -258,15 +258,15 @@
       "model_used": "keyword-fallback",
       "tokens_used": 0,
       "suggested_action": "\u26a0\ufe0f ESCALATE: Immediate human call required",
-      "response_time_ms": 0
+      "response_time_ms": 2902
     },
     {
-      "id": "65df476d",
+      "id": "1ed946bd",
       "source": "web_form",
       "caller_name": "Emma Wilson",
       "contact": "emma@email.com",
       "message": "Can you install a smart thermostat? I already bought the unit.",
-      "received_at": "2026-08-14T17:42:51.408167",
+      "received_at": "2026-08-14T20:12:08.576478",
       "status": "responded",
       "category": "missing_information",
       "urgency": "normal",
@@ -280,7 +280,7 @@
       "model_used": "keyword-fallback",
       "tokens_used": 0,
       "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
-      "response_time_ms": 0
+      "response_time_ms": 3037
     }
   ]
 }

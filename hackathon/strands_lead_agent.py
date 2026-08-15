@@ -41,30 +41,31 @@ class Lead:
 # ─── Tool functions (the Strands pattern: @tool) ──────────────────────────────
 
 try:
-    from strands import Agent, tool
+    from strands import Agent, tool as _strands_tool
     STRANDS_AVAILABLE = True
 except ImportError:  # pragma: no cover
     STRANDS_AVAILABLE = False
     Agent = None  # type: ignore[assignment,misc]
-    # No-op stand-ins so the file parses and the direct-tool harness still runs
-    # when strands-agents is not installed.
-    def tool(fn=None, *args, **kwargs):  # type: ignore[no-redef]
+    def _strands_tool(fn=None, *args, **kwargs):  # type: ignore
         if callable(fn):
             return fn
         return lambda f: f
 
 
-@tool
-def classify_lead(message: str, business_name: str = "Northside HVAC") -> dict:
-    """Classify an inbound lead message.
+def classify_lead(lead_id: str, business_name: str = "Northside HVAC") -> dict:
+    """Classify an already-ingested lead and update its record in the store.
 
     Args:
-        message: The raw lead text (web form, SMS, voicemail transcript).
+        lead_id: The lead's id returned by ingest_lead.
         business_name: Name of the business receiving the lead.
 
     Returns:
         dict with category, urgency, missing_info, draft_reply, confidence.
     """
+    lead = LEADS.get(lead_id)
+    if lead is None:
+        return {"error": "unknown lead_id"}
+    message = lead.message
     msg = message.lower()
 
     emergency_kw = ["no ac", "gas smell", "carbon monoxide", "leak", "fire", "smoke",
@@ -77,35 +78,41 @@ def classify_lead(message: str, business_name: str = "Northside HVAC") -> dict:
     quote_kw = ["quote", "estimate", "price", "how much", "cost", "pricing"]
     schedule_kw = ["appointment", "schedule", "book", "come out", "available", "when can"]
 
+    def _finish(result: dict) -> dict:
+        lead.category = result["category"]
+        lead.urgency = result["urgency"]
+        lead.missing_info = result["missing_info"]
+        lead.draft_reply = result["draft_reply"]
+        return result
+
     if any(w in msg for w in emergency_kw):
-        return {"category": "urgent_escalate", "urgency": "emergency",
+        return _finish({"category": "urgent_escalate", "urgency": "emergency",
                 "missing_info": ["callback number", "address"],
                 "draft_reply": f"This sounds urgent — {business_name} has been flagged for an immediate call. Please expect contact within 30 minutes.",
-                "confidence": 0.9}
+                "confidence": 0.9})
     if any(w in msg for w in complaint_kw):
-        return {"category": "complaint", "urgency": "high",
+        return _finish({"category": "complaint", "urgency": "high",
                 "missing_info": ["work order number"],
                 "draft_reply": "Sorry to hear this — your message has been routed directly to the owner.",
-                "confidence": 0.85}
+                "confidence": 0.85})
     if any(w in msg for w in spam_kw):
-        return {"category": "spam", "urgency": "normal", "missing_info": [],
-                "draft_reply": "", "confidence": 0.95}
+        return _finish({"category": "spam", "urgency": "normal", "missing_info": [],
+                "draft_reply": "", "confidence": 0.95})
     if any(w in msg for w in quote_kw):
-        return {"category": "quote_request", "urgency": "normal",
+        return _finish({"category": "quote_request", "urgency": "normal",
                 "missing_info": ["address", "system details"],
                 "draft_reply": "Thanks for reaching out! To give an accurate quote we need a few more details — what's the address and system type?",
-                "confidence": 0.8}
+                "confidence": 0.8})
     if any(w in msg for w in schedule_kw):
-        return {"category": "scheduling", "urgency": "normal", "missing_info": [],
+        return _finish({"category": "scheduling", "urgency": "normal", "missing_info": [],
                 "draft_reply": "Thanks for contacting us! What day and time works best for you?",
-                "confidence": 0.8}
-    return {"category": "missing_information", "urgency": "normal",
+                "confidence": 0.8})
+    return _finish({"category": "missing_information", "urgency": "normal",
             "missing_info": ["service type", "address", "preferred time"],
             "draft_reply": "Thanks for your inquiry — could you share a few more details so we can help?",
-            "confidence": 0.6}
+            "confidence": 0.6})
 
 
-@tool
 def route_lead(lead_id: str) -> dict:
     """Route a classified lead to the right next step (book/escalate/respond/close).
 
@@ -142,7 +149,6 @@ def route_lead(lead_id: str) -> dict:
     return {"lead_id": lead_id, "status": lead.status, "action": action}
 
 
-@tool
 def ingest_lead(name: str, contact: str, message: str, source: str = "web_form") -> str:
     """Log a new inbound lead.
 
@@ -161,7 +167,6 @@ def ingest_lead(name: str, contact: str, message: str, source: str = "web_form")
     return lead.id
 
 
-@tool
 def draft_owner_report() -> dict:
     """Generate the end-of-day owner report across all leads."""
     by_cat, by_status = {}, {}
@@ -187,34 +192,70 @@ that sounds like a safety issue (gas, smoke, carbon monoxide, medical, extreme
 temps with vulnerable people)."""
 
 
+def _build_agent():
+    """Assemble the Strands agent, preferring a local Ollama model (no cloud credentials needed)."""
+    tools = [_strands_tool(ingest_lead), _strands_tool(classify_lead),
+             _strands_tool(route_lead), _strands_tool(draft_owner_report)]
+    model = None
+    try:
+        from strands.models.ollama import OllamaModel
+        model = OllamaModel(host="http://localhost:11434", model_id="qwen2.5:7b")
+        print("✓ Using local Ollama model: qwen2.5:7b (zero-credential demo, fully local)")
+    except Exception as e:
+        print(f"Ollama model unavailable ({type(e).__name__}: {e}); using Strands default (Bedrock)")
+    if model is not None:
+        return Agent(system_prompt=SYSTEM_PROMPT, tools=tools, model=model)
+    return Agent(system_prompt=SYSTEM_PROMPT, tools=tools)
+
+
 def run_strands_demo():
-    """Run the Strands agent over the same demo leads."""
+    """Run the Strands agent over the same demo leads.
+
+    Deterministic core first: exercise the @tool functions directly so the
+    lead store is populated regardless of model availability. Then, if a
+    local Ollama model is reachable, let the Strands agent loop answer one
+    summary question on top of the populated store (bounded, best-effort).
+    """
     print("=" * 70)
     print("  Lead Recovery Agent — Strands Agents SDK Edition")
     print("  Target: Agents for Humans hackathon (Sep 14)")
     print("=" * 70)
 
+    # Phase 1 — deterministic tool pipeline (always runs, populates LEADS)
+    print("\nPhase 1: deterministic @tool pipeline")
+    _direct_tool_demo()
+
+    # Phase 2 — LLM agent loop on top of the populated store (best-effort)
     if STRANDS_AVAILABLE:
         try:
-            agent = Agent(system_prompt=SYSTEM_PROMPT,
-                          tools=[ingest_lead, classify_lead, route_lead, draft_owner_report])
-            print("✓ Strands Agent assembled with 4 tools")
-            demo_prompt = (
-                "Process these 3 leads and then give me the owner report:\n"
-                "1. Sarah, sarah@x.com, 'AC out, 95 degrees, baby at home' (web_form)\n"
-                "2. John, jd@x.com, 'How much for a new unit? 1800 sq ft house' (web_form)\n"
-                "3. Spam Bot, spam@bot.com, 'free casino crypto viagra click here' (web_form)"
-            )
-            result = agent(demo_prompt)
+            agent = _build_agent()
+            print("\nPhase 2: Strands agent question (LLM on populated store)")
+            result = agent("Using draft_owner_report, summarize today's leads in two sentences.")
             print("\n--- Agent output ---\n")
-            print(str(result)[:1500])
+            print(str(result)[:1200])
         except Exception as e:
-            print(f"Strands agent runtime error (needs credentials): {e}")
-            print("Falling back to direct tool invocation demo.\n")
-            _direct_tool_demo()
+            print(f"\n(LLM loop skipped: {type(e).__name__}: {e})")
+            print("Deterministic pipeline above is the demo artifact.")
     else:
-        print("strands-agents not importable — running direct tool demo.\n")
-        _direct_tool_demo()
+        print("\nstrands-agents not importable — deterministic pipeline above is the demo.")
+
+    # Final artifact — report computed from the store the tools actually wrote
+    print("\n--- Final lead state (from tool store) ---")
+    by_cat, by_status = {}, {}
+    for l in LEADS.values():
+        by_cat[l.category] = by_cat.get(l.category, 0) + 1
+        by_status[l.status] = by_status.get(l.status, 0) + 1
+    print(json.dumps({
+        "generated_at": datetime.now().isoformat(),
+        "total_leads": len(LEADS),
+        "by_category": by_cat,
+        "by_status": by_status,
+        "stats": STATS,
+    }, indent=2))
+    with open("strands-agent-output.json", "w") as f:
+        json.dump({"by_category": by_cat, "by_status": by_status, "stats": STATS,
+                   "leads": [asdict(l) for l in LEADS.values()]}, f, indent=2)
+    print("\n💾 Saved strands-agent-output.json")
 
 
 def _direct_tool_demo():
@@ -229,7 +270,7 @@ def _direct_tool_demo():
     print(f"Processing {len(demo)} leads through the tool pipeline:\n")
     for name, contact, message in demo:
         lid = ingest_lead(name, contact, message)
-        c = classify_lead(message)
+        c = classify_lead(lid)
         lead = LEADS[lid]
         lead.category = c["category"]
         lead.urgency = c["urgency"]
