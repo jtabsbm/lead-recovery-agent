@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /$
+Allow: /*.css
+Allow: /*.js
+Allow: /why-utest
+Allow: /about-us
+Allow: /projects
+Allow: /signup
+Allow: /utest-guidelines
+Allow: /privacy-policy
+Allow: /phishing-notice
+Allow: /terms-and-conditions
+Allow: /api/v1/*
+Allow: /assets/*
+Allow: /resources
+Allow: /resources/*
+Disallow: /
