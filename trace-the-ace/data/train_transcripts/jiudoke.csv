@@ -1,0 +1,134 @@
+session_id,utterance_id,role,content,timestamp
+jiudoke,0,background,[unclear],00:00:00
+jiudoke,1,tutor,"Hello, are you ready to get started today?",00:00:08
+jiudoke,2,student,"Yes, I think so.",00:00:16
+jiudoke,3,tutor,What do you notice about these two numbers?,00:00:24
+jiudoke,4,student,I'm not sure. Is it because 10 has one zero?,00:00:32
+jiudoke,5,tutor,What do you notice about these two numbers?,00:00:40
+jiudoke,6,student,"I would divide it by 100, so the answer is 3.45.",00:00:48
+jiudoke,7,tutor,Uh-huh. And what would you do next?,00:00:56
+jiudoke,8,student,Maybe I should compare them as decimals first.,00:01:04
+jiudoke,9,tutor,So let me ask you first. Do you know what a fact family is?,00:01:12
+jiudoke,10,student,6?,00:01:20
+jiudoke,11,tutor,So let me ask you first. Do you know what a fact family is?,00:01:28
+jiudoke,12,student,Maybe I should compare them as decimals first.,00:01:36
+jiudoke,13,tutor,What do you notice about these two numbers?,00:01:44
+jiudoke,14,student,300?,00:01:52
+jiudoke,15,tutor,So let me ask you first. Do you know what a fact family is?,00:02:00
+jiudoke,16,student,I'm not sure. Is it because 10 has one zero?,00:02:08
+jiudoke,17,tutor,Remember what we said about the denominator. What happens here?,00:02:16
+jiudoke,18,student,I'm not sure. Is it because 10 has one zero?,00:02:24
+jiudoke,19,tutor,What do you notice about these two numbers?,00:02:32
+jiudoke,20,student,I'm not sure. Is it because 10 has one zero?,00:02:40
+jiudoke,21,tutor,Remember what we said about the denominator. What happens here?,00:02:48
+jiudoke,22,student,"I would divide it by 100, so the answer is 3.45.",00:02:56
+jiudoke,23,tutor,"Good thinking. Now, is that answer reasonable?",00:03:04
+jiudoke,24,student,No,00:03:12
+jiudoke,25,tutor,Can you talk me through how you got that answer?,00:03:20
+jiudoke,26,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:03:28
+jiudoke,27,tutor,Can you talk me through how you got that answer?,00:03:36
+jiudoke,28,student,"I would divide it by 100, so the answer is 3.45.",00:03:44
+jiudoke,29,tutor,"Good thinking. Now, is that answer reasonable?",00:03:52
+jiudoke,30,student,Half?,00:04:00
+jiudoke,31,tutor,Uh-huh. And what would you do next?,00:04:08
+jiudoke,32,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:04:16
+jiudoke,33,tutor,Can you talk me through how you got that answer?,00:04:24
+jiudoke,34,student,I'm not sure. Is it because 10 has one zero?,00:04:32
+jiudoke,35,tutor,Remember what we said about the denominator. What happens here?,00:04:40
+jiudoke,36,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:04:48
+jiudoke,37,tutor,Uh-huh. And what would you do next?,00:04:56
+jiudoke,38,student,I think we need to make the bottom numbers the same before we add.,00:05:04
+jiudoke,39,tutor,Uh-huh. And what would you do next?,00:05:12
+jiudoke,40,student,Maybe I should compare them as decimals first.,00:05:20
+jiudoke,41,tutor,Uh-huh. And what would you do next?,00:05:28
+jiudoke,42,student,I'm not sure. Is it because 10 has one zero?,00:05:36
+jiudoke,43,tutor,Remember what we said about the denominator. What happens here?,00:05:44
+jiudoke,44,student,I think we need to make the bottom numbers the same before we add.,00:05:52
+jiudoke,45,tutor,So let me ask you first. Do you know what a fact family is?,00:06:00
+jiudoke,46,student,I think we need to make the bottom numbers the same before we add.,00:06:08
+jiudoke,47,tutor,Remember what we said about the denominator. What happens here?,00:06:16
+jiudoke,48,student,I think we need to make the bottom numbers the same before we add.,00:06:24
+jiudoke,49,tutor,"Good thinking. Now, is that answer reasonable?",00:06:32
+jiudoke,50,student,6?,00:06:40
+jiudoke,51,tutor,What do you notice about these two numbers?,00:06:48
+jiudoke,52,student,"I would divide it by 100, so the answer is 3.45.",00:06:56
+jiudoke,53,tutor,"Good thinking. Now, is that answer reasonable?",00:07:04
+jiudoke,54,student,Yes,00:07:12
+jiudoke,55,tutor,What do you notice about these two numbers?,00:07:20
+jiudoke,56,student,"I would divide it by 100, so the answer is 3.45.",00:07:28
+jiudoke,57,tutor,"Good thinking. Now, is that answer reasonable?",00:07:36
+jiudoke,58,student,Maybe I should compare them as decimals first.,00:07:44
+jiudoke,59,tutor,Can you talk me through how you got that answer?,00:07:52
+jiudoke,60,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:08:00
+jiudoke,61,tutor,Let's try a similar one. What is 30 times 4?,00:08:08
+jiudoke,62,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:08:16
+jiudoke,63,tutor,Let's try a similar one. What is 30 times 4?,00:08:24
+jiudoke,64,student,Half?,00:08:32
+jiudoke,65,tutor,Let's try a similar one. What is 30 times 4?,00:08:40
+jiudoke,66,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:08:48
+jiudoke,67,tutor,Remember what we said about the denominator. What happens here?,00:08:56
+jiudoke,68,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:09:04
+jiudoke,69,tutor,Uh-huh. And what would you do next?,00:09:12
+jiudoke,70,student,I think we need to make the bottom numbers the same before we add.,00:09:20
+jiudoke,71,tutor,So let me ask you first. Do you know what a fact family is?,00:09:28
+jiudoke,72,student,I'm not sure. Is it because 10 has one zero?,00:09:36
+jiudoke,73,tutor,Uh-huh. And what would you do next?,00:09:44
+jiudoke,74,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:09:52
+jiudoke,75,tutor,Let's try a similar one. What is 30 times 4?,00:10:00
+jiudoke,76,student,300?,00:10:08
+jiudoke,77,tutor,Uh-huh. And what would you do next?,00:10:16
+jiudoke,78,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:10:24
+jiudoke,79,tutor,What do you notice about these two numbers?,00:10:32
+jiudoke,80,student,6?,00:10:40
+jiudoke,81,tutor,Let's try a similar one. What is 30 times 4?,00:10:48
+jiudoke,82,student,Is it 4?,00:10:56
+jiudoke,83,tutor,Let's try a similar one. What is 30 times 4?,00:11:04
+jiudoke,84,student,"I would divide it by 100, so the answer is 3.45.",00:11:12
+jiudoke,85,tutor,Remember what we said about the denominator. What happens here?,00:11:20
+jiudoke,86,student,12.,00:11:28
+jiudoke,87,tutor,What do you notice about these two numbers?,00:11:36
+jiudoke,88,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:11:44
+jiudoke,89,tutor,Uh-huh. And what would you do next?,00:11:52
+jiudoke,90,student,Maybe I should compare them as decimals first.,00:12:00
+jiudoke,91,tutor,"Good thinking. Now, is that answer reasonable?",00:12:08
+jiudoke,92,student,Yes,00:12:16
+jiudoke,93,tutor,Let's try a similar one. What is 30 times 4?,00:12:24
+jiudoke,94,student,I'm not sure. Is it because 10 has one zero?,00:12:32
+jiudoke,95,tutor,Let's try a similar one. What is 30 times 4?,00:12:40
+jiudoke,96,student,Maybe I should compare them as decimals first.,00:12:48
+jiudoke,97,tutor,What do you notice about these two numbers?,00:12:56
+jiudoke,98,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:13:04
+jiudoke,99,tutor,Remember what we said about the denominator. What happens here?,00:13:12
+jiudoke,100,student,I'm not sure. Is it because 10 has one zero?,00:13:20
+jiudoke,101,tutor,"Good thinking. Now, is that answer reasonable?",00:13:28
+jiudoke,102,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:13:36
+jiudoke,103,tutor,Uh-huh. And what would you do next?,00:13:44
+jiudoke,104,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:13:52
+jiudoke,105,tutor,Can you talk me through how you got that answer?,00:14:00
+jiudoke,106,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:14:08
+jiudoke,107,tutor,Uh-huh. And what would you do next?,00:14:16
+jiudoke,108,student,I'm not sure. Is it because 10 has one zero?,00:14:24
+jiudoke,109,tutor,What do you notice about these two numbers?,00:14:32
+jiudoke,110,student,I'm not sure. Is it because 10 has one zero?,00:14:40
+jiudoke,111,tutor,What do you notice about these two numbers?,00:14:48
+jiudoke,112,student,"I would divide it by 100, so the answer is 3.45.",00:14:56
+jiudoke,113,tutor,Let's try a similar one. What is 30 times 4?,00:15:04
+jiudoke,114,student,I'm not sure. Is it because 10 has one zero?,00:15:12
+jiudoke,115,tutor,"Good thinking. Now, is that answer reasonable?",00:15:20
+jiudoke,116,student,Okay,00:15:28
+jiudoke,117,tutor,Can you talk me through how you got that answer?,00:15:36
+jiudoke,118,student,300?,00:15:44
+jiudoke,119,tutor,"Good thinking. Now, is that answer reasonable?",00:15:52
+jiudoke,120,student,"I would divide it by 100, so the answer is 3.45.",00:16:00
+jiudoke,121,tutor,Remember what we said about the denominator. What happens here?,00:16:08
+jiudoke,122,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:16:16
+jiudoke,123,tutor,Remember what we said about the denominator. What happens here?,00:16:24
+jiudoke,124,student,No,00:16:32
+jiudoke,125,tutor,What do you notice about these two numbers?,00:16:40
+jiudoke,126,student,I think we need to make the bottom numbers the same before we add.,00:16:48
+jiudoke,127,tutor,Remember what we said about the denominator. What happens here?,00:16:56
+jiudoke,128,student,"I would divide it by 100, so the answer is 3.45.",00:17:04
+jiudoke,129,tutor,Remember what we said about the denominator. What happens here?,00:17:12
+jiudoke,130,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:17:20
+jiudoke,131,tutor,What do you notice about these two numbers?,00:17:28
+jiudoke,132,tutor,Great work today. See you next time!,00:17:36

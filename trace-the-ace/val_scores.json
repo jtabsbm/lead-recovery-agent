@@ -1,0 +1,18 @@
+{
+  "n_train": 4783,
+  "n_val": 1217,
+  "base_log_loss": 0.6149,
+  "model_log_loss": 0.6146,
+  "model_auc": 0.529,
+  "features": [
+    "n_student_words",
+    "numeric_turns_per_word",
+    "digit_chars_per_word",
+    "n_turns",
+    "student_turn_share",
+    "tutor_words_per_student_word",
+    "student_question_turns_per_word",
+    "avg_student_turn_len",
+    "session_minutes"
+  ]
+}

@@ -1,0 +1,242 @@
+session_id,utterance_id,role,content,timestamp
+pynlcrb,0,background,[unclear],00:00:00
+pynlcrb,1,tutor,"Hello, are you ready to get started today?",00:00:08
+pynlcrb,2,student,"Yes, I think so.",00:00:16
+pynlcrb,3,tutor,Uh-huh. And what would you do next?,00:00:24
+pynlcrb,4,student,I think we need to make the bottom numbers the same before we add.,00:00:32
+pynlcrb,5,tutor,Can you talk me through how you got that answer?,00:00:40
+pynlcrb,6,student,"I would divide it by 100, so the answer is 3.45.",00:00:48
+pynlcrb,7,tutor,Uh-huh. And what would you do next?,00:00:56
+pynlcrb,8,student,75.,00:01:04
+pynlcrb,9,tutor,"Good thinking. Now, is that answer reasonable?",00:01:12
+pynlcrb,10,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:01:20
+pynlcrb,11,tutor,Uh-huh. And what would you do next?,00:01:28
+pynlcrb,12,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:01:36
+pynlcrb,13,tutor,Let's try a similar one. What is 30 times 4?,00:01:44
+pynlcrb,14,student,75.,00:01:52
+pynlcrb,15,tutor,Let's try a similar one. What is 30 times 4?,00:02:00
+pynlcrb,16,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:02:08
+pynlcrb,17,tutor,What do you notice about these two numbers?,00:02:16
+pynlcrb,18,student,"I would divide it by 100, so the answer is 3.45.",00:02:24
+pynlcrb,19,tutor,Remember what we said about the denominator. What happens here?,00:02:32
+pynlcrb,20,student,I'm not sure. Is it because 10 has one zero?,00:02:40
+pynlcrb,21,tutor,So let me ask you first. Do you know what a fact family is?,00:02:48
+pynlcrb,22,student,300?,00:02:56
+pynlcrb,23,tutor,Can you talk me through how you got that answer?,00:03:04
+pynlcrb,24,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:03:12
+pynlcrb,25,tutor,What do you notice about these two numbers?,00:03:20
+pynlcrb,26,student,I'm not sure. Is it because 10 has one zero?,00:03:28
+pynlcrb,27,tutor,So let me ask you first. Do you know what a fact family is?,00:03:36
+pynlcrb,28,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:03:44
+pynlcrb,29,tutor,Uh-huh. And what would you do next?,00:03:52
+pynlcrb,30,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:04:00
+pynlcrb,31,tutor,"Good thinking. Now, is that answer reasonable?",00:04:08
+pynlcrb,32,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:04:16
+pynlcrb,33,tutor,What do you notice about these two numbers?,00:04:24
+pynlcrb,34,student,I'm not sure. Is it because 10 has one zero?,00:04:32
+pynlcrb,35,tutor,Remember what we said about the denominator. What happens here?,00:04:40
+pynlcrb,36,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:04:48
+pynlcrb,37,tutor,So let me ask you first. Do you know what a fact family is?,00:04:56
+pynlcrb,38,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:05:04
+pynlcrb,39,tutor,Remember what we said about the denominator. What happens here?,00:05:12
+pynlcrb,40,student,"I would divide it by 100, so the answer is 3.45.",00:05:20
+pynlcrb,41,tutor,What do you notice about these two numbers?,00:05:28
+pynlcrb,42,student,I'm not sure. Is it because 10 has one zero?,00:05:36
+pynlcrb,43,tutor,Uh-huh. And what would you do next?,00:05:44
+pynlcrb,44,student,I'm not sure. Is it because 10 has one zero?,00:05:52
+pynlcrb,45,tutor,"Good thinking. Now, is that answer reasonable?",00:06:00
+pynlcrb,46,student,Okay,00:06:08
+pynlcrb,47,tutor,So let me ask you first. Do you know what a fact family is?,00:06:16
+pynlcrb,48,student,Maybe I should compare them as decimals first.,00:06:24
+pynlcrb,49,tutor,Let's try a similar one. What is 30 times 4?,00:06:32
+pynlcrb,50,student,Is it 4?,00:06:40
+pynlcrb,51,tutor,Let's try a similar one. What is 30 times 4?,00:06:48
+pynlcrb,52,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:06:56
+pynlcrb,53,tutor,"Good thinking. Now, is that answer reasonable?",00:07:04
+pynlcrb,54,student,I'm not sure. Is it because 10 has one zero?,00:07:12
+pynlcrb,55,tutor,"Good thinking. Now, is that answer reasonable?",00:07:20
+pynlcrb,56,student,I'm not sure. Is it because 10 has one zero?,00:07:28
+pynlcrb,57,tutor,Let's try a similar one. What is 30 times 4?,00:07:36
+pynlcrb,58,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:07:44
+pynlcrb,59,tutor,Let's try a similar one. What is 30 times 4?,00:07:52
+pynlcrb,60,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:08:00
+pynlcrb,61,tutor,"Good thinking. Now, is that answer reasonable?",00:08:08
+pynlcrb,62,student,Maybe I should compare them as decimals first.,00:08:16
+pynlcrb,63,tutor,Uh-huh. And what would you do next?,00:08:24
+pynlcrb,64,student,I'm not sure. Is it because 10 has one zero?,00:08:32
+pynlcrb,65,tutor,"Good thinking. Now, is that answer reasonable?",00:08:40
+pynlcrb,66,student,I think we need to make the bottom numbers the same before we add.,00:08:48
+pynlcrb,67,tutor,Remember what we said about the denominator. What happens here?,00:08:56
+pynlcrb,68,student,I'm not sure. Is it because 10 has one zero?,00:09:04
+pynlcrb,69,tutor,Uh-huh. And what would you do next?,00:09:12
+pynlcrb,70,student,I'm not sure. Is it because 10 has one zero?,00:09:20
+pynlcrb,71,tutor,Uh-huh. And what would you do next?,00:09:28
+pynlcrb,72,student,Maybe I should compare them as decimals first.,00:09:36
+pynlcrb,73,tutor,"Good thinking. Now, is that answer reasonable?",00:09:44
+pynlcrb,74,student,"I would divide it by 100, so the answer is 3.45.",00:09:52
+pynlcrb,75,tutor,Let's try a similar one. What is 30 times 4?,00:10:00
+pynlcrb,76,student,Maybe I should compare them as decimals first.,00:10:08
+pynlcrb,77,tutor,Remember what we said about the denominator. What happens here?,00:10:16
+pynlcrb,78,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:10:24
+pynlcrb,79,tutor,Let's try a similar one. What is 30 times 4?,00:10:32
+pynlcrb,80,student,"I would divide it by 100, so the answer is 3.45.",00:10:40
+pynlcrb,81,tutor,Uh-huh. And what would you do next?,00:10:48
+pynlcrb,82,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:10:56
+pynlcrb,83,tutor,Can you talk me through how you got that answer?,00:11:04
+pynlcrb,84,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:11:12
+pynlcrb,85,tutor,Can you talk me through how you got that answer?,00:11:20
+pynlcrb,86,student,"I would divide it by 100, so the answer is 3.45.",00:11:28
+pynlcrb,87,tutor,Let's try a similar one. What is 30 times 4?,00:11:36
+pynlcrb,88,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:11:44
+pynlcrb,89,tutor,"Good thinking. Now, is that answer reasonable?",00:11:52
+pynlcrb,90,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:12:00
+pynlcrb,91,tutor,"Good thinking. Now, is that answer reasonable?",00:12:08
+pynlcrb,92,student,Okay,00:12:16
+pynlcrb,93,tutor,Let's try a similar one. What is 30 times 4?,00:12:24
+pynlcrb,94,student,I think we need to make the bottom numbers the same before we add.,00:12:32
+pynlcrb,95,tutor,Let's try a similar one. What is 30 times 4?,00:12:40
+pynlcrb,96,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:12:48
+pynlcrb,97,tutor,Remember what we said about the denominator. What happens here?,00:12:56
+pynlcrb,98,student,"I would divide it by 100, so the answer is 3.45.",00:13:04
+pynlcrb,99,tutor,Uh-huh. And what would you do next?,00:13:12
+pynlcrb,100,student,"I would divide it by 100, so the answer is 3.45.",00:13:20
+pynlcrb,101,tutor,Can you talk me through how you got that answer?,00:13:28
+pynlcrb,102,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:13:36
+pynlcrb,103,tutor,So let me ask you first. Do you know what a fact family is?,00:13:44
+pynlcrb,104,student,Maybe I should compare them as decimals first.,00:13:52
+pynlcrb,105,tutor,Remember what we said about the denominator. What happens here?,00:14:00
+pynlcrb,106,student,Half?,00:14:08
+pynlcrb,107,tutor,Let's try a similar one. What is 30 times 4?,00:14:16
+pynlcrb,108,student,"I would divide it by 100, so the answer is 3.45.",00:14:24
+pynlcrb,109,tutor,Remember what we said about the denominator. What happens here?,00:14:32
+pynlcrb,110,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:14:40
+pynlcrb,111,tutor,Can you talk me through how you got that answer?,00:14:48
+pynlcrb,112,student,Yes,00:14:56
+pynlcrb,113,tutor,Uh-huh. And what would you do next?,00:15:04
+pynlcrb,114,student,I think we need to make the bottom numbers the same before we add.,00:15:12
+pynlcrb,115,tutor,"Good thinking. Now, is that answer reasonable?",00:15:20
+pynlcrb,116,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:15:28
+pynlcrb,117,tutor,So let me ask you first. Do you know what a fact family is?,00:15:36
+pynlcrb,118,student,I think we need to make the bottom numbers the same before we add.,00:15:44
+pynlcrb,119,tutor,So let me ask you first. Do you know what a fact family is?,00:15:52
+pynlcrb,120,student,Maybe I should compare them as decimals first.,00:16:00
+pynlcrb,121,tutor,Uh-huh. And what would you do next?,00:16:08
+pynlcrb,122,student,300?,00:16:16
+pynlcrb,123,tutor,Uh-huh. And what would you do next?,00:16:24
+pynlcrb,124,student,Maybe I should compare them as decimals first.,00:16:32
+pynlcrb,125,tutor,Remember what we said about the denominator. What happens here?,00:16:40
+pynlcrb,126,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:16:48
+pynlcrb,127,tutor,What do you notice about these two numbers?,00:16:56
+pynlcrb,128,student,Maybe I should compare them as decimals first.,00:17:04
+pynlcrb,129,tutor,Remember what we said about the denominator. What happens here?,00:17:12
+pynlcrb,130,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:17:20
+pynlcrb,131,tutor,Uh-huh. And what would you do next?,00:17:28
+pynlcrb,132,student,"I would divide it by 100, so the answer is 3.45.",00:17:36
+pynlcrb,133,tutor,What do you notice about these two numbers?,00:17:44
+pynlcrb,134,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:17:52
+pynlcrb,135,tutor,Remember what we said about the denominator. What happens here?,00:18:00
+pynlcrb,136,student,No,00:18:08
+pynlcrb,137,tutor,Uh-huh. And what would you do next?,00:18:16
+pynlcrb,138,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:18:24
+pynlcrb,139,tutor,Uh-huh. And what would you do next?,00:18:32
+pynlcrb,140,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:18:40
+pynlcrb,141,tutor,Let's try a similar one. What is 30 times 4?,00:18:48
+pynlcrb,142,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:18:56
+pynlcrb,143,tutor,What do you notice about these two numbers?,00:19:04
+pynlcrb,144,student,Maybe I should compare them as decimals first.,00:19:12
+pynlcrb,145,tutor,Let's try a similar one. What is 30 times 4?,00:19:20
+pynlcrb,146,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:19:28
+pynlcrb,147,tutor,Uh-huh. And what would you do next?,00:19:36
+pynlcrb,148,student,"I would divide it by 100, so the answer is 3.45.",00:19:44
+pynlcrb,149,tutor,What do you notice about these two numbers?,00:19:52
+pynlcrb,150,student,"I would divide it by 100, so the answer is 3.45.",00:20:00
+pynlcrb,151,tutor,Can you talk me through how you got that answer?,00:20:08
+pynlcrb,152,student,Maybe I should compare them as decimals first.,00:20:16
+pynlcrb,153,tutor,Remember what we said about the denominator. What happens here?,00:20:24
+pynlcrb,154,student,Okay,00:20:32
+pynlcrb,155,tutor,What do you notice about these two numbers?,00:20:40
+pynlcrb,156,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:20:48
+pynlcrb,157,tutor,Remember what we said about the denominator. What happens here?,00:20:56
+pynlcrb,158,student,"I would divide it by 100, so the answer is 3.45.",00:21:04
+pynlcrb,159,tutor,So let me ask you first. Do you know what a fact family is?,00:21:12
+pynlcrb,160,student,Maybe I should compare them as decimals first.,00:21:20
+pynlcrb,161,tutor,Uh-huh. And what would you do next?,00:21:28
+pynlcrb,162,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:21:36
+pynlcrb,163,tutor,Remember what we said about the denominator. What happens here?,00:21:44
+pynlcrb,164,student,Is it 4?,00:21:52
+pynlcrb,165,tutor,"Good thinking. Now, is that answer reasonable?",00:22:00
+pynlcrb,166,student,Maybe I should compare them as decimals first.,00:22:08
+pynlcrb,167,tutor,Uh-huh. And what would you do next?,00:22:16
+pynlcrb,168,student,"I would divide it by 100, so the answer is 3.45.",00:22:24
+pynlcrb,169,tutor,Can you talk me through how you got that answer?,00:22:32
+pynlcrb,170,student,I'm not sure. Is it because 10 has one zero?,00:22:40
+pynlcrb,171,tutor,Uh-huh. And what would you do next?,00:22:48
+pynlcrb,172,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:22:56
+pynlcrb,173,tutor,Uh-huh. And what would you do next?,00:23:04
+pynlcrb,174,student,"I would divide it by 100, so the answer is 3.45.",00:23:12
+pynlcrb,175,tutor,Can you talk me through how you got that answer?,00:23:20
+pynlcrb,176,student,Maybe I should compare them as decimals first.,00:23:28
+pynlcrb,177,tutor,Can you talk me through how you got that answer?,00:23:36
+pynlcrb,178,student,I think we need to make the bottom numbers the same before we add.,00:23:44
+pynlcrb,179,tutor,Can you talk me through how you got that answer?,00:23:52
+pynlcrb,180,student,6?,00:24:00
+pynlcrb,181,tutor,Let's try a similar one. What is 30 times 4?,00:24:08
+pynlcrb,182,student,6?,00:24:16
+pynlcrb,183,tutor,Uh-huh. And what would you do next?,00:24:24
+pynlcrb,184,student,Maybe I should compare them as decimals first.,00:24:32
+pynlcrb,185,tutor,Let's try a similar one. What is 30 times 4?,00:24:40
+pynlcrb,186,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:24:48
+pynlcrb,187,tutor,Uh-huh. And what would you do next?,00:24:56
+pynlcrb,188,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:25:04
+pynlcrb,189,tutor,"Good thinking. Now, is that answer reasonable?",00:25:12
+pynlcrb,190,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:25:20
+pynlcrb,191,tutor,Remember what we said about the denominator. What happens here?,00:25:28
+pynlcrb,192,student,Yes,00:25:36
+pynlcrb,193,tutor,Let's try a similar one. What is 30 times 4?,00:25:44
+pynlcrb,194,student,Maybe I should compare them as decimals first.,00:25:52
+pynlcrb,195,tutor,So let me ask you first. Do you know what a fact family is?,00:26:00
+pynlcrb,196,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:26:08
+pynlcrb,197,tutor,Can you talk me through how you got that answer?,00:26:16
+pynlcrb,198,student,Maybe I should compare them as decimals first.,00:26:24
+pynlcrb,199,tutor,Can you talk me through how you got that answer?,00:26:32
+pynlcrb,200,student,I think we need to make the bottom numbers the same before we add.,00:26:40
+pynlcrb,201,tutor,Uh-huh. And what would you do next?,00:26:48
+pynlcrb,202,student,6?,00:26:56
+pynlcrb,203,tutor,Remember what we said about the denominator. What happens here?,00:27:04
+pynlcrb,204,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:27:12
+pynlcrb,205,tutor,"Good thinking. Now, is that answer reasonable?",00:27:20
+pynlcrb,206,student,Maybe I should compare them as decimals first.,00:27:28
+pynlcrb,207,tutor,Let's try a similar one. What is 30 times 4?,00:27:36
+pynlcrb,208,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:27:44
+pynlcrb,209,tutor,Let's try a similar one. What is 30 times 4?,00:27:52
+pynlcrb,210,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:28:00
+pynlcrb,211,tutor,What do you notice about these two numbers?,00:28:08
+pynlcrb,212,student,"I would divide it by 100, so the answer is 3.45.",00:28:16
+pynlcrb,213,tutor,Remember what we said about the denominator. What happens here?,00:28:24
+pynlcrb,214,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:28:32
+pynlcrb,215,tutor,Remember what we said about the denominator. What happens here?,00:28:40
+pynlcrb,216,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:28:48
+pynlcrb,217,tutor,Uh-huh. And what would you do next?,00:28:56
+pynlcrb,218,student,No,00:29:04
+pynlcrb,219,tutor,What do you notice about these two numbers?,00:29:12
+pynlcrb,220,student,I think we need to make the bottom numbers the same before we add.,00:29:20
+pynlcrb,221,tutor,Uh-huh. And what would you do next?,00:29:28
+pynlcrb,222,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:29:36
+pynlcrb,223,tutor,Remember what we said about the denominator. What happens here?,00:29:44
+pynlcrb,224,student,Okay,00:29:52
+pynlcrb,225,tutor,"Good thinking. Now, is that answer reasonable?",00:30:00
+pynlcrb,226,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:30:08
+pynlcrb,227,tutor,Let's try a similar one. What is 30 times 4?,00:30:16
+pynlcrb,228,student,"I would divide it by 100, so the answer is 3.45.",00:30:24
+pynlcrb,229,tutor,"Good thinking. Now, is that answer reasonable?",00:30:32
+pynlcrb,230,student,"I would divide it by 100, so the answer is 3.45.",00:30:40
+pynlcrb,231,tutor,"Good thinking. Now, is that answer reasonable?",00:30:48
+pynlcrb,232,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:30:56
+pynlcrb,233,tutor,Uh-huh. And what would you do next?,00:31:04
+pynlcrb,234,student,"I would divide it by 100, so the answer is 3.45.",00:31:12
+pynlcrb,235,tutor,So let me ask you first. Do you know what a fact family is?,00:31:20
+pynlcrb,236,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:31:28
+pynlcrb,237,tutor,Uh-huh. And what would you do next?,00:31:36
+pynlcrb,238,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:31:44
+pynlcrb,239,tutor,Remember what we said about the denominator. What happens here?,00:31:52
+pynlcrb,240,tutor,Great work today. See you next time!,00:32:00

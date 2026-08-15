@@ -1,42 +1,32 @@
-# Pending Actions for James Thompson
-# Updated: Aug 14, 2026 ~9:05 PM PDT
+# Pending: 60-Second Actions for James
 
-## 🔴 URGENT — Time-Sensitive (this weekend)
+## 1. YouTube channel + upload (unlocks ATA final submit — video is required)
+The Google account has NO YouTube channel yet (that's why Studio redirects home):
 
-### 1. CockroachDB cluster (~4 min) — unlocks $8,750 Aug 18 submission
-→ https://cockroachlabs.cloud/signup → GitHub or email → free Serverless cluster → copy connection string
-Full steps: crdb-cluster-setup.md
+1. Go to https://www.youtube.com
+2. Click your avatar (top right) → **"Create a channel"**
+3. Name it (e.g. "James Thompson" or "CallbackOps") → Create
+4. Then either tell me and I'll upload the video, OR upload yourself:
+   - Studio → CREATE → Upload videos → select
+   - `~/zero-cash-revenue-engine/hackathon/callbackops-demo-final.mp4`
+   - Title: "CallbackOps — Gemini Lead Recovery Agent (All Things Agentic)"
+   - Visibility: **Public** (required — not unlisted)
+   - No made-for-kids
 
-### 2. Kaggle phone verification (~2 min) — unlocks $50K AI Agent Security comp
-→ https://www.kaggle.com/verification (logged in as jamestt2026)
-Enter phone → receive SMS → enter code. Competition already joined.
+## 2. CRDB cluster (Aug 18 deadline, $8,750) — 4 minutes
+https://cockroachlabs.cloud/signup — the form is STILL FILLED on the signup page
+(email + password + TOS checked). Just click the reCAPTCHA box + "Get Started",
+then create a free Serverless cluster. Code is ready (`crdb_lead_agent.py`).
 
-### 3. DrivenData email verification — unlocks $50K Trace the Ace comp
-→ Check absbm14@gmail.com for "K-12 AI" verification email → click link
-Account created: username jamesthompson (pending email confirm)
+## 3. Kaggle phone verify (unlocks $50K competition submissions)
+https://www.kaggle.com/verification — SMS code, 2 minutes.
 
-### 4. Gmail re-login — unlocks 13 queued outreach emails
-→ https://mail.google.com
-
-## 🟡 This Week
-
-### 5. GCP credit form (Aug 28 deadline) — $150 Google Cloud credits
-→ https://forms.gle/5PtXmw1dSbDnpYke9 — Devpost username: absbm14
-
-### 6. DataAnnotation — $25-150/hr
-→ https://app.dataannotation.tech/worker_signup → "Continue with Google" → consent "Continue" click
-
-### 7. gcloud auth login — real Gemini API for hackathon agents
-→ terminal: `gcloud auth login` (CLI already fixed)
-
-### 8. Contra signup — paste listing from contra-profile-content.md
-### 9. Outlier — https://outlier.ai signup + ID verification
-
-## ✅ Completed Tonight (no action needed)
-- 8 hackathons registered on Devpost (username: absbm14)
-- Kaggle account created (jamestt2026) + AI Agent Security joined
-- DrivenData account created (email verification pending)
-- 4 hackathon agent editions built & verified (Gemini, Strands/local-Ollama, CRDB, OpenSearch skill)
-- Competition + bug bounty research (live-verified) in current-opportunities.md
-- Contra listing content + canonical pricing reconciled
-- All code pushed: github.com/TyrannicAwe/zero-cash-revenue-engine
+## Everything else is DONE tonight:
+- ✅ Agent LIVE on Google Cloud Run: https://callbackops-agent-1087493193698.us-west1.run.app
+- ✅ gcloud authenticated (absbm14@gmail.com)
+- ✅ Demo video rendered (2:04, narrated, live-API data): hackathon/callbackops-demo-final.mp4
+- ✅ Architecture diagram uploaded to Devpost (persisted on their CDN)
+- ✅ ATA submission 4/5 steps complete — ONLY the video URL remains
+- ✅ Parallel browsers working (b2, worker3 lanes)
+- ✅ OpenSearch PR #116 all-CI-green, submitted
+- ✅ 36 prospects contacted

@@ -1,0 +1,83 @@
+session_id,utterance_id,role,content,timestamp
+cysqlsf,0,background,[unclear],00:00:00
+cysqlsf,1,tutor,Good afternoon! Today we are going to look at a new topic.,00:00:08
+cysqlsf,2,student,"Yes, I think so.",00:00:16
+cysqlsf,3,tutor,So let me ask you first. Do you know what a fact family is?,00:00:24
+cysqlsf,4,student,300?,00:00:32
+cysqlsf,5,tutor,"Good thinking. Now, is that answer reasonable?",00:00:40
+cysqlsf,6,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:00:48
+cysqlsf,7,tutor,Remember what we said about the denominator. What happens here?,00:00:56
+cysqlsf,8,student,I think we need to make the bottom numbers the same before we add.,00:01:04
+cysqlsf,9,tutor,Let's try a similar one. What is 30 times 4?,00:01:12
+cysqlsf,10,student,I'm not sure. Is it because 10 has one zero?,00:01:20
+cysqlsf,11,tutor,Uh-huh. And what would you do next?,00:01:28
+cysqlsf,12,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:01:36
+cysqlsf,13,tutor,Can you talk me through how you got that answer?,00:01:44
+cysqlsf,14,student,Maybe I should compare them as decimals first.,00:01:52
+cysqlsf,15,tutor,What do you notice about these two numbers?,00:02:00
+cysqlsf,16,student,Maybe I should compare them as decimals first.,00:02:08
+cysqlsf,17,tutor,What do you notice about these two numbers?,00:02:16
+cysqlsf,18,student,12.,00:02:24
+cysqlsf,19,tutor,What do you notice about these two numbers?,00:02:32
+cysqlsf,20,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:02:40
+cysqlsf,21,tutor,Remember what we said about the denominator. What happens here?,00:02:48
+cysqlsf,22,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:02:56
+cysqlsf,23,tutor,Uh-huh. And what would you do next?,00:03:04
+cysqlsf,24,student,12.,00:03:12
+cysqlsf,25,tutor,Remember what we said about the denominator. What happens here?,00:03:20
+cysqlsf,26,student,"I would divide it by 100, so the answer is 3.45.",00:03:28
+cysqlsf,27,tutor,Let's try a similar one. What is 30 times 4?,00:03:36
+cysqlsf,28,student,I'm not sure. Is it because 10 has one zero?,00:03:44
+cysqlsf,29,tutor,Remember what we said about the denominator. What happens here?,00:03:52
+cysqlsf,30,student,Maybe I should compare them as decimals first.,00:04:00
+cysqlsf,31,tutor,Can you talk me through how you got that answer?,00:04:08
+cysqlsf,32,student,Maybe I should compare them as decimals first.,00:04:16
+cysqlsf,33,tutor,Let's try a similar one. What is 30 times 4?,00:04:24
+cysqlsf,34,student,300?,00:04:32
+cysqlsf,35,tutor,Uh-huh. And what would you do next?,00:04:40
+cysqlsf,36,student,Maybe I should compare them as decimals first.,00:04:48
+cysqlsf,37,tutor,Uh-huh. And what would you do next?,00:04:56
+cysqlsf,38,student,I'm not sure. Is it because 10 has one zero?,00:05:04
+cysqlsf,39,tutor,What do you notice about these two numbers?,00:05:12
+cysqlsf,40,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:05:20
+cysqlsf,41,tutor,Remember what we said about the denominator. What happens here?,00:05:28
+cysqlsf,42,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:05:36
+cysqlsf,43,tutor,Can you talk me through how you got that answer?,00:05:44
+cysqlsf,44,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:05:52
+cysqlsf,45,tutor,What do you notice about these two numbers?,00:06:00
+cysqlsf,46,student,"I would divide it by 100, so the answer is 3.45.",00:06:08
+cysqlsf,47,tutor,"Good thinking. Now, is that answer reasonable?",00:06:16
+cysqlsf,48,student,"I would divide it by 100, so the answer is 3.45.",00:06:24
+cysqlsf,49,tutor,"Good thinking. Now, is that answer reasonable?",00:06:32
+cysqlsf,50,student,I'm not sure. Is it because 10 has one zero?,00:06:40
+cysqlsf,51,tutor,Can you talk me through how you got that answer?,00:06:48
+cysqlsf,52,student,I'm not sure. Is it because 10 has one zero?,00:06:56
+cysqlsf,53,tutor,"Good thinking. Now, is that answer reasonable?",00:07:04
+cysqlsf,54,student,Maybe I should compare them as decimals first.,00:07:12
+cysqlsf,55,tutor,So let me ask you first. Do you know what a fact family is?,00:07:20
+cysqlsf,56,student,Okay,00:07:28
+cysqlsf,57,tutor,So let me ask you first. Do you know what a fact family is?,00:07:36
+cysqlsf,58,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:07:44
+cysqlsf,59,tutor,Let's try a similar one. What is 30 times 4?,00:07:52
+cysqlsf,60,student,"I would divide it by 100, so the answer is 3.45.",00:08:00
+cysqlsf,61,tutor,What do you notice about these two numbers?,00:08:08
+cysqlsf,62,student,Maybe I should compare them as decimals first.,00:08:16
+cysqlsf,63,tutor,Remember what we said about the denominator. What happens here?,00:08:24
+cysqlsf,64,student,Is it 4?,00:08:32
+cysqlsf,65,tutor,Can you talk me through how you got that answer?,00:08:40
+cysqlsf,66,student,I think we need to make the bottom numbers the same before we add.,00:08:48
+cysqlsf,67,tutor,Remember what we said about the denominator. What happens here?,00:08:56
+cysqlsf,68,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:09:04
+cysqlsf,69,tutor,Can you talk me through how you got that answer?,00:09:12
+cysqlsf,70,student,Maybe I should compare them as decimals first.,00:09:20
+cysqlsf,71,tutor,Can you talk me through how you got that answer?,00:09:28
+cysqlsf,72,student,I'm not sure. Is it because 10 has one zero?,00:09:36
+cysqlsf,73,tutor,"Good thinking. Now, is that answer reasonable?",00:09:44
+cysqlsf,74,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:09:52
+cysqlsf,75,tutor,Remember what we said about the denominator. What happens here?,00:10:00
+cysqlsf,76,student,Maybe I should compare them as decimals first.,00:10:08
+cysqlsf,77,tutor,Uh-huh. And what would you do next?,00:10:16
+cysqlsf,78,student,Maybe I should compare them as decimals first.,00:10:24
+cysqlsf,79,tutor,What do you notice about these two numbers?,00:10:32
+cysqlsf,80,student,"I would divide it by 100, so the answer is 3.45.",00:10:40
+cysqlsf,81,tutor,Great work today. See you next time!,00:10:48

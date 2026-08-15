@@ -1,0 +1,319 @@
+session_id,utterance_id,role,content,timestamp
+sopameq,0,background,[unclear],00:00:00
+sopameq,1,tutor,"Hello, are you ready to get started today?",00:00:08
+sopameq,2,student,"Yes, I think so.",00:00:16
+sopameq,3,tutor,What do you notice about these two numbers?,00:00:24
+sopameq,4,student,Okay,00:00:32
+sopameq,5,tutor,Uh-huh. And what would you do next?,00:00:40
+sopameq,6,student,Half?,00:00:48
+sopameq,7,tutor,Uh-huh. And what would you do next?,00:00:56
+sopameq,8,student,No,00:01:04
+sopameq,9,tutor,Let's try a similar one. What is 30 times 4?,00:01:12
+sopameq,10,student,12.,00:01:20
+sopameq,11,tutor,Can you talk me through how you got that answer?,00:01:28
+sopameq,12,student,6?,00:01:36
+sopameq,13,tutor,"Good thinking. Now, is that answer reasonable?",00:01:44
+sopameq,14,student,Half?,00:01:52
+sopameq,15,tutor,Remember what we said about the denominator. What happens here?,00:02:00
+sopameq,16,student,Yes,00:02:08
+sopameq,17,tutor,"Good thinking. Now, is that answer reasonable?",00:02:16
+sopameq,18,student,I'm not sure. Is it because 10 has one zero?,00:02:24
+sopameq,19,tutor,"Good thinking. Now, is that answer reasonable?",00:02:32
+sopameq,20,student,"I would divide it by 100, so the answer is 3.45.",00:02:40
+sopameq,21,tutor,Uh-huh. And what would you do next?,00:02:48
+sopameq,22,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:02:56
+sopameq,23,tutor,Can you talk me through how you got that answer?,00:03:04
+sopameq,24,student,Maybe I should compare them as decimals first.,00:03:12
+sopameq,25,tutor,Uh-huh. And what would you do next?,00:03:20
+sopameq,26,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:03:28
+sopameq,27,tutor,So let me ask you first. Do you know what a fact family is?,00:03:36
+sopameq,28,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:03:44
+sopameq,29,tutor,So let me ask you first. Do you know what a fact family is?,00:03:52
+sopameq,30,student,6?,00:04:00
+sopameq,31,tutor,Let's try a similar one. What is 30 times 4?,00:04:08
+sopameq,32,student,I'm not sure. Is it because 10 has one zero?,00:04:16
+sopameq,33,tutor,Let's try a similar one. What is 30 times 4?,00:04:24
+sopameq,34,student,Maybe I should compare them as decimals first.,00:04:32
+sopameq,35,tutor,Let's try a similar one. What is 30 times 4?,00:04:40
+sopameq,36,student,Maybe I should compare them as decimals first.,00:04:48
+sopameq,37,tutor,Can you talk me through how you got that answer?,00:04:56
+sopameq,38,student,Okay,00:05:04
+sopameq,39,tutor,"Good thinking. Now, is that answer reasonable?",00:05:12
+sopameq,40,student,Maybe I should compare them as decimals first.,00:05:20
+sopameq,41,tutor,Can you talk me through how you got that answer?,00:05:28
+sopameq,42,student,Is it 4?,00:05:36
+sopameq,43,tutor,Uh-huh. And what would you do next?,00:05:44
+sopameq,44,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:05:52
+sopameq,45,tutor,What do you notice about these two numbers?,00:06:00
+sopameq,46,student,I'm not sure. Is it because 10 has one zero?,00:06:08
+sopameq,47,tutor,Remember what we said about the denominator. What happens here?,00:06:16
+sopameq,48,student,Maybe I should compare them as decimals first.,00:06:24
+sopameq,49,tutor,Let's try a similar one. What is 30 times 4?,00:06:32
+sopameq,50,student,Is it 4?,00:06:40
+sopameq,51,tutor,Can you talk me through how you got that answer?,00:06:48
+sopameq,52,student,"I would divide it by 100, so the answer is 3.45.",00:06:56
+sopameq,53,tutor,What do you notice about these two numbers?,00:07:04
+sopameq,54,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:07:12
+sopameq,55,tutor,Remember what we said about the denominator. What happens here?,00:07:20
+sopameq,56,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:07:28
+sopameq,57,tutor,"Good thinking. Now, is that answer reasonable?",00:07:36
+sopameq,58,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:07:44
+sopameq,59,tutor,Remember what we said about the denominator. What happens here?,00:07:52
+sopameq,60,student,Maybe I should compare them as decimals first.,00:08:00
+sopameq,61,tutor,Let's try a similar one. What is 30 times 4?,00:08:08
+sopameq,62,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:08:16
+sopameq,63,tutor,Uh-huh. And what would you do next?,00:08:24
+sopameq,64,student,I'm not sure. Is it because 10 has one zero?,00:08:32
+sopameq,65,tutor,Uh-huh. And what would you do next?,00:08:40
+sopameq,66,student,Is it 4?,00:08:48
+sopameq,67,tutor,Uh-huh. And what would you do next?,00:08:56
+sopameq,68,student,Is it 4?,00:09:04
+sopameq,69,tutor,Let's try a similar one. What is 30 times 4?,00:09:12
+sopameq,70,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:09:20
+sopameq,71,tutor,Let's try a similar one. What is 30 times 4?,00:09:28
+sopameq,72,student,I think we need to make the bottom numbers the same before we add.,00:09:36
+sopameq,73,tutor,"Good thinking. Now, is that answer reasonable?",00:09:44
+sopameq,74,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:09:52
+sopameq,75,tutor,What do you notice about these two numbers?,00:10:00
+sopameq,76,student,Maybe I should compare them as decimals first.,00:10:08
+sopameq,77,tutor,Let's try a similar one. What is 30 times 4?,00:10:16
+sopameq,78,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:10:24
+sopameq,79,tutor,Remember what we said about the denominator. What happens here?,00:10:32
+sopameq,80,student,75.,00:10:40
+sopameq,81,tutor,What do you notice about these two numbers?,00:10:48
+sopameq,82,student,Maybe I should compare them as decimals first.,00:10:56
+sopameq,83,tutor,So let me ask you first. Do you know what a fact family is?,00:11:04
+sopameq,84,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:11:12
+sopameq,85,tutor,Can you talk me through how you got that answer?,00:11:20
+sopameq,86,student,Is it 4?,00:11:28
+sopameq,87,tutor,Can you talk me through how you got that answer?,00:11:36
+sopameq,88,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:11:44
+sopameq,89,tutor,Uh-huh. And what would you do next?,00:11:52
+sopameq,90,student,6?,00:12:00
+sopameq,91,tutor,What do you notice about these two numbers?,00:12:08
+sopameq,92,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:12:16
+sopameq,93,tutor,"Good thinking. Now, is that answer reasonable?",00:12:24
+sopameq,94,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:12:32
+sopameq,95,tutor,Can you talk me through how you got that answer?,00:12:40
+sopameq,96,student,I think we need to make the bottom numbers the same before we add.,00:12:48
+sopameq,97,tutor,Uh-huh. And what would you do next?,00:12:56
+sopameq,98,student,I'm not sure. Is it because 10 has one zero?,00:13:04
+sopameq,99,tutor,Remember what we said about the denominator. What happens here?,00:13:12
+sopameq,100,student,12.,00:13:20
+sopameq,101,tutor,What do you notice about these two numbers?,00:13:28
+sopameq,102,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:13:36
+sopameq,103,tutor,"Good thinking. Now, is that answer reasonable?",00:13:44
+sopameq,104,student,"I would divide it by 100, so the answer is 3.45.",00:13:52
+sopameq,105,tutor,"Good thinking. Now, is that answer reasonable?",00:14:00
+sopameq,106,student,Yes,00:14:08
+sopameq,107,tutor,So let me ask you first. Do you know what a fact family is?,00:14:16
+sopameq,108,student,Okay,00:14:24
+sopameq,109,tutor,Can you talk me through how you got that answer?,00:14:32
+sopameq,110,student,Yes,00:14:40
+sopameq,111,tutor,Let's try a similar one. What is 30 times 4?,00:14:48
+sopameq,112,student,I'm not sure. Is it because 10 has one zero?,00:14:56
+sopameq,113,tutor,So let me ask you first. Do you know what a fact family is?,00:15:04
+sopameq,114,student,6?,00:15:12
+sopameq,115,tutor,Uh-huh. And what would you do next?,00:15:20
+sopameq,116,student,No,00:15:28
+sopameq,117,tutor,Uh-huh. And what would you do next?,00:15:36
+sopameq,118,student,"I would divide it by 100, so the answer is 3.45.",00:15:44
+sopameq,119,tutor,So let me ask you first. Do you know what a fact family is?,00:15:52
+sopameq,120,student,6?,00:16:00
+sopameq,121,tutor,"Good thinking. Now, is that answer reasonable?",00:16:08
+sopameq,122,student,Maybe I should compare them as decimals first.,00:16:16
+sopameq,123,tutor,So let me ask you first. Do you know what a fact family is?,00:16:24
+sopameq,124,student,Is it 4?,00:16:32
+sopameq,125,tutor,So let me ask you first. Do you know what a fact family is?,00:16:40
+sopameq,126,student,"I would divide it by 100, so the answer is 3.45.",00:16:48
+sopameq,127,tutor,What do you notice about these two numbers?,00:16:56
+sopameq,128,student,6?,00:17:04
+sopameq,129,tutor,"Good thinking. Now, is that answer reasonable?",00:17:12
+sopameq,130,student,Maybe I should compare them as decimals first.,00:17:20
+sopameq,131,tutor,What do you notice about these two numbers?,00:17:28
+sopameq,132,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:17:36
+sopameq,133,tutor,Remember what we said about the denominator. What happens here?,00:17:44
+sopameq,134,student,Is it 4?,00:17:52
+sopameq,135,tutor,Let's try a similar one. What is 30 times 4?,00:18:00
+sopameq,136,student,Yes,00:18:08
+sopameq,137,tutor,What do you notice about these two numbers?,00:18:16
+sopameq,138,student,Is it 4?,00:18:24
+sopameq,139,tutor,Remember what we said about the denominator. What happens here?,00:18:32
+sopameq,140,student,No,00:18:40
+sopameq,141,tutor,Can you talk me through how you got that answer?,00:18:48
+sopameq,142,student,Maybe I should compare them as decimals first.,00:18:56
+sopameq,143,tutor,So let me ask you first. Do you know what a fact family is?,00:19:04
+sopameq,144,student,75.,00:19:12
+sopameq,145,tutor,What do you notice about these two numbers?,00:19:20
+sopameq,146,student,Maybe I should compare them as decimals first.,00:19:28
+sopameq,147,tutor,Can you talk me through how you got that answer?,00:19:36
+sopameq,148,student,"I would divide it by 100, so the answer is 3.45.",00:19:44
+sopameq,149,tutor,Let's try a similar one. What is 30 times 4?,00:19:52
+sopameq,150,student,I think we need to make the bottom numbers the same before we add.,00:20:00
+sopameq,151,tutor,Remember what we said about the denominator. What happens here?,00:20:08
+sopameq,152,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:20:16
+sopameq,153,tutor,What do you notice about these two numbers?,00:20:24
+sopameq,154,student,12.,00:20:32
+sopameq,155,tutor,Uh-huh. And what would you do next?,00:20:40
+sopameq,156,student,I think we need to make the bottom numbers the same before we add.,00:20:48
+sopameq,157,tutor,"Good thinking. Now, is that answer reasonable?",00:20:56
+sopameq,158,student,No,00:21:04
+sopameq,159,tutor,What do you notice about these two numbers?,00:21:12
+sopameq,160,student,75.,00:21:20
+sopameq,161,tutor,Let's try a similar one. What is 30 times 4?,00:21:28
+sopameq,162,student,"I would divide it by 100, so the answer is 3.45.",00:21:36
+sopameq,163,tutor,Can you talk me through how you got that answer?,00:21:44
+sopameq,164,student,12.,00:21:52
+sopameq,165,tutor,Remember what we said about the denominator. What happens here?,00:22:00
+sopameq,166,student,Yes,00:22:08
+sopameq,167,tutor,What do you notice about these two numbers?,00:22:16
+sopameq,168,student,Maybe I should compare them as decimals first.,00:22:24
+sopameq,169,tutor,"Good thinking. Now, is that answer reasonable?",00:22:32
+sopameq,170,student,Yes,00:22:40
+sopameq,171,tutor,Remember what we said about the denominator. What happens here?,00:22:48
+sopameq,172,student,Maybe I should compare them as decimals first.,00:22:56
+sopameq,173,tutor,"Good thinking. Now, is that answer reasonable?",00:23:04
+sopameq,174,student,I think we need to make the bottom numbers the same before we add.,00:23:12
+sopameq,175,tutor,"Good thinking. Now, is that answer reasonable?",00:23:20
+sopameq,176,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:23:28
+sopameq,177,tutor,Uh-huh. And what would you do next?,00:23:36
+sopameq,178,student,300?,00:23:44
+sopameq,179,tutor,Can you talk me through how you got that answer?,00:23:52
+sopameq,180,student,300?,00:24:00
+sopameq,181,tutor,Uh-huh. And what would you do next?,00:24:08
+sopameq,182,student,Yes,00:24:16
+sopameq,183,tutor,What do you notice about these two numbers?,00:24:24
+sopameq,184,student,6?,00:24:32
+sopameq,185,tutor,So let me ask you first. Do you know what a fact family is?,00:24:40
+sopameq,186,student,12.,00:24:48
+sopameq,187,tutor,"Good thinking. Now, is that answer reasonable?",00:24:56
+sopameq,188,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:25:04
+sopameq,189,tutor,What do you notice about these two numbers?,00:25:12
+sopameq,190,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:25:20
+sopameq,191,tutor,What do you notice about these two numbers?,00:25:28
+sopameq,192,student,12.,00:25:36
+sopameq,193,tutor,Remember what we said about the denominator. What happens here?,00:25:44
+sopameq,194,student,I'm not sure. Is it because 10 has one zero?,00:25:52
+sopameq,195,tutor,Uh-huh. And what would you do next?,00:26:00
+sopameq,196,student,Is it 4?,00:26:08
+sopameq,197,tutor,"Good thinking. Now, is that answer reasonable?",00:26:16
+sopameq,198,student,75.,00:26:24
+sopameq,199,tutor,Let's try a similar one. What is 30 times 4?,00:26:32
+sopameq,200,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:26:40
+sopameq,201,tutor,So let me ask you first. Do you know what a fact family is?,00:26:48
+sopameq,202,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:26:56
+sopameq,203,tutor,Can you talk me through how you got that answer?,00:27:04
+sopameq,204,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:27:12
+sopameq,205,tutor,Let's try a similar one. What is 30 times 4?,00:27:20
+sopameq,206,student,I'm not sure. Is it because 10 has one zero?,00:27:28
+sopameq,207,tutor,Remember what we said about the denominator. What happens here?,00:27:36
+sopameq,208,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:27:44
+sopameq,209,tutor,Uh-huh. And what would you do next?,00:27:52
+sopameq,210,student,12.,00:28:00
+sopameq,211,tutor,Can you talk me through how you got that answer?,00:28:08
+sopameq,212,student,Half?,00:28:16
+sopameq,213,tutor,Can you talk me through how you got that answer?,00:28:24
+sopameq,214,student,I think we need to make the bottom numbers the same before we add.,00:28:32
+sopameq,215,tutor,So let me ask you first. Do you know what a fact family is?,00:28:40
+sopameq,216,student,6?,00:28:48
+sopameq,217,tutor,What do you notice about these two numbers?,00:28:56
+sopameq,218,student,75.,00:29:04
+sopameq,219,tutor,Uh-huh. And what would you do next?,00:29:12
+sopameq,220,student,Is it 4?,00:29:20
+sopameq,221,tutor,Can you talk me through how you got that answer?,00:29:28
+sopameq,222,student,I think we need to make the bottom numbers the same before we add.,00:29:36
+sopameq,223,tutor,Can you talk me through how you got that answer?,00:29:44
+sopameq,224,student,6?,00:29:52
+sopameq,225,tutor,Remember what we said about the denominator. What happens here?,00:30:00
+sopameq,226,student,I'm not sure. Is it because 10 has one zero?,00:30:08
+sopameq,227,tutor,Can you talk me through how you got that answer?,00:30:16
+sopameq,228,student,Yes,00:30:24
+sopameq,229,tutor,Let's try a similar one. What is 30 times 4?,00:30:32
+sopameq,230,student,I'm not sure. Is it because 10 has one zero?,00:30:40
+sopameq,231,tutor,So let me ask you first. Do you know what a fact family is?,00:30:48
+sopameq,232,student,I think we need to make the bottom numbers the same before we add.,00:30:56
+sopameq,233,tutor,So let me ask you first. Do you know what a fact family is?,00:31:04
+sopameq,234,student,12.,00:31:12
+sopameq,235,tutor,"Good thinking. Now, is that answer reasonable?",00:31:20
+sopameq,236,student,"I would divide it by 100, so the answer is 3.45.",00:31:28
+sopameq,237,tutor,Can you talk me through how you got that answer?,00:31:36
+sopameq,238,student,I'm not sure. Is it because 10 has one zero?,00:31:44
+sopameq,239,tutor,"Good thinking. Now, is that answer reasonable?",00:31:52
+sopameq,240,student,I'm not sure. Is it because 10 has one zero?,00:32:00
+sopameq,241,tutor,Can you talk me through how you got that answer?,00:32:08
+sopameq,242,student,I'm not sure. Is it because 10 has one zero?,00:32:16
+sopameq,243,tutor,Can you talk me through how you got that answer?,00:32:24
+sopameq,244,student,I think we need to make the bottom numbers the same before we add.,00:32:32
+sopameq,245,tutor,What do you notice about these two numbers?,00:32:40
+sopameq,246,student,Maybe I should compare them as decimals first.,00:32:48
+sopameq,247,tutor,Uh-huh. And what would you do next?,00:32:56
+sopameq,248,student,Maybe I should compare them as decimals first.,00:33:04
+sopameq,249,tutor,Remember what we said about the denominator. What happens here?,00:33:12
+sopameq,250,student,Maybe I should compare them as decimals first.,00:33:20
+sopameq,251,tutor,What do you notice about these two numbers?,00:33:28
+sopameq,252,student,I think we need to make the bottom numbers the same before we add.,00:33:36
+sopameq,253,tutor,What do you notice about these two numbers?,00:33:44
+sopameq,254,student,Half?,00:33:52
+sopameq,255,tutor,"Good thinking. Now, is that answer reasonable?",00:34:00
+sopameq,256,student,12.,00:34:08
+sopameq,257,tutor,Can you talk me through how you got that answer?,00:34:16
+sopameq,258,student,Maybe I should compare them as decimals first.,00:34:24
+sopameq,259,tutor,Uh-huh. And what would you do next?,00:34:32
+sopameq,260,student,"I would divide it by 100, so the answer is 3.45.",00:34:40
+sopameq,261,tutor,Let's try a similar one. What is 30 times 4?,00:34:48
+sopameq,262,student,Is it 4?,00:34:56
+sopameq,263,tutor,Let's try a similar one. What is 30 times 4?,00:35:04
+sopameq,264,student,75.,00:35:12
+sopameq,265,tutor,What do you notice about these two numbers?,00:35:20
+sopameq,266,student,300?,00:35:28
+sopameq,267,tutor,"Good thinking. Now, is that answer reasonable?",00:35:36
+sopameq,268,student,Maybe I should compare them as decimals first.,00:35:44
+sopameq,269,tutor,So let me ask you first. Do you know what a fact family is?,00:35:52
+sopameq,270,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:36:00
+sopameq,271,tutor,"Good thinking. Now, is that answer reasonable?",00:36:08
+sopameq,272,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:36:16
+sopameq,273,tutor,"Good thinking. Now, is that answer reasonable?",00:36:24
+sopameq,274,student,No,00:36:32
+sopameq,275,tutor,Let's try a similar one. What is 30 times 4?,00:36:40
+sopameq,276,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:36:48
+sopameq,277,tutor,Can you talk me through how you got that answer?,00:36:56
+sopameq,278,student,Yes,00:37:04
+sopameq,279,tutor,Remember what we said about the denominator. What happens here?,00:37:12
+sopameq,280,student,12.,00:37:20
+sopameq,281,tutor,Remember what we said about the denominator. What happens here?,00:37:28
+sopameq,282,student,"I would divide it by 100, so the answer is 3.45.",00:37:36
+sopameq,283,tutor,What do you notice about these two numbers?,00:37:44
+sopameq,284,student,12.,00:37:52
+sopameq,285,tutor,Remember what we said about the denominator. What happens here?,00:38:00
+sopameq,286,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:38:08
+sopameq,287,tutor,What do you notice about these two numbers?,00:38:16
+sopameq,288,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:38:24
+sopameq,289,tutor,Remember what we said about the denominator. What happens here?,00:38:32
+sopameq,290,student,No,00:38:40
+sopameq,291,tutor,Let's try a similar one. What is 30 times 4?,00:38:48
+sopameq,292,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:38:56
+sopameq,293,tutor,"Good thinking. Now, is that answer reasonable?",00:39:04
+sopameq,294,student,"I would divide it by 100, so the answer is 3.45.",00:39:12
+sopameq,295,tutor,"Good thinking. Now, is that answer reasonable?",00:39:20
+sopameq,296,student,Half?,00:39:28
+sopameq,297,tutor,Uh-huh. And what would you do next?,00:39:36
+sopameq,298,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:39:44
+sopameq,299,tutor,What do you notice about these two numbers?,00:39:52
+sopameq,300,student,Maybe I should compare them as decimals first.,00:40:00
+sopameq,301,tutor,"Good thinking. Now, is that answer reasonable?",00:40:08
+sopameq,302,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:40:16
+sopameq,303,tutor,What do you notice about these two numbers?,00:40:24
+sopameq,304,student,75.,00:40:32
+sopameq,305,tutor,So let me ask you first. Do you know what a fact family is?,00:40:40
+sopameq,306,student,300?,00:40:48
+sopameq,307,tutor,What do you notice about these two numbers?,00:40:56
+sopameq,308,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:41:04
+sopameq,309,tutor,Uh-huh. And what would you do next?,00:41:12
+sopameq,310,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:41:20
+sopameq,311,tutor,Can you talk me through how you got that answer?,00:41:28
+sopameq,312,student,"I would divide it by 100, so the answer is 3.45.",00:41:36
+sopameq,313,tutor,What do you notice about these two numbers?,00:41:44
+sopameq,314,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:41:52
+sopameq,315,tutor,"Good thinking. Now, is that answer reasonable?",00:42:00
+sopameq,316,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:42:08
+sopameq,317,tutor,Great work today. See you next time!,00:42:16

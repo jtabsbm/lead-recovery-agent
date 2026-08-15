@@ -1,0 +1,630 @@
+session_id,utterance_id,role,content,timestamp
+xrhawdc,0,background,[unclear],00:00:00
+xrhawdc,1,tutor,Good afternoon! Today we are going to look at a new topic.,00:00:08
+xrhawdc,2,student,"Yes, I think so.",00:00:16
+xrhawdc,3,tutor,What do you notice about these two numbers?,00:00:24
+xrhawdc,4,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:00:32
+xrhawdc,5,tutor,Let's try a similar one. What is 30 times 4?,00:00:40
+xrhawdc,6,student,I'm not sure. Is it because 10 has one zero?,00:00:48
+xrhawdc,7,tutor,Uh-huh. And what would you do next?,00:00:56
+xrhawdc,8,student,Maybe I should compare them as decimals first.,00:01:04
+xrhawdc,9,tutor,Let's try a similar one. What is 30 times 4?,00:01:12
+xrhawdc,10,student,Maybe I should compare them as decimals first.,00:01:20
+xrhawdc,11,tutor,So let me ask you first. Do you know what a fact family is?,00:01:28
+xrhawdc,12,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:01:36
+xrhawdc,13,tutor,Remember what we said about the denominator. What happens here?,00:01:44
+xrhawdc,14,student,"I would divide it by 100, so the answer is 3.45.",00:01:52
+xrhawdc,15,tutor,"Good thinking. Now, is that answer reasonable?",00:02:00
+xrhawdc,16,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:02:08
+xrhawdc,17,tutor,Can you talk me through how you got that answer?,00:02:16
+xrhawdc,18,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:02:24
+xrhawdc,19,tutor,What do you notice about these two numbers?,00:02:32
+xrhawdc,20,student,I'm not sure. Is it because 10 has one zero?,00:02:40
+xrhawdc,21,tutor,Can you talk me through how you got that answer?,00:02:48
+xrhawdc,22,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:02:56
+xrhawdc,23,tutor,"Good thinking. Now, is that answer reasonable?",00:03:04
+xrhawdc,24,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:03:12
+xrhawdc,25,tutor,What do you notice about these two numbers?,00:03:20
+xrhawdc,26,student,12.,00:03:28
+xrhawdc,27,tutor,Can you talk me through how you got that answer?,00:03:36
+xrhawdc,28,student,I'm not sure. Is it because 10 has one zero?,00:03:44
+xrhawdc,29,tutor,Remember what we said about the denominator. What happens here?,00:03:52
+xrhawdc,30,student,I'm not sure. Is it because 10 has one zero?,00:04:00
+xrhawdc,31,tutor,So let me ask you first. Do you know what a fact family is?,00:04:08
+xrhawdc,32,student,"I would divide it by 100, so the answer is 3.45.",00:04:16
+xrhawdc,33,tutor,Uh-huh. And what would you do next?,00:04:24
+xrhawdc,34,student,I'm not sure. Is it because 10 has one zero?,00:04:32
+xrhawdc,35,tutor,Remember what we said about the denominator. What happens here?,00:04:40
+xrhawdc,36,student,Maybe I should compare them as decimals first.,00:04:48
+xrhawdc,37,tutor,"Good thinking. Now, is that answer reasonable?",00:04:56
+xrhawdc,38,student,Maybe I should compare them as decimals first.,00:05:04
+xrhawdc,39,tutor,Can you talk me through how you got that answer?,00:05:12
+xrhawdc,40,student,Maybe I should compare them as decimals first.,00:05:20
+xrhawdc,41,tutor,"Good thinking. Now, is that answer reasonable?",00:05:28
+xrhawdc,42,student,12.,00:05:36
+xrhawdc,43,tutor,What do you notice about these two numbers?,00:05:44
+xrhawdc,44,student,"I would divide it by 100, so the answer is 3.45.",00:05:52
+xrhawdc,45,tutor,Let's try a similar one. What is 30 times 4?,00:06:00
+xrhawdc,46,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:06:08
+xrhawdc,47,tutor,"Good thinking. Now, is that answer reasonable?",00:06:16
+xrhawdc,48,student,I think we need to make the bottom numbers the same before we add.,00:06:24
+xrhawdc,49,tutor,So let me ask you first. Do you know what a fact family is?,00:06:32
+xrhawdc,50,student,Maybe I should compare them as decimals first.,00:06:40
+xrhawdc,51,tutor,Let's try a similar one. What is 30 times 4?,00:06:48
+xrhawdc,52,student,"I would divide it by 100, so the answer is 3.45.",00:06:56
+xrhawdc,53,tutor,"Good thinking. Now, is that answer reasonable?",00:07:04
+xrhawdc,54,student,"I would divide it by 100, so the answer is 3.45.",00:07:12
+xrhawdc,55,tutor,Let's try a similar one. What is 30 times 4?,00:07:20
+xrhawdc,56,student,No,00:07:28
+xrhawdc,57,tutor,Can you talk me through how you got that answer?,00:07:36
+xrhawdc,58,student,"I would divide it by 100, so the answer is 3.45.",00:07:44
+xrhawdc,59,tutor,Remember what we said about the denominator. What happens here?,00:07:52
+xrhawdc,60,student,Maybe I should compare them as decimals first.,00:08:00
+xrhawdc,61,tutor,Remember what we said about the denominator. What happens here?,00:08:08
+xrhawdc,62,student,"I would divide it by 100, so the answer is 3.45.",00:08:16
+xrhawdc,63,tutor,"Good thinking. Now, is that answer reasonable?",00:08:24
+xrhawdc,64,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:08:32
+xrhawdc,65,tutor,Remember what we said about the denominator. What happens here?,00:08:40
+xrhawdc,66,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:08:48
+xrhawdc,67,tutor,So let me ask you first. Do you know what a fact family is?,00:08:56
+xrhawdc,68,student,Maybe I should compare them as decimals first.,00:09:04
+xrhawdc,69,tutor,Let's try a similar one. What is 30 times 4?,00:09:12
+xrhawdc,70,student,Is it 4?,00:09:20
+xrhawdc,71,tutor,Uh-huh. And what would you do next?,00:09:28
+xrhawdc,72,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:09:36
+xrhawdc,73,tutor,So let me ask you first. Do you know what a fact family is?,00:09:44
+xrhawdc,74,student,I'm not sure. Is it because 10 has one zero?,00:09:52
+xrhawdc,75,tutor,Can you talk me through how you got that answer?,00:10:00
+xrhawdc,76,student,Maybe I should compare them as decimals first.,00:10:08
+xrhawdc,77,tutor,So let me ask you first. Do you know what a fact family is?,00:10:16
+xrhawdc,78,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:10:24
+xrhawdc,79,tutor,Let's try a similar one. What is 30 times 4?,00:10:32
+xrhawdc,80,student,Okay,00:10:40
+xrhawdc,81,tutor,So let me ask you first. Do you know what a fact family is?,00:10:48
+xrhawdc,82,student,12.,00:10:56
+xrhawdc,83,tutor,Let's try a similar one. What is 30 times 4?,00:11:04
+xrhawdc,84,student,I think we need to make the bottom numbers the same before we add.,00:11:12
+xrhawdc,85,tutor,So let me ask you first. Do you know what a fact family is?,00:11:20
+xrhawdc,86,student,Maybe I should compare them as decimals first.,00:11:28
+xrhawdc,87,tutor,Let's try a similar one. What is 30 times 4?,00:11:36
+xrhawdc,88,student,Maybe I should compare them as decimals first.,00:11:44
+xrhawdc,89,tutor,Can you talk me through how you got that answer?,00:11:52
+xrhawdc,90,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:12:00
+xrhawdc,91,tutor,Remember what we said about the denominator. What happens here?,00:12:08
+xrhawdc,92,student,Is it 4?,00:12:16
+xrhawdc,93,tutor,"Good thinking. Now, is that answer reasonable?",00:12:24
+xrhawdc,94,student,I think we need to make the bottom numbers the same before we add.,00:12:32
+xrhawdc,95,tutor,"Good thinking. Now, is that answer reasonable?",00:12:40
+xrhawdc,96,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:12:48
+xrhawdc,97,tutor,Let's try a similar one. What is 30 times 4?,00:12:56
+xrhawdc,98,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:13:04
+xrhawdc,99,tutor,What do you notice about these two numbers?,00:13:12
+xrhawdc,100,student,Is it 4?,00:13:20
+xrhawdc,101,tutor,Can you talk me through how you got that answer?,00:13:28
+xrhawdc,102,student,Maybe I should compare them as decimals first.,00:13:36
+xrhawdc,103,tutor,Remember what we said about the denominator. What happens here?,00:13:44
+xrhawdc,104,student,Maybe I should compare them as decimals first.,00:13:52
+xrhawdc,105,tutor,Can you talk me through how you got that answer?,00:14:00
+xrhawdc,106,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:14:08
+xrhawdc,107,tutor,Uh-huh. And what would you do next?,00:14:16
+xrhawdc,108,student,I'm not sure. Is it because 10 has one zero?,00:14:24
+xrhawdc,109,tutor,Remember what we said about the denominator. What happens here?,00:14:32
+xrhawdc,110,student,I'm not sure. Is it because 10 has one zero?,00:14:40
+xrhawdc,111,tutor,Let's try a similar one. What is 30 times 4?,00:14:48
+xrhawdc,112,student,I'm not sure. Is it because 10 has one zero?,00:14:56
+xrhawdc,113,tutor,So let me ask you first. Do you know what a fact family is?,00:15:04
+xrhawdc,114,student,Maybe I should compare them as decimals first.,00:15:12
+xrhawdc,115,tutor,So let me ask you first. Do you know what a fact family is?,00:15:20
+xrhawdc,116,student,"I would divide it by 100, so the answer is 3.45.",00:15:28
+xrhawdc,117,tutor,Remember what we said about the denominator. What happens here?,00:15:36
+xrhawdc,118,student,I think we need to make the bottom numbers the same before we add.,00:15:44
+xrhawdc,119,tutor,"Good thinking. Now, is that answer reasonable?",00:15:52
+xrhawdc,120,student,Maybe I should compare them as decimals first.,00:16:00
+xrhawdc,121,tutor,Let's try a similar one. What is 30 times 4?,00:16:08
+xrhawdc,122,student,Yes,00:16:16
+xrhawdc,123,tutor,So let me ask you first. Do you know what a fact family is?,00:16:24
+xrhawdc,124,student,I think we need to make the bottom numbers the same before we add.,00:16:32
+xrhawdc,125,tutor,Can you talk me through how you got that answer?,00:16:40
+xrhawdc,126,student,"I would divide it by 100, so the answer is 3.45.",00:16:48
+xrhawdc,127,tutor,So let me ask you first. Do you know what a fact family is?,00:16:56
+xrhawdc,128,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:17:04
+xrhawdc,129,tutor,So let me ask you first. Do you know what a fact family is?,00:17:12
+xrhawdc,130,student,I think we need to make the bottom numbers the same before we add.,00:17:20
+xrhawdc,131,tutor,Let's try a similar one. What is 30 times 4?,00:17:28
+xrhawdc,132,student,"I would divide it by 100, so the answer is 3.45.",00:17:36
+xrhawdc,133,tutor,Remember what we said about the denominator. What happens here?,00:17:44
+xrhawdc,134,student,I'm not sure. Is it because 10 has one zero?,00:17:52
+xrhawdc,135,tutor,What do you notice about these two numbers?,00:18:00
+xrhawdc,136,student,I think we need to make the bottom numbers the same before we add.,00:18:08
+xrhawdc,137,tutor,Can you talk me through how you got that answer?,00:18:16
+xrhawdc,138,student,75.,00:18:24
+xrhawdc,139,tutor,Can you talk me through how you got that answer?,00:18:32
+xrhawdc,140,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:18:40
+xrhawdc,141,tutor,Can you talk me through how you got that answer?,00:18:48
+xrhawdc,142,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:18:56
+xrhawdc,143,tutor,What do you notice about these two numbers?,00:19:04
+xrhawdc,144,student,I'm not sure. Is it because 10 has one zero?,00:19:12
+xrhawdc,145,tutor,Remember what we said about the denominator. What happens here?,00:19:20
+xrhawdc,146,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:19:28
+xrhawdc,147,tutor,What do you notice about these two numbers?,00:19:36
+xrhawdc,148,student,I'm not sure. Is it because 10 has one zero?,00:19:44
+xrhawdc,149,tutor,Can you talk me through how you got that answer?,00:19:52
+xrhawdc,150,student,I think we need to make the bottom numbers the same before we add.,00:20:00
+xrhawdc,151,tutor,Remember what we said about the denominator. What happens here?,00:20:08
+xrhawdc,152,student,I think we need to make the bottom numbers the same before we add.,00:20:16
+xrhawdc,153,tutor,Can you talk me through how you got that answer?,00:20:24
+xrhawdc,154,student,Maybe I should compare them as decimals first.,00:20:32
+xrhawdc,155,tutor,Let's try a similar one. What is 30 times 4?,00:20:40
+xrhawdc,156,student,12.,00:20:48
+xrhawdc,157,tutor,Uh-huh. And what would you do next?,00:20:56
+xrhawdc,158,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:21:04
+xrhawdc,159,tutor,What do you notice about these two numbers?,00:21:12
+xrhawdc,160,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:21:20
+xrhawdc,161,tutor,So let me ask you first. Do you know what a fact family is?,00:21:28
+xrhawdc,162,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:21:36
+xrhawdc,163,tutor,Remember what we said about the denominator. What happens here?,00:21:44
+xrhawdc,164,student,Maybe I should compare them as decimals first.,00:21:52
+xrhawdc,165,tutor,So let me ask you first. Do you know what a fact family is?,00:22:00
+xrhawdc,166,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:22:08
+xrhawdc,167,tutor,Let's try a similar one. What is 30 times 4?,00:22:16
+xrhawdc,168,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:22:24
+xrhawdc,169,tutor,Remember what we said about the denominator. What happens here?,00:22:32
+xrhawdc,170,student,I think we need to make the bottom numbers the same before we add.,00:22:40
+xrhawdc,171,tutor,Uh-huh. And what would you do next?,00:22:48
+xrhawdc,172,student,"I would divide it by 100, so the answer is 3.45.",00:22:56
+xrhawdc,173,tutor,So let me ask you first. Do you know what a fact family is?,00:23:04
+xrhawdc,174,student,I'm not sure. Is it because 10 has one zero?,00:23:12
+xrhawdc,175,tutor,What do you notice about these two numbers?,00:23:20
+xrhawdc,176,student,6?,00:23:28
+xrhawdc,177,tutor,Can you talk me through how you got that answer?,00:23:36
+xrhawdc,178,student,Yes,00:23:44
+xrhawdc,179,tutor,Can you talk me through how you got that answer?,00:23:52
+xrhawdc,180,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:24:00
+xrhawdc,181,tutor,Remember what we said about the denominator. What happens here?,00:24:08
+xrhawdc,182,student,"I would divide it by 100, so the answer is 3.45.",00:24:16
+xrhawdc,183,tutor,Remember what we said about the denominator. What happens here?,00:24:24
+xrhawdc,184,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:24:32
+xrhawdc,185,tutor,Uh-huh. And what would you do next?,00:24:40
+xrhawdc,186,student,I think we need to make the bottom numbers the same before we add.,00:24:48
+xrhawdc,187,tutor,Uh-huh. And what would you do next?,00:24:56
+xrhawdc,188,student,No,00:25:04
+xrhawdc,189,tutor,Let's try a similar one. What is 30 times 4?,00:25:12
+xrhawdc,190,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:25:20
+xrhawdc,191,tutor,So let me ask you first. Do you know what a fact family is?,00:25:28
+xrhawdc,192,student,12.,00:25:36
+xrhawdc,193,tutor,Uh-huh. And what would you do next?,00:25:44
+xrhawdc,194,student,I'm not sure. Is it because 10 has one zero?,00:25:52
+xrhawdc,195,tutor,Let's try a similar one. What is 30 times 4?,00:26:00
+xrhawdc,196,student,Maybe I should compare them as decimals first.,00:26:08
+xrhawdc,197,tutor,Remember what we said about the denominator. What happens here?,00:26:16
+xrhawdc,198,student,I think we need to make the bottom numbers the same before we add.,00:26:24
+xrhawdc,199,tutor,Uh-huh. And what would you do next?,00:26:32
+xrhawdc,200,student,Okay,00:26:40
+xrhawdc,201,tutor,So let me ask you first. Do you know what a fact family is?,00:26:48
+xrhawdc,202,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:26:56
+xrhawdc,203,tutor,Let's try a similar one. What is 30 times 4?,00:27:04
+xrhawdc,204,student,"I would divide it by 100, so the answer is 3.45.",00:27:12
+xrhawdc,205,tutor,Can you talk me through how you got that answer?,00:27:20
+xrhawdc,206,student,12.,00:27:28
+xrhawdc,207,tutor,Remember what we said about the denominator. What happens here?,00:27:36
+xrhawdc,208,student,75.,00:27:44
+xrhawdc,209,tutor,Let's try a similar one. What is 30 times 4?,00:27:52
+xrhawdc,210,student,Is it 4?,00:28:00
+xrhawdc,211,tutor,"Good thinking. Now, is that answer reasonable?",00:28:08
+xrhawdc,212,student,I'm not sure. Is it because 10 has one zero?,00:28:16
+xrhawdc,213,tutor,"Good thinking. Now, is that answer reasonable?",00:28:24
+xrhawdc,214,student,Okay,00:28:32
+xrhawdc,215,tutor,Let's try a similar one. What is 30 times 4?,00:28:40
+xrhawdc,216,student,Maybe I should compare them as decimals first.,00:28:48
+xrhawdc,217,tutor,What do you notice about these two numbers?,00:28:56
+xrhawdc,218,student,Okay,00:29:04
+xrhawdc,219,tutor,"Good thinking. Now, is that answer reasonable?",00:29:12
+xrhawdc,220,student,I think we need to make the bottom numbers the same before we add.,00:29:20
+xrhawdc,221,tutor,What do you notice about these two numbers?,00:29:28
+xrhawdc,222,student,"I would divide it by 100, so the answer is 3.45.",00:29:36
+xrhawdc,223,tutor,So let me ask you first. Do you know what a fact family is?,00:29:44
+xrhawdc,224,student,Half?,00:29:52
+xrhawdc,225,tutor,Can you talk me through how you got that answer?,00:30:00
+xrhawdc,226,student,I'm not sure. Is it because 10 has one zero?,00:30:08
+xrhawdc,227,tutor,What do you notice about these two numbers?,00:30:16
+xrhawdc,228,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:30:24
+xrhawdc,229,tutor,Can you talk me through how you got that answer?,00:30:32
+xrhawdc,230,student,6?,00:30:40
+xrhawdc,231,tutor,"Good thinking. Now, is that answer reasonable?",00:30:48
+xrhawdc,232,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:30:56
+xrhawdc,233,tutor,Can you talk me through how you got that answer?,00:31:04
+xrhawdc,234,student,I think we need to make the bottom numbers the same before we add.,00:31:12
+xrhawdc,235,tutor,"Good thinking. Now, is that answer reasonable?",00:31:20
+xrhawdc,236,student,I'm not sure. Is it because 10 has one zero?,00:31:28
+xrhawdc,237,tutor,Let's try a similar one. What is 30 times 4?,00:31:36
+xrhawdc,238,student,I'm not sure. Is it because 10 has one zero?,00:31:44
+xrhawdc,239,tutor,Can you talk me through how you got that answer?,00:31:52
+xrhawdc,240,student,"I would divide it by 100, so the answer is 3.45.",00:32:00
+xrhawdc,241,tutor,"Good thinking. Now, is that answer reasonable?",00:32:08
+xrhawdc,242,student,"I would divide it by 100, so the answer is 3.45.",00:32:16
+xrhawdc,243,tutor,"Good thinking. Now, is that answer reasonable?",00:32:24
+xrhawdc,244,student,I'm not sure. Is it because 10 has one zero?,00:32:32
+xrhawdc,245,tutor,Let's try a similar one. What is 30 times 4?,00:32:40
+xrhawdc,246,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:32:48
+xrhawdc,247,tutor,What do you notice about these two numbers?,00:32:56
+xrhawdc,248,student,Maybe I should compare them as decimals first.,00:33:04
+xrhawdc,249,tutor,"Good thinking. Now, is that answer reasonable?",00:33:12
+xrhawdc,250,student,Is it 4?,00:33:20
+xrhawdc,251,tutor,Let's try a similar one. What is 30 times 4?,00:33:28
+xrhawdc,252,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:33:36
+xrhawdc,253,tutor,Can you talk me through how you got that answer?,00:33:44
+xrhawdc,254,student,Maybe I should compare them as decimals first.,00:33:52
+xrhawdc,255,tutor,Let's try a similar one. What is 30 times 4?,00:34:00
+xrhawdc,256,student,No,00:34:08
+xrhawdc,257,tutor,Can you talk me through how you got that answer?,00:34:16
+xrhawdc,258,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:34:24
+xrhawdc,259,tutor,Remember what we said about the denominator. What happens here?,00:34:32
+xrhawdc,260,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:34:40
+xrhawdc,261,tutor,Remember what we said about the denominator. What happens here?,00:34:48
+xrhawdc,262,student,I think we need to make the bottom numbers the same before we add.,00:34:56
+xrhawdc,263,tutor,Remember what we said about the denominator. What happens here?,00:35:04
+xrhawdc,264,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:35:12
+xrhawdc,265,tutor,What do you notice about these two numbers?,00:35:20
+xrhawdc,266,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:35:28
+xrhawdc,267,tutor,So let me ask you first. Do you know what a fact family is?,00:35:36
+xrhawdc,268,student,I'm not sure. Is it because 10 has one zero?,00:35:44
+xrhawdc,269,tutor,So let me ask you first. Do you know what a fact family is?,00:35:52
+xrhawdc,270,student,6?,00:36:00
+xrhawdc,271,tutor,What do you notice about these two numbers?,00:36:08
+xrhawdc,272,student,I'm not sure. Is it because 10 has one zero?,00:36:16
+xrhawdc,273,tutor,Let's try a similar one. What is 30 times 4?,00:36:24
+xrhawdc,274,student,Yes,00:36:32
+xrhawdc,275,tutor,What do you notice about these two numbers?,00:36:40
+xrhawdc,276,student,Maybe I should compare them as decimals first.,00:36:48
+xrhawdc,277,tutor,Remember what we said about the denominator. What happens here?,00:36:56
+xrhawdc,278,student,Half?,00:37:04
+xrhawdc,279,tutor,Remember what we said about the denominator. What happens here?,00:37:12
+xrhawdc,280,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:37:20
+xrhawdc,281,tutor,Let's try a similar one. What is 30 times 4?,00:37:28
+xrhawdc,282,student,I think we need to make the bottom numbers the same before we add.,00:37:36
+xrhawdc,283,tutor,"Good thinking. Now, is that answer reasonable?",00:37:44
+xrhawdc,284,student,"I would divide it by 100, so the answer is 3.45.",00:37:52
+xrhawdc,285,tutor,Uh-huh. And what would you do next?,00:38:00
+xrhawdc,286,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:38:08
+xrhawdc,287,tutor,Let's try a similar one. What is 30 times 4?,00:38:16
+xrhawdc,288,student,I think we need to make the bottom numbers the same before we add.,00:38:24
+xrhawdc,289,tutor,Can you talk me through how you got that answer?,00:38:32
+xrhawdc,290,student,"I would divide it by 100, so the answer is 3.45.",00:38:40
+xrhawdc,291,tutor,Remember what we said about the denominator. What happens here?,00:38:48
+xrhawdc,292,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:38:56
+xrhawdc,293,tutor,So let me ask you first. Do you know what a fact family is?,00:39:04
+xrhawdc,294,student,I'm not sure. Is it because 10 has one zero?,00:39:12
+xrhawdc,295,tutor,Uh-huh. And what would you do next?,00:39:20
+xrhawdc,296,student,I think we need to make the bottom numbers the same before we add.,00:39:28
+xrhawdc,297,tutor,Can you talk me through how you got that answer?,00:39:36
+xrhawdc,298,student,I'm not sure. Is it because 10 has one zero?,00:39:44
+xrhawdc,299,tutor,So let me ask you first. Do you know what a fact family is?,00:39:52
+xrhawdc,300,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:40:00
+xrhawdc,301,tutor,Let's try a similar one. What is 30 times 4?,00:40:08
+xrhawdc,302,student,"I would divide it by 100, so the answer is 3.45.",00:40:16
+xrhawdc,303,tutor,Uh-huh. And what would you do next?,00:40:24
+xrhawdc,304,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:40:32
+xrhawdc,305,tutor,"Good thinking. Now, is that answer reasonable?",00:40:40
+xrhawdc,306,student,Maybe I should compare them as decimals first.,00:40:48
+xrhawdc,307,tutor,Remember what we said about the denominator. What happens here?,00:40:56
+xrhawdc,308,student,"I would divide it by 100, so the answer is 3.45.",00:41:04
+xrhawdc,309,tutor,Uh-huh. And what would you do next?,00:41:12
+xrhawdc,310,student,Yes,00:41:20
+xrhawdc,311,tutor,So let me ask you first. Do you know what a fact family is?,00:41:28
+xrhawdc,312,student,I think we need to make the bottom numbers the same before we add.,00:41:36
+xrhawdc,313,tutor,Can you talk me through how you got that answer?,00:41:44
+xrhawdc,314,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:41:52
+xrhawdc,315,tutor,Let's try a similar one. What is 30 times 4?,00:42:00
+xrhawdc,316,student,75.,00:42:08
+xrhawdc,317,tutor,Let's try a similar one. What is 30 times 4?,00:42:16
+xrhawdc,318,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:42:24
+xrhawdc,319,tutor,Let's try a similar one. What is 30 times 4?,00:42:32
+xrhawdc,320,student,Maybe I should compare them as decimals first.,00:42:40
+xrhawdc,321,tutor,So let me ask you first. Do you know what a fact family is?,00:42:48
+xrhawdc,322,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:42:56
+xrhawdc,323,tutor,"Good thinking. Now, is that answer reasonable?",00:43:04
+xrhawdc,324,student,Okay,00:43:12
+xrhawdc,325,tutor,Uh-huh. And what would you do next?,00:43:20
+xrhawdc,326,student,I'm not sure. Is it because 10 has one zero?,00:43:28
+xrhawdc,327,tutor,Remember what we said about the denominator. What happens here?,00:43:36
+xrhawdc,328,student,"I would divide it by 100, so the answer is 3.45.",00:43:44
+xrhawdc,329,tutor,"Good thinking. Now, is that answer reasonable?",00:43:52
+xrhawdc,330,student,I'm not sure. Is it because 10 has one zero?,00:44:00
+xrhawdc,331,tutor,What do you notice about these two numbers?,00:44:08
+xrhawdc,332,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:44:16
+xrhawdc,333,tutor,So let me ask you first. Do you know what a fact family is?,00:44:24
+xrhawdc,334,student,I'm not sure. Is it because 10 has one zero?,00:44:32
+xrhawdc,335,tutor,"Good thinking. Now, is that answer reasonable?",00:44:40
+xrhawdc,336,student,300?,00:44:48
+xrhawdc,337,tutor,Remember what we said about the denominator. What happens here?,00:44:56
+xrhawdc,338,student,Maybe I should compare them as decimals first.,00:45:04
+xrhawdc,339,tutor,Remember what we said about the denominator. What happens here?,00:45:12
+xrhawdc,340,student,I think we need to make the bottom numbers the same before we add.,00:45:20
+xrhawdc,341,tutor,Uh-huh. And what would you do next?,00:45:28
+xrhawdc,342,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:45:36
+xrhawdc,343,tutor,What do you notice about these two numbers?,00:45:44
+xrhawdc,344,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:45:52
+xrhawdc,345,tutor,Can you talk me through how you got that answer?,00:46:00
+xrhawdc,346,student,Okay,00:46:08
+xrhawdc,347,tutor,Can you talk me through how you got that answer?,00:46:16
+xrhawdc,348,student,75.,00:46:24
+xrhawdc,349,tutor,Uh-huh. And what would you do next?,00:46:32
+xrhawdc,350,student,Maybe I should compare them as decimals first.,00:46:40
+xrhawdc,351,tutor,Remember what we said about the denominator. What happens here?,00:46:48
+xrhawdc,352,student,75.,00:46:56
+xrhawdc,353,tutor,Let's try a similar one. What is 30 times 4?,00:47:04
+xrhawdc,354,student,I'm not sure. Is it because 10 has one zero?,00:47:12
+xrhawdc,355,tutor,Uh-huh. And what would you do next?,00:47:20
+xrhawdc,356,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:47:28
+xrhawdc,357,tutor,Uh-huh. And what would you do next?,00:47:36
+xrhawdc,358,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:47:44
+xrhawdc,359,tutor,Let's try a similar one. What is 30 times 4?,00:47:52
+xrhawdc,360,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:48:00
+xrhawdc,361,tutor,Uh-huh. And what would you do next?,00:48:08
+xrhawdc,362,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:48:16
+xrhawdc,363,tutor,Let's try a similar one. What is 30 times 4?,00:48:24
+xrhawdc,364,student,I think we need to make the bottom numbers the same before we add.,00:48:32
+xrhawdc,365,tutor,Uh-huh. And what would you do next?,00:48:40
+xrhawdc,366,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:48:48
+xrhawdc,367,tutor,So let me ask you first. Do you know what a fact family is?,00:48:56
+xrhawdc,368,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:49:04
+xrhawdc,369,tutor,Uh-huh. And what would you do next?,00:49:12
+xrhawdc,370,student,Maybe I should compare them as decimals first.,00:49:20
+xrhawdc,371,tutor,"Good thinking. Now, is that answer reasonable?",00:49:28
+xrhawdc,372,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:49:36
+xrhawdc,373,tutor,What do you notice about these two numbers?,00:49:44
+xrhawdc,374,student,"I would divide it by 100, so the answer is 3.45.",00:49:52
+xrhawdc,375,tutor,So let me ask you first. Do you know what a fact family is?,00:50:00
+xrhawdc,376,student,12.,00:50:08
+xrhawdc,377,tutor,"Good thinking. Now, is that answer reasonable?",00:50:16
+xrhawdc,378,student,"I would divide it by 100, so the answer is 3.45.",00:50:24
+xrhawdc,379,tutor,What do you notice about these two numbers?,00:50:32
+xrhawdc,380,student,Is it 4?,00:50:40
+xrhawdc,381,tutor,Remember what we said about the denominator. What happens here?,00:50:48
+xrhawdc,382,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:50:56
+xrhawdc,383,tutor,What do you notice about these two numbers?,00:51:04
+xrhawdc,384,student,"I would divide it by 100, so the answer is 3.45.",00:51:12
+xrhawdc,385,tutor,Let's try a similar one. What is 30 times 4?,00:51:20
+xrhawdc,386,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:51:28
+xrhawdc,387,tutor,Can you talk me through how you got that answer?,00:51:36
+xrhawdc,388,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:51:44
+xrhawdc,389,tutor,Uh-huh. And what would you do next?,00:51:52
+xrhawdc,390,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:52:00
+xrhawdc,391,tutor,Remember what we said about the denominator. What happens here?,00:52:08
+xrhawdc,392,student,Half?,00:52:16
+xrhawdc,393,tutor,What do you notice about these two numbers?,00:52:24
+xrhawdc,394,student,"I would divide it by 100, so the answer is 3.45.",00:52:32
+xrhawdc,395,tutor,"Good thinking. Now, is that answer reasonable?",00:52:40
+xrhawdc,396,student,"I would divide it by 100, so the answer is 3.45.",00:52:48
+xrhawdc,397,tutor,Remember what we said about the denominator. What happens here?,00:52:56
+xrhawdc,398,student,I think we need to make the bottom numbers the same before we add.,00:53:04
+xrhawdc,399,tutor,Let's try a similar one. What is 30 times 4?,00:53:12
+xrhawdc,400,student,Maybe I should compare them as decimals first.,00:53:20
+xrhawdc,401,tutor,Uh-huh. And what would you do next?,00:53:28
+xrhawdc,402,student,I'm not sure. Is it because 10 has one zero?,00:53:36
+xrhawdc,403,tutor,So let me ask you first. Do you know what a fact family is?,00:53:44
+xrhawdc,404,student,I think we need to make the bottom numbers the same before we add.,00:53:52
+xrhawdc,405,tutor,What do you notice about these two numbers?,00:54:00
+xrhawdc,406,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:54:08
+xrhawdc,407,tutor,Let's try a similar one. What is 30 times 4?,00:54:16
+xrhawdc,408,student,I'm not sure. Is it because 10 has one zero?,00:54:24
+xrhawdc,409,tutor,"Good thinking. Now, is that answer reasonable?",00:54:32
+xrhawdc,410,student,I think we need to make the bottom numbers the same before we add.,00:54:40
+xrhawdc,411,tutor,Can you talk me through how you got that answer?,00:54:48
+xrhawdc,412,student,"I would divide it by 100, so the answer is 3.45.",00:54:56
+xrhawdc,413,tutor,Let's try a similar one. What is 30 times 4?,00:55:04
+xrhawdc,414,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:55:12
+xrhawdc,415,tutor,Remember what we said about the denominator. What happens here?,00:55:20
+xrhawdc,416,student,Half?,00:55:28
+xrhawdc,417,tutor,Can you talk me through how you got that answer?,00:55:36
+xrhawdc,418,student,I'm not sure. Is it because 10 has one zero?,00:55:44
+xrhawdc,419,tutor,Can you talk me through how you got that answer?,00:55:52
+xrhawdc,420,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:56:00
+xrhawdc,421,tutor,Can you talk me through how you got that answer?,00:56:08
+xrhawdc,422,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:56:16
+xrhawdc,423,tutor,Let's try a similar one. What is 30 times 4?,00:56:24
+xrhawdc,424,student,"I would divide it by 100, so the answer is 3.45.",00:56:32
+xrhawdc,425,tutor,Uh-huh. And what would you do next?,00:56:40
+xrhawdc,426,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:56:48
+xrhawdc,427,tutor,So let me ask you first. Do you know what a fact family is?,00:56:56
+xrhawdc,428,student,I think we need to make the bottom numbers the same before we add.,00:57:04
+xrhawdc,429,tutor,So let me ask you first. Do you know what a fact family is?,00:57:12
+xrhawdc,430,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:57:20
+xrhawdc,431,tutor,Let's try a similar one. What is 30 times 4?,00:57:28
+xrhawdc,432,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:57:36
+xrhawdc,433,tutor,Remember what we said about the denominator. What happens here?,00:57:44
+xrhawdc,434,student,Maybe I should compare them as decimals first.,00:57:52
+xrhawdc,435,tutor,So let me ask you first. Do you know what a fact family is?,00:58:00
+xrhawdc,436,student,I think we need to make the bottom numbers the same before we add.,00:58:08
+xrhawdc,437,tutor,"Good thinking. Now, is that answer reasonable?",00:58:16
+xrhawdc,438,student,Maybe I should compare them as decimals first.,00:58:24
+xrhawdc,439,tutor,Let's try a similar one. What is 30 times 4?,00:58:32
+xrhawdc,440,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:58:40
+xrhawdc,441,tutor,So let me ask you first. Do you know what a fact family is?,00:58:48
+xrhawdc,442,student,6?,00:58:56
+xrhawdc,443,tutor,So let me ask you first. Do you know what a fact family is?,00:59:04
+xrhawdc,444,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:59:12
+xrhawdc,445,tutor,So let me ask you first. Do you know what a fact family is?,00:59:20
+xrhawdc,446,student,6?,00:59:28
+xrhawdc,447,tutor,Can you talk me through how you got that answer?,00:59:36
+xrhawdc,448,student,Maybe I should compare them as decimals first.,00:59:44
+xrhawdc,449,tutor,Uh-huh. And what would you do next?,00:59:52
+xrhawdc,450,student,Half?,01:00:00
+xrhawdc,451,tutor,"Good thinking. Now, is that answer reasonable?",01:00:08
+xrhawdc,452,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",01:00:16
+xrhawdc,453,tutor,"Good thinking. Now, is that answer reasonable?",01:00:24
+xrhawdc,454,student,I'm not sure. Is it because 10 has one zero?,01:00:32
+xrhawdc,455,tutor,Uh-huh. And what would you do next?,01:00:40
+xrhawdc,456,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",01:00:48
+xrhawdc,457,tutor,Uh-huh. And what would you do next?,01:00:56
+xrhawdc,458,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",01:01:04
+xrhawdc,459,tutor,Remember what we said about the denominator. What happens here?,01:01:12
+xrhawdc,460,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",01:01:20
+xrhawdc,461,tutor,Can you talk me through how you got that answer?,01:01:28
+xrhawdc,462,student,No,01:01:36
+xrhawdc,463,tutor,What do you notice about these two numbers?,01:01:44
+xrhawdc,464,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",01:01:52
+xrhawdc,465,tutor,Uh-huh. And what would you do next?,01:02:00
+xrhawdc,466,student,Yes,01:02:08
+xrhawdc,467,tutor,So let me ask you first. Do you know what a fact family is?,01:02:16
+xrhawdc,468,student,I think we need to make the bottom numbers the same before we add.,01:02:24
+xrhawdc,469,tutor,"Good thinking. Now, is that answer reasonable?",01:02:32
+xrhawdc,470,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",01:02:40
+xrhawdc,471,tutor,Can you talk me through how you got that answer?,01:02:48
+xrhawdc,472,student,I think we need to make the bottom numbers the same before we add.,01:02:56
+xrhawdc,473,tutor,So let me ask you first. Do you know what a fact family is?,01:03:04
+xrhawdc,474,student,"Hmm, the 4 is in the tens column so it means 40 really.",01:03:12
+xrhawdc,475,tutor,What do you notice about these two numbers?,01:03:20
+xrhawdc,476,student,I think we need to make the bottom numbers the same before we add.,01:03:28
+xrhawdc,477,tutor,What do you notice about these two numbers?,01:03:36
+xrhawdc,478,student,300?,01:03:44
+xrhawdc,479,tutor,What do you notice about these two numbers?,01:03:52
+xrhawdc,480,student,6?,01:04:00
+xrhawdc,481,tutor,"Good thinking. Now, is that answer reasonable?",01:04:08
+xrhawdc,482,student,I'm not sure. Is it because 10 has one zero?,01:04:16
+xrhawdc,483,tutor,Can you talk me through how you got that answer?,01:04:24
+xrhawdc,484,student,"Hmm, the 4 is in the tens column so it means 40 really.",01:04:32
+xrhawdc,485,tutor,"Good thinking. Now, is that answer reasonable?",01:04:40
+xrhawdc,486,student,I think we need to make the bottom numbers the same before we add.,01:04:48
+xrhawdc,487,tutor,Let's try a similar one. What is 30 times 4?,01:04:56
+xrhawdc,488,student,No,01:05:04
+xrhawdc,489,tutor,Remember what we said about the denominator. What happens here?,01:05:12
+xrhawdc,490,student,Maybe I should compare them as decimals first.,01:05:20
+xrhawdc,491,tutor,Uh-huh. And what would you do next?,01:05:28
+xrhawdc,492,student,Maybe I should compare them as decimals first.,01:05:36
+xrhawdc,493,tutor,"Good thinking. Now, is that answer reasonable?",01:05:44
+xrhawdc,494,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",01:05:52
+xrhawdc,495,tutor,Let's try a similar one. What is 30 times 4?,01:06:00
+xrhawdc,496,student,I'm not sure. Is it because 10 has one zero?,01:06:08
+xrhawdc,497,tutor,What do you notice about these two numbers?,01:06:16
+xrhawdc,498,student,"Hmm, the 4 is in the tens column so it means 40 really.",01:06:24
+xrhawdc,499,tutor,Uh-huh. And what would you do next?,01:06:32
+xrhawdc,500,student,I'm not sure. Is it because 10 has one zero?,01:06:40
+xrhawdc,501,tutor,Can you talk me through how you got that answer?,01:06:48
+xrhawdc,502,student,I think we need to make the bottom numbers the same before we add.,01:06:56
+xrhawdc,503,tutor,"Good thinking. Now, is that answer reasonable?",01:07:04
+xrhawdc,504,student,No,01:07:12
+xrhawdc,505,tutor,What do you notice about these two numbers?,01:07:20
+xrhawdc,506,student,"Hmm, the 4 is in the tens column so it means 40 really.",01:07:28
+xrhawdc,507,tutor,Uh-huh. And what would you do next?,01:07:36
+xrhawdc,508,student,Is it 4?,01:07:44
+xrhawdc,509,tutor,So let me ask you first. Do you know what a fact family is?,01:07:52
+xrhawdc,510,student,"Hmm, the 4 is in the tens column so it means 40 really.",01:08:00
+xrhawdc,511,tutor,Remember what we said about the denominator. What happens here?,01:08:08
+xrhawdc,512,student,I think we need to make the bottom numbers the same before we add.,01:08:16
+xrhawdc,513,tutor,Remember what we said about the denominator. What happens here?,01:08:24
+xrhawdc,514,student,Maybe I should compare them as decimals first.,01:08:32
+xrhawdc,515,tutor,What do you notice about these two numbers?,01:08:40
+xrhawdc,516,student,Maybe I should compare them as decimals first.,01:08:48
+xrhawdc,517,tutor,Remember what we said about the denominator. What happens here?,01:08:56
+xrhawdc,518,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",01:09:04
+xrhawdc,519,tutor,Remember what we said about the denominator. What happens here?,01:09:12
+xrhawdc,520,student,75.,01:09:20
+xrhawdc,521,tutor,So let me ask you first. Do you know what a fact family is?,01:09:28
+xrhawdc,522,student,Maybe I should compare them as decimals first.,01:09:36
+xrhawdc,523,tutor,Let's try a similar one. What is 30 times 4?,01:09:44
+xrhawdc,524,student,"I would divide it by 100, so the answer is 3.45.",01:09:52
+xrhawdc,525,tutor,Can you talk me through how you got that answer?,01:10:00
+xrhawdc,526,student,Maybe I should compare them as decimals first.,01:10:08
+xrhawdc,527,tutor,Remember what we said about the denominator. What happens here?,01:10:16
+xrhawdc,528,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",01:10:24
+xrhawdc,529,tutor,What do you notice about these two numbers?,01:10:32
+xrhawdc,530,student,I'm not sure. Is it because 10 has one zero?,01:10:40
+xrhawdc,531,tutor,Let's try a similar one. What is 30 times 4?,01:10:48
+xrhawdc,532,student,"Hmm, the 4 is in the tens column so it means 40 really.",01:10:56
+xrhawdc,533,tutor,So let me ask you first. Do you know what a fact family is?,01:11:04
+xrhawdc,534,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",01:11:12
+xrhawdc,535,tutor,"Good thinking. Now, is that answer reasonable?",01:11:20
+xrhawdc,536,student,"Hmm, the 4 is in the tens column so it means 40 really.",01:11:28
+xrhawdc,537,tutor,"Good thinking. Now, is that answer reasonable?",01:11:36
+xrhawdc,538,student,Yes,01:11:44
+xrhawdc,539,tutor,Remember what we said about the denominator. What happens here?,01:11:52
+xrhawdc,540,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",01:12:00
+xrhawdc,541,tutor,Remember what we said about the denominator. What happens here?,01:12:08
+xrhawdc,542,student,"Hmm, the 4 is in the tens column so it means 40 really.",01:12:16
+xrhawdc,543,tutor,"Good thinking. Now, is that answer reasonable?",01:12:24
+xrhawdc,544,student,"Hmm, the 4 is in the tens column so it means 40 really.",01:12:32
+xrhawdc,545,tutor,So let me ask you first. Do you know what a fact family is?,01:12:40
+xrhawdc,546,student,Maybe I should compare them as decimals first.,01:12:48
+xrhawdc,547,tutor,"Good thinking. Now, is that answer reasonable?",01:12:56
+xrhawdc,548,student,12.,01:13:04
+xrhawdc,549,tutor,So let me ask you first. Do you know what a fact family is?,01:13:12
+xrhawdc,550,student,"I would divide it by 100, so the answer is 3.45.",01:13:20
+xrhawdc,551,tutor,"Good thinking. Now, is that answer reasonable?",01:13:28
+xrhawdc,552,student,I think we need to make the bottom numbers the same before we add.,01:13:36
+xrhawdc,553,tutor,Uh-huh. And what would you do next?,01:13:44
+xrhawdc,554,student,"I would divide it by 100, so the answer is 3.45.",01:13:52
+xrhawdc,555,tutor,"Good thinking. Now, is that answer reasonable?",01:14:00
+xrhawdc,556,student,"I would divide it by 100, so the answer is 3.45.",01:14:08
+xrhawdc,557,tutor,Let's try a similar one. What is 30 times 4?,01:14:16
+xrhawdc,558,student,"Hmm, the 4 is in the tens column so it means 40 really.",01:14:24
+xrhawdc,559,tutor,Can you talk me through how you got that answer?,01:14:32
+xrhawdc,560,student,75.,01:14:40
+xrhawdc,561,tutor,Uh-huh. And what would you do next?,01:14:48
+xrhawdc,562,student,No,01:14:56
+xrhawdc,563,tutor,Uh-huh. And what would you do next?,01:15:04
+xrhawdc,564,student,"Hmm, the 4 is in the tens column so it means 40 really.",01:15:12
+xrhawdc,565,tutor,"Good thinking. Now, is that answer reasonable?",01:15:20
+xrhawdc,566,student,Okay,01:15:28
+xrhawdc,567,tutor,Let's try a similar one. What is 30 times 4?,01:15:36
+xrhawdc,568,student,I think we need to make the bottom numbers the same before we add.,01:15:44
+xrhawdc,569,tutor,So let me ask you first. Do you know what a fact family is?,01:15:52
+xrhawdc,570,student,Half?,01:16:00
+xrhawdc,571,tutor,Can you talk me through how you got that answer?,01:16:08
+xrhawdc,572,student,6?,01:16:16
+xrhawdc,573,tutor,Can you talk me through how you got that answer?,01:16:24
+xrhawdc,574,student,"I would divide it by 100, so the answer is 3.45.",01:16:32
+xrhawdc,575,tutor,So let me ask you first. Do you know what a fact family is?,01:16:40
+xrhawdc,576,student,No,01:16:48
+xrhawdc,577,tutor,Let's try a similar one. What is 30 times 4?,01:16:56
+xrhawdc,578,student,Maybe I should compare them as decimals first.,01:17:04
+xrhawdc,579,tutor,So let me ask you first. Do you know what a fact family is?,01:17:12
+xrhawdc,580,student,"I would divide it by 100, so the answer is 3.45.",01:17:20
+xrhawdc,581,tutor,What do you notice about these two numbers?,01:17:28
+xrhawdc,582,student,12.,01:17:36
+xrhawdc,583,tutor,So let me ask you first. Do you know what a fact family is?,01:17:44
+xrhawdc,584,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",01:17:52
+xrhawdc,585,tutor,Let's try a similar one. What is 30 times 4?,01:18:00
+xrhawdc,586,student,I think we need to make the bottom numbers the same before we add.,01:18:08
+xrhawdc,587,tutor,Can you talk me through how you got that answer?,01:18:16
+xrhawdc,588,student,Maybe I should compare them as decimals first.,01:18:24
+xrhawdc,589,tutor,What do you notice about these two numbers?,01:18:32
+xrhawdc,590,student,I'm not sure. Is it because 10 has one zero?,01:18:40
+xrhawdc,591,tutor,So let me ask you first. Do you know what a fact family is?,01:18:48
+xrhawdc,592,student,75.,01:18:56
+xrhawdc,593,tutor,Remember what we said about the denominator. What happens here?,01:19:04
+xrhawdc,594,student,"Hmm, the 4 is in the tens column so it means 40 really.",01:19:12
+xrhawdc,595,tutor,So let me ask you first. Do you know what a fact family is?,01:19:20
+xrhawdc,596,student,"I would divide it by 100, so the answer is 3.45.",01:19:28
+xrhawdc,597,tutor,"Good thinking. Now, is that answer reasonable?",01:19:36
+xrhawdc,598,student,"I would divide it by 100, so the answer is 3.45.",01:19:44
+xrhawdc,599,tutor,So let me ask you first. Do you know what a fact family is?,01:19:52
+xrhawdc,600,student,Yes,01:20:00
+xrhawdc,601,tutor,So let me ask you first. Do you know what a fact family is?,01:20:08
+xrhawdc,602,student,I'm not sure. Is it because 10 has one zero?,01:20:16
+xrhawdc,603,tutor,"Good thinking. Now, is that answer reasonable?",01:20:24
+xrhawdc,604,student,Maybe I should compare them as decimals first.,01:20:32
+xrhawdc,605,tutor,What do you notice about these two numbers?,01:20:40
+xrhawdc,606,student,"I would divide it by 100, so the answer is 3.45.",01:20:48
+xrhawdc,607,tutor,So let me ask you first. Do you know what a fact family is?,01:20:56
+xrhawdc,608,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",01:21:04
+xrhawdc,609,tutor,Can you talk me through how you got that answer?,01:21:12
+xrhawdc,610,student,I think we need to make the bottom numbers the same before we add.,01:21:20
+xrhawdc,611,tutor,Can you talk me through how you got that answer?,01:21:28
+xrhawdc,612,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",01:21:36
+xrhawdc,613,tutor,Let's try a similar one. What is 30 times 4?,01:21:44
+xrhawdc,614,student,I'm not sure. Is it because 10 has one zero?,01:21:52
+xrhawdc,615,tutor,Remember what we said about the denominator. What happens here?,01:22:00
+xrhawdc,616,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",01:22:08
+xrhawdc,617,tutor,"Good thinking. Now, is that answer reasonable?",01:22:16
+xrhawdc,618,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",01:22:24
+xrhawdc,619,tutor,Uh-huh. And what would you do next?,01:22:32
+xrhawdc,620,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",01:22:40
+xrhawdc,621,tutor,What do you notice about these two numbers?,01:22:48
+xrhawdc,622,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",01:22:56
+xrhawdc,623,tutor,Can you talk me through how you got that answer?,01:23:04
+xrhawdc,624,student,I'm not sure. Is it because 10 has one zero?,01:23:12
+xrhawdc,625,tutor,Uh-huh. And what would you do next?,01:23:20
+xrhawdc,626,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",01:23:28
+xrhawdc,627,tutor,Can you talk me through how you got that answer?,01:23:36
+xrhawdc,628,tutor,Great work today. See you next time!,01:23:44

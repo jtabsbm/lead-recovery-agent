@@ -1,0 +1,437 @@
+session_id,utterance_id,role,content,timestamp
+sdigpuc,0,background,[unclear],00:00:00
+sdigpuc,1,tutor,"Hello, are you ready to get started today?",00:00:08
+sdigpuc,2,student,"Yes, I think so.",00:00:16
+sdigpuc,3,tutor,Uh-huh. And what would you do next?,00:00:24
+sdigpuc,4,student,Maybe I should compare them as decimals first.,00:00:32
+sdigpuc,5,tutor,"Good thinking. Now, is that answer reasonable?",00:00:40
+sdigpuc,6,student,Okay,00:00:48
+sdigpuc,7,tutor,Can you talk me through how you got that answer?,00:00:56
+sdigpuc,8,student,300?,00:01:04
+sdigpuc,9,tutor,Can you talk me through how you got that answer?,00:01:12
+sdigpuc,10,student,No,00:01:20
+sdigpuc,11,tutor,Let's try a similar one. What is 30 times 4?,00:01:28
+sdigpuc,12,student,I think we need to make the bottom numbers the same before we add.,00:01:36
+sdigpuc,13,tutor,What do you notice about these two numbers?,00:01:44
+sdigpuc,14,student,No,00:01:52
+sdigpuc,15,tutor,Uh-huh. And what would you do next?,00:02:00
+sdigpuc,16,student,I'm not sure. Is it because 10 has one zero?,00:02:08
+sdigpuc,17,tutor,What do you notice about these two numbers?,00:02:16
+sdigpuc,18,student,12.,00:02:24
+sdigpuc,19,tutor,Let's try a similar one. What is 30 times 4?,00:02:32
+sdigpuc,20,student,6?,00:02:40
+sdigpuc,21,tutor,Can you talk me through how you got that answer?,00:02:48
+sdigpuc,22,student,Maybe I should compare them as decimals first.,00:02:56
+sdigpuc,23,tutor,Can you talk me through how you got that answer?,00:03:04
+sdigpuc,24,student,I think we need to make the bottom numbers the same before we add.,00:03:12
+sdigpuc,25,tutor,Uh-huh. And what would you do next?,00:03:20
+sdigpuc,26,student,75.,00:03:28
+sdigpuc,27,tutor,Uh-huh. And what would you do next?,00:03:36
+sdigpuc,28,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:03:44
+sdigpuc,29,tutor,Can you talk me through how you got that answer?,00:03:52
+sdigpuc,30,student,I think we need to make the bottom numbers the same before we add.,00:04:00
+sdigpuc,31,tutor,Let's try a similar one. What is 30 times 4?,00:04:08
+sdigpuc,32,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:04:16
+sdigpuc,33,tutor,So let me ask you first. Do you know what a fact family is?,00:04:24
+sdigpuc,34,student,I think we need to make the bottom numbers the same before we add.,00:04:32
+sdigpuc,35,tutor,"Good thinking. Now, is that answer reasonable?",00:04:40
+sdigpuc,36,student,300?,00:04:48
+sdigpuc,37,tutor,So let me ask you first. Do you know what a fact family is?,00:04:56
+sdigpuc,38,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:05:04
+sdigpuc,39,tutor,Let's try a similar one. What is 30 times 4?,00:05:12
+sdigpuc,40,student,300?,00:05:20
+sdigpuc,41,tutor,What do you notice about these two numbers?,00:05:28
+sdigpuc,42,student,Maybe I should compare them as decimals first.,00:05:36
+sdigpuc,43,tutor,"Good thinking. Now, is that answer reasonable?",00:05:44
+sdigpuc,44,student,6?,00:05:52
+sdigpuc,45,tutor,Can you talk me through how you got that answer?,00:06:00
+sdigpuc,46,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:06:08
+sdigpuc,47,tutor,"Good thinking. Now, is that answer reasonable?",00:06:16
+sdigpuc,48,student,Maybe I should compare them as decimals first.,00:06:24
+sdigpuc,49,tutor,So let me ask you first. Do you know what a fact family is?,00:06:32
+sdigpuc,50,student,"I would divide it by 100, so the answer is 3.45.",00:06:40
+sdigpuc,51,tutor,What do you notice about these two numbers?,00:06:48
+sdigpuc,52,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:06:56
+sdigpuc,53,tutor,What do you notice about these two numbers?,00:07:04
+sdigpuc,54,student,"I would divide it by 100, so the answer is 3.45.",00:07:12
+sdigpuc,55,tutor,Can you talk me through how you got that answer?,00:07:20
+sdigpuc,56,student,300?,00:07:28
+sdigpuc,57,tutor,Let's try a similar one. What is 30 times 4?,00:07:36
+sdigpuc,58,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:07:44
+sdigpuc,59,tutor,What do you notice about these two numbers?,00:07:52
+sdigpuc,60,student,300?,00:08:00
+sdigpuc,61,tutor,So let me ask you first. Do you know what a fact family is?,00:08:08
+sdigpuc,62,student,Maybe I should compare them as decimals first.,00:08:16
+sdigpuc,63,tutor,"Good thinking. Now, is that answer reasonable?",00:08:24
+sdigpuc,64,student,Maybe I should compare them as decimals first.,00:08:32
+sdigpuc,65,tutor,Let's try a similar one. What is 30 times 4?,00:08:40
+sdigpuc,66,student,Maybe I should compare them as decimals first.,00:08:48
+sdigpuc,67,tutor,"Good thinking. Now, is that answer reasonable?",00:08:56
+sdigpuc,68,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:09:04
+sdigpuc,69,tutor,Can you talk me through how you got that answer?,00:09:12
+sdigpuc,70,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:09:20
+sdigpuc,71,tutor,Can you talk me through how you got that answer?,00:09:28
+sdigpuc,72,student,Maybe I should compare them as decimals first.,00:09:36
+sdigpuc,73,tutor,Remember what we said about the denominator. What happens here?,00:09:44
+sdigpuc,74,student,Okay,00:09:52
+sdigpuc,75,tutor,"Good thinking. Now, is that answer reasonable?",00:10:00
+sdigpuc,76,student,I'm not sure. Is it because 10 has one zero?,00:10:08
+sdigpuc,77,tutor,Let's try a similar one. What is 30 times 4?,00:10:16
+sdigpuc,78,student,"I would divide it by 100, so the answer is 3.45.",00:10:24
+sdigpuc,79,tutor,Let's try a similar one. What is 30 times 4?,00:10:32
+sdigpuc,80,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:10:40
+sdigpuc,81,tutor,So let me ask you first. Do you know what a fact family is?,00:10:48
+sdigpuc,82,student,Maybe I should compare them as decimals first.,00:10:56
+sdigpuc,83,tutor,Uh-huh. And what would you do next?,00:11:04
+sdigpuc,84,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:11:12
+sdigpuc,85,tutor,So let me ask you first. Do you know what a fact family is?,00:11:20
+sdigpuc,86,student,Okay,00:11:28
+sdigpuc,87,tutor,"Good thinking. Now, is that answer reasonable?",00:11:36
+sdigpuc,88,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:11:44
+sdigpuc,89,tutor,Uh-huh. And what would you do next?,00:11:52
+sdigpuc,90,student,Is it 4?,00:12:00
+sdigpuc,91,tutor,So let me ask you first. Do you know what a fact family is?,00:12:08
+sdigpuc,92,student,Is it 4?,00:12:16
+sdigpuc,93,tutor,What do you notice about these two numbers?,00:12:24
+sdigpuc,94,student,300?,00:12:32
+sdigpuc,95,tutor,Let's try a similar one. What is 30 times 4?,00:12:40
+sdigpuc,96,student,6?,00:12:48
+sdigpuc,97,tutor,What do you notice about these two numbers?,00:12:56
+sdigpuc,98,student,I'm not sure. Is it because 10 has one zero?,00:13:04
+sdigpuc,99,tutor,What do you notice about these two numbers?,00:13:12
+sdigpuc,100,student,Half?,00:13:20
+sdigpuc,101,tutor,"Good thinking. Now, is that answer reasonable?",00:13:28
+sdigpuc,102,student,Yes,00:13:36
+sdigpuc,103,tutor,Remember what we said about the denominator. What happens here?,00:13:44
+sdigpuc,104,student,300?,00:13:52
+sdigpuc,105,tutor,Uh-huh. And what would you do next?,00:14:00
+sdigpuc,106,student,12.,00:14:08
+sdigpuc,107,tutor,Uh-huh. And what would you do next?,00:14:16
+sdigpuc,108,student,75.,00:14:24
+sdigpuc,109,tutor,Let's try a similar one. What is 30 times 4?,00:14:32
+sdigpuc,110,student,300?,00:14:40
+sdigpuc,111,tutor,Let's try a similar one. What is 30 times 4?,00:14:48
+sdigpuc,112,student,"I would divide it by 100, so the answer is 3.45.",00:14:56
+sdigpuc,113,tutor,Can you talk me through how you got that answer?,00:15:04
+sdigpuc,114,student,Maybe I should compare them as decimals first.,00:15:12
+sdigpuc,115,tutor,So let me ask you first. Do you know what a fact family is?,00:15:20
+sdigpuc,116,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:15:28
+sdigpuc,117,tutor,What do you notice about these two numbers?,00:15:36
+sdigpuc,118,student,Is it 4?,00:15:44
+sdigpuc,119,tutor,"Good thinking. Now, is that answer reasonable?",00:15:52
+sdigpuc,120,student,"I would divide it by 100, so the answer is 3.45.",00:16:00
+sdigpuc,121,tutor,Let's try a similar one. What is 30 times 4?,00:16:08
+sdigpuc,122,student,6?,00:16:16
+sdigpuc,123,tutor,So let me ask you first. Do you know what a fact family is?,00:16:24
+sdigpuc,124,student,I think we need to make the bottom numbers the same before we add.,00:16:32
+sdigpuc,125,tutor,"Good thinking. Now, is that answer reasonable?",00:16:40
+sdigpuc,126,student,Yes,00:16:48
+sdigpuc,127,tutor,So let me ask you first. Do you know what a fact family is?,00:16:56
+sdigpuc,128,student,No,00:17:04
+sdigpuc,129,tutor,Can you talk me through how you got that answer?,00:17:12
+sdigpuc,130,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:17:20
+sdigpuc,131,tutor,"Good thinking. Now, is that answer reasonable?",00:17:28
+sdigpuc,132,student,No,00:17:36
+sdigpuc,133,tutor,Let's try a similar one. What is 30 times 4?,00:17:44
+sdigpuc,134,student,300?,00:17:52
+sdigpuc,135,tutor,Can you talk me through how you got that answer?,00:18:00
+sdigpuc,136,student,Maybe I should compare them as decimals first.,00:18:08
+sdigpuc,137,tutor,Uh-huh. And what would you do next?,00:18:16
+sdigpuc,138,student,I'm not sure. Is it because 10 has one zero?,00:18:24
+sdigpuc,139,tutor,Can you talk me through how you got that answer?,00:18:32
+sdigpuc,140,student,6?,00:18:40
+sdigpuc,141,tutor,"Good thinking. Now, is that answer reasonable?",00:18:48
+sdigpuc,142,student,"I would divide it by 100, so the answer is 3.45.",00:18:56
+sdigpuc,143,tutor,Remember what we said about the denominator. What happens here?,00:19:04
+sdigpuc,144,student,No,00:19:12
+sdigpuc,145,tutor,So let me ask you first. Do you know what a fact family is?,00:19:20
+sdigpuc,146,student,"I would divide it by 100, so the answer is 3.45.",00:19:28
+sdigpuc,147,tutor,Uh-huh. And what would you do next?,00:19:36
+sdigpuc,148,student,Maybe I should compare them as decimals first.,00:19:44
+sdigpuc,149,tutor,Uh-huh. And what would you do next?,00:19:52
+sdigpuc,150,student,I'm not sure. Is it because 10 has one zero?,00:20:00
+sdigpuc,151,tutor,Can you talk me through how you got that answer?,00:20:08
+sdigpuc,152,student,I'm not sure. Is it because 10 has one zero?,00:20:16
+sdigpuc,153,tutor,What do you notice about these two numbers?,00:20:24
+sdigpuc,154,student,6?,00:20:32
+sdigpuc,155,tutor,"Good thinking. Now, is that answer reasonable?",00:20:40
+sdigpuc,156,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:20:48
+sdigpuc,157,tutor,What do you notice about these two numbers?,00:20:56
+sdigpuc,158,student,Half?,00:21:04
+sdigpuc,159,tutor,Remember what we said about the denominator. What happens here?,00:21:12
+sdigpuc,160,student,75.,00:21:20
+sdigpuc,161,tutor,Uh-huh. And what would you do next?,00:21:28
+sdigpuc,162,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:21:36
+sdigpuc,163,tutor,Can you talk me through how you got that answer?,00:21:44
+sdigpuc,164,student,Half?,00:21:52
+sdigpuc,165,tutor,What do you notice about these two numbers?,00:22:00
+sdigpuc,166,student,Is it 4?,00:22:08
+sdigpuc,167,tutor,Remember what we said about the denominator. What happens here?,00:22:16
+sdigpuc,168,student,Yes,00:22:24
+sdigpuc,169,tutor,Uh-huh. And what would you do next?,00:22:32
+sdigpuc,170,student,Maybe I should compare them as decimals first.,00:22:40
+sdigpuc,171,tutor,Remember what we said about the denominator. What happens here?,00:22:48
+sdigpuc,172,student,"I would divide it by 100, so the answer is 3.45.",00:22:56
+sdigpuc,173,tutor,Can you talk me through how you got that answer?,00:23:04
+sdigpuc,174,student,I'm not sure. Is it because 10 has one zero?,00:23:12
+sdigpuc,175,tutor,So let me ask you first. Do you know what a fact family is?,00:23:20
+sdigpuc,176,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:23:28
+sdigpuc,177,tutor,Uh-huh. And what would you do next?,00:23:36
+sdigpuc,178,student,I think we need to make the bottom numbers the same before we add.,00:23:44
+sdigpuc,179,tutor,What do you notice about these two numbers?,00:23:52
+sdigpuc,180,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:24:00
+sdigpuc,181,tutor,Uh-huh. And what would you do next?,00:24:08
+sdigpuc,182,student,Half?,00:24:16
+sdigpuc,183,tutor,What do you notice about these two numbers?,00:24:24
+sdigpuc,184,student,I think we need to make the bottom numbers the same before we add.,00:24:32
+sdigpuc,185,tutor,Can you talk me through how you got that answer?,00:24:40
+sdigpuc,186,student,Half?,00:24:48
+sdigpuc,187,tutor,So let me ask you first. Do you know what a fact family is?,00:24:56
+sdigpuc,188,student,Is it 4?,00:25:04
+sdigpuc,189,tutor,Can you talk me through how you got that answer?,00:25:12
+sdigpuc,190,student,No,00:25:20
+sdigpuc,191,tutor,Can you talk me through how you got that answer?,00:25:28
+sdigpuc,192,student,Maybe I should compare them as decimals first.,00:25:36
+sdigpuc,193,tutor,"Good thinking. Now, is that answer reasonable?",00:25:44
+sdigpuc,194,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:25:52
+sdigpuc,195,tutor,Remember what we said about the denominator. What happens here?,00:26:00
+sdigpuc,196,student,75.,00:26:08
+sdigpuc,197,tutor,Uh-huh. And what would you do next?,00:26:16
+sdigpuc,198,student,75.,00:26:24
+sdigpuc,199,tutor,So let me ask you first. Do you know what a fact family is?,00:26:32
+sdigpuc,200,student,12.,00:26:40
+sdigpuc,201,tutor,So let me ask you first. Do you know what a fact family is?,00:26:48
+sdigpuc,202,student,300?,00:26:56
+sdigpuc,203,tutor,"Good thinking. Now, is that answer reasonable?",00:27:04
+sdigpuc,204,student,6?,00:27:12
+sdigpuc,205,tutor,Uh-huh. And what would you do next?,00:27:20
+sdigpuc,206,student,12.,00:27:28
+sdigpuc,207,tutor,Remember what we said about the denominator. What happens here?,00:27:36
+sdigpuc,208,student,No,00:27:44
+sdigpuc,209,tutor,"Good thinking. Now, is that answer reasonable?",00:27:52
+sdigpuc,210,student,12.,00:28:00
+sdigpuc,211,tutor,Uh-huh. And what would you do next?,00:28:08
+sdigpuc,212,student,"I would divide it by 100, so the answer is 3.45.",00:28:16
+sdigpuc,213,tutor,Uh-huh. And what would you do next?,00:28:24
+sdigpuc,214,student,Half?,00:28:32
+sdigpuc,215,tutor,Remember what we said about the denominator. What happens here?,00:28:40
+sdigpuc,216,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:28:48
+sdigpuc,217,tutor,Let's try a similar one. What is 30 times 4?,00:28:56
+sdigpuc,218,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:29:04
+sdigpuc,219,tutor,"Good thinking. Now, is that answer reasonable?",00:29:12
+sdigpuc,220,student,12.,00:29:20
+sdigpuc,221,tutor,Remember what we said about the denominator. What happens here?,00:29:28
+sdigpuc,222,student,Half?,00:29:36
+sdigpuc,223,tutor,Uh-huh. And what would you do next?,00:29:44
+sdigpuc,224,student,300?,00:29:52
+sdigpuc,225,tutor,Remember what we said about the denominator. What happens here?,00:30:00
+sdigpuc,226,student,12.,00:30:08
+sdigpuc,227,tutor,Remember what we said about the denominator. What happens here?,00:30:16
+sdigpuc,228,student,"I would divide it by 100, so the answer is 3.45.",00:30:24
+sdigpuc,229,tutor,Remember what we said about the denominator. What happens here?,00:30:32
+sdigpuc,230,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:30:40
+sdigpuc,231,tutor,Can you talk me through how you got that answer?,00:30:48
+sdigpuc,232,student,"I would divide it by 100, so the answer is 3.45.",00:30:56
+sdigpuc,233,tutor,Remember what we said about the denominator. What happens here?,00:31:04
+sdigpuc,234,student,75.,00:31:12
+sdigpuc,235,tutor,"Good thinking. Now, is that answer reasonable?",00:31:20
+sdigpuc,236,student,6?,00:31:28
+sdigpuc,237,tutor,"Good thinking. Now, is that answer reasonable?",00:31:36
+sdigpuc,238,student,Maybe I should compare them as decimals first.,00:31:44
+sdigpuc,239,tutor,So let me ask you first. Do you know what a fact family is?,00:31:52
+sdigpuc,240,student,No,00:32:00
+sdigpuc,241,tutor,Remember what we said about the denominator. What happens here?,00:32:08
+sdigpuc,242,student,Maybe I should compare them as decimals first.,00:32:16
+sdigpuc,243,tutor,What do you notice about these two numbers?,00:32:24
+sdigpuc,244,student,Maybe I should compare them as decimals first.,00:32:32
+sdigpuc,245,tutor,So let me ask you first. Do you know what a fact family is?,00:32:40
+sdigpuc,246,student,Is it 4?,00:32:48
+sdigpuc,247,tutor,What do you notice about these two numbers?,00:32:56
+sdigpuc,248,student,Maybe I should compare them as decimals first.,00:33:04
+sdigpuc,249,tutor,So let me ask you first. Do you know what a fact family is?,00:33:12
+sdigpuc,250,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:33:20
+sdigpuc,251,tutor,Remember what we said about the denominator. What happens here?,00:33:28
+sdigpuc,252,student,75.,00:33:36
+sdigpuc,253,tutor,Remember what we said about the denominator. What happens here?,00:33:44
+sdigpuc,254,student,No,00:33:52
+sdigpuc,255,tutor,Can you talk me through how you got that answer?,00:34:00
+sdigpuc,256,student,I'm not sure. Is it because 10 has one zero?,00:34:08
+sdigpuc,257,tutor,So let me ask you first. Do you know what a fact family is?,00:34:16
+sdigpuc,258,student,Is it 4?,00:34:24
+sdigpuc,259,tutor,Let's try a similar one. What is 30 times 4?,00:34:32
+sdigpuc,260,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:34:40
+sdigpuc,261,tutor,Uh-huh. And what would you do next?,00:34:48
+sdigpuc,262,student,I'm not sure. Is it because 10 has one zero?,00:34:56
+sdigpuc,263,tutor,Remember what we said about the denominator. What happens here?,00:35:04
+sdigpuc,264,student,I'm not sure. Is it because 10 has one zero?,00:35:12
+sdigpuc,265,tutor,Let's try a similar one. What is 30 times 4?,00:35:20
+sdigpuc,266,student,Is it 4?,00:35:28
+sdigpuc,267,tutor,"Good thinking. Now, is that answer reasonable?",00:35:36
+sdigpuc,268,student,Maybe I should compare them as decimals first.,00:35:44
+sdigpuc,269,tutor,What do you notice about these two numbers?,00:35:52
+sdigpuc,270,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:36:00
+sdigpuc,271,tutor,What do you notice about these two numbers?,00:36:08
+sdigpuc,272,student,75.,00:36:16
+sdigpuc,273,tutor,"Good thinking. Now, is that answer reasonable?",00:36:24
+sdigpuc,274,student,Half?,00:36:32
+sdigpuc,275,tutor,Can you talk me through how you got that answer?,00:36:40
+sdigpuc,276,student,75.,00:36:48
+sdigpuc,277,tutor,What do you notice about these two numbers?,00:36:56
+sdigpuc,278,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:37:04
+sdigpuc,279,tutor,Remember what we said about the denominator. What happens here?,00:37:12
+sdigpuc,280,student,I'm not sure. Is it because 10 has one zero?,00:37:20
+sdigpuc,281,tutor,So let me ask you first. Do you know what a fact family is?,00:37:28
+sdigpuc,282,student,I'm not sure. Is it because 10 has one zero?,00:37:36
+sdigpuc,283,tutor,Can you talk me through how you got that answer?,00:37:44
+sdigpuc,284,student,12.,00:37:52
+sdigpuc,285,tutor,So let me ask you first. Do you know what a fact family is?,00:38:00
+sdigpuc,286,student,I think we need to make the bottom numbers the same before we add.,00:38:08
+sdigpuc,287,tutor,What do you notice about these two numbers?,00:38:16
+sdigpuc,288,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:38:24
+sdigpuc,289,tutor,What do you notice about these two numbers?,00:38:32
+sdigpuc,290,student,No,00:38:40
+sdigpuc,291,tutor,Can you talk me through how you got that answer?,00:38:48
+sdigpuc,292,student,Okay,00:38:56
+sdigpuc,293,tutor,So let me ask you first. Do you know what a fact family is?,00:39:04
+sdigpuc,294,student,Maybe I should compare them as decimals first.,00:39:12
+sdigpuc,295,tutor,"Good thinking. Now, is that answer reasonable?",00:39:20
+sdigpuc,296,student,No,00:39:28
+sdigpuc,297,tutor,What do you notice about these two numbers?,00:39:36
+sdigpuc,298,student,Maybe I should compare them as decimals first.,00:39:44
+sdigpuc,299,tutor,Remember what we said about the denominator. What happens here?,00:39:52
+sdigpuc,300,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:40:00
+sdigpuc,301,tutor,Uh-huh. And what would you do next?,00:40:08
+sdigpuc,302,student,Maybe I should compare them as decimals first.,00:40:16
+sdigpuc,303,tutor,Remember what we said about the denominator. What happens here?,00:40:24
+sdigpuc,304,student,Is it 4?,00:40:32
+sdigpuc,305,tutor,Remember what we said about the denominator. What happens here?,00:40:40
+sdigpuc,306,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:40:48
+sdigpuc,307,tutor,So let me ask you first. Do you know what a fact family is?,00:40:56
+sdigpuc,308,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:41:04
+sdigpuc,309,tutor,Let's try a similar one. What is 30 times 4?,00:41:12
+sdigpuc,310,student,75.,00:41:20
+sdigpuc,311,tutor,Uh-huh. And what would you do next?,00:41:28
+sdigpuc,312,student,Okay,00:41:36
+sdigpuc,313,tutor,What do you notice about these two numbers?,00:41:44
+sdigpuc,314,student,Is it 4?,00:41:52
+sdigpuc,315,tutor,So let me ask you first. Do you know what a fact family is?,00:42:00
+sdigpuc,316,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:42:08
+sdigpuc,317,tutor,What do you notice about these two numbers?,00:42:16
+sdigpuc,318,student,Yes,00:42:24
+sdigpuc,319,tutor,Let's try a similar one. What is 30 times 4?,00:42:32
+sdigpuc,320,student,Is it 4?,00:42:40
+sdigpuc,321,tutor,So let me ask you first. Do you know what a fact family is?,00:42:48
+sdigpuc,322,student,I think we need to make the bottom numbers the same before we add.,00:42:56
+sdigpuc,323,tutor,Let's try a similar one. What is 30 times 4?,00:43:04
+sdigpuc,324,student,I think we need to make the bottom numbers the same before we add.,00:43:12
+sdigpuc,325,tutor,"Good thinking. Now, is that answer reasonable?",00:43:20
+sdigpuc,326,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:43:28
+sdigpuc,327,tutor,Remember what we said about the denominator. What happens here?,00:43:36
+sdigpuc,328,student,Half?,00:43:44
+sdigpuc,329,tutor,So let me ask you first. Do you know what a fact family is?,00:43:52
+sdigpuc,330,student,I think we need to make the bottom numbers the same before we add.,00:44:00
+sdigpuc,331,tutor,Remember what we said about the denominator. What happens here?,00:44:08
+sdigpuc,332,student,Half?,00:44:16
+sdigpuc,333,tutor,So let me ask you first. Do you know what a fact family is?,00:44:24
+sdigpuc,334,student,Half?,00:44:32
+sdigpuc,335,tutor,So let me ask you first. Do you know what a fact family is?,00:44:40
+sdigpuc,336,student,Half?,00:44:48
+sdigpuc,337,tutor,So let me ask you first. Do you know what a fact family is?,00:44:56
+sdigpuc,338,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:45:04
+sdigpuc,339,tutor,What do you notice about these two numbers?,00:45:12
+sdigpuc,340,student,Maybe I should compare them as decimals first.,00:45:20
+sdigpuc,341,tutor,So let me ask you first. Do you know what a fact family is?,00:45:28
+sdigpuc,342,student,Okay,00:45:36
+sdigpuc,343,tutor,"Good thinking. Now, is that answer reasonable?",00:45:44
+sdigpuc,344,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:45:52
+sdigpuc,345,tutor,Can you talk me through how you got that answer?,00:46:00
+sdigpuc,346,student,No,00:46:08
+sdigpuc,347,tutor,Uh-huh. And what would you do next?,00:46:16
+sdigpuc,348,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:46:24
+sdigpuc,349,tutor,"Good thinking. Now, is that answer reasonable?",00:46:32
+sdigpuc,350,student,Maybe I should compare them as decimals first.,00:46:40
+sdigpuc,351,tutor,Let's try a similar one. What is 30 times 4?,00:46:48
+sdigpuc,352,student,300?,00:46:56
+sdigpuc,353,tutor,What do you notice about these two numbers?,00:47:04
+sdigpuc,354,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:47:12
+sdigpuc,355,tutor,"Good thinking. Now, is that answer reasonable?",00:47:20
+sdigpuc,356,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:47:28
+sdigpuc,357,tutor,Let's try a similar one. What is 30 times 4?,00:47:36
+sdigpuc,358,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:47:44
+sdigpuc,359,tutor,What do you notice about these two numbers?,00:47:52
+sdigpuc,360,student,"I would divide it by 100, so the answer is 3.45.",00:48:00
+sdigpuc,361,tutor,"Good thinking. Now, is that answer reasonable?",00:48:08
+sdigpuc,362,student,Okay,00:48:16
+sdigpuc,363,tutor,What do you notice about these two numbers?,00:48:24
+sdigpuc,364,student,No,00:48:32
+sdigpuc,365,tutor,So let me ask you first. Do you know what a fact family is?,00:48:40
+sdigpuc,366,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:48:48
+sdigpuc,367,tutor,Uh-huh. And what would you do next?,00:48:56
+sdigpuc,368,student,75.,00:49:04
+sdigpuc,369,tutor,Can you talk me through how you got that answer?,00:49:12
+sdigpuc,370,student,Is it 4?,00:49:20
+sdigpuc,371,tutor,Can you talk me through how you got that answer?,00:49:28
+sdigpuc,372,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:49:36
+sdigpuc,373,tutor,"Good thinking. Now, is that answer reasonable?",00:49:44
+sdigpuc,374,student,"So 2000 plus 725 would be 2725, and then I take away 25 to get 2700.",00:49:52
+sdigpuc,375,tutor,So let me ask you first. Do you know what a fact family is?,00:50:00
+sdigpuc,376,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:50:08
+sdigpuc,377,tutor,Uh-huh. And what would you do next?,00:50:16
+sdigpuc,378,student,Yes,00:50:24
+sdigpuc,379,tutor,Remember what we said about the denominator. What happens here?,00:50:32
+sdigpuc,380,student,12.,00:50:40
+sdigpuc,381,tutor,"Good thinking. Now, is that answer reasonable?",00:50:48
+sdigpuc,382,student,300?,00:50:56
+sdigpuc,383,tutor,So let me ask you first. Do you know what a fact family is?,00:51:04
+sdigpuc,384,student,Is it 4?,00:51:12
+sdigpuc,385,tutor,"Good thinking. Now, is that answer reasonable?",00:51:20
+sdigpuc,386,student,I'm not sure. Is it because 10 has one zero?,00:51:28
+sdigpuc,387,tutor,Can you talk me through how you got that answer?,00:51:36
+sdigpuc,388,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:51:44
+sdigpuc,389,tutor,Can you talk me through how you got that answer?,00:51:52
+sdigpuc,390,student,300?,00:52:00
+sdigpuc,391,tutor,Let's try a similar one. What is 30 times 4?,00:52:08
+sdigpuc,392,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:52:16
+sdigpuc,393,tutor,So let me ask you first. Do you know what a fact family is?,00:52:24
+sdigpuc,394,student,I'm not sure. Is it because 10 has one zero?,00:52:32
+sdigpuc,395,tutor,So let me ask you first. Do you know what a fact family is?,00:52:40
+sdigpuc,396,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:52:48
+sdigpuc,397,tutor,Can you talk me through how you got that answer?,00:52:56
+sdigpuc,398,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:53:04
+sdigpuc,399,tutor,So let me ask you first. Do you know what a fact family is?,00:53:12
+sdigpuc,400,student,I think we need to make the bottom numbers the same before we add.,00:53:20
+sdigpuc,401,tutor,What do you notice about these two numbers?,00:53:28
+sdigpuc,402,student,"I would divide it by 100, so the answer is 3.45.",00:53:36
+sdigpuc,403,tutor,Remember what we said about the denominator. What happens here?,00:53:44
+sdigpuc,404,student,Maybe I should compare them as decimals first.,00:53:52
+sdigpuc,405,tutor,So let me ask you first. Do you know what a fact family is?,00:54:00
+sdigpuc,406,student,Yes,00:54:08
+sdigpuc,407,tutor,Can you talk me through how you got that answer?,00:54:16
+sdigpuc,408,student,Half?,00:54:24
+sdigpuc,409,tutor,Remember what we said about the denominator. What happens here?,00:54:32
+sdigpuc,410,student,300?,00:54:40
+sdigpuc,411,tutor,"Good thinking. Now, is that answer reasonable?",00:54:48
+sdigpuc,412,student,No,00:54:56
+sdigpuc,413,tutor,What do you notice about these two numbers?,00:55:04
+sdigpuc,414,student,I'm not sure. Is it because 10 has one zero?,00:55:12
+sdigpuc,415,tutor,"Good thinking. Now, is that answer reasonable?",00:55:20
+sdigpuc,416,student,Maybe I should compare them as decimals first.,00:55:28
+sdigpuc,417,tutor,"Good thinking. Now, is that answer reasonable?",00:55:36
+sdigpuc,418,student,"Wait, wait. So if I'm adding 25 onto it, then it becomes 95?",00:55:44
+sdigpuc,419,tutor,So let me ask you first. Do you know what a fact family is?,00:55:52
+sdigpuc,420,student,"Hmm, the 4 is in the tens column so it means 40 really.",00:56:00
+sdigpuc,421,tutor,Remember what we said about the denominator. What happens here?,00:56:08
+sdigpuc,422,student,No,00:56:16
+sdigpuc,423,tutor,Can you talk me through how you got that answer?,00:56:24
+sdigpuc,424,student,Yes,00:56:32
+sdigpuc,425,tutor,So let me ask you first. Do you know what a fact family is?,00:56:40
+sdigpuc,426,student,300?,00:56:48
+sdigpuc,427,tutor,So let me ask you first. Do you know what a fact family is?,00:56:56
+sdigpuc,428,student,Maybe I should compare them as decimals first.,00:57:04
+sdigpuc,429,tutor,"Good thinking. Now, is that answer reasonable?",00:57:12
+sdigpuc,430,student,6?,00:57:20
+sdigpuc,431,tutor,Remember what we said about the denominator. What happens here?,00:57:28
+sdigpuc,432,student,Maybe I should compare them as decimals first.,00:57:36
+sdigpuc,433,tutor,Remember what we said about the denominator. What happens here?,00:57:44
+sdigpuc,434,student,Maybe I should compare them as decimals first.,00:57:52
+sdigpuc,435,tutor,Great work today. See you next time!,00:58:00
