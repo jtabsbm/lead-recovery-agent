@@ -36,7 +36,7 @@ from enum import Enum
 # google-generativeai SDK is deprecated and older model names are retired;
 # direct REST with a current model is the durable path.
 
-GEMINI_MODELS = ["gemini-3-flash-preview", "gemini-flash-latest", "gemini-flash-lite-latest"]
+GEMINI_MODELS = ["gemini-3.5-flash", "gemini-3.5-flash-lite", "gemini-3-flash-preview", "gemini-flash-latest"]
 
 
 class GeminiClassifier:
@@ -97,7 +97,7 @@ class GeminiClassifier:
         for m in GEMINI_MODELS:
             self.model = m
             try:
-                out = self._call('Lead message: "hello are you open today?"', timeout=30)
+                out = self._call('Lead message: "hello are you open today?"', timeout=60)
                 if "category" in out:
                     return True
             except Exception:
