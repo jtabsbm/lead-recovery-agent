@@ -24,7 +24,7 @@ Every draft waits for owner review before sending — the AI runs the desk, huma
 This is a real operating business, not just a demo: 36 San Diego-area home-service companies contacted in week one, with a productized offer ($750 pilot / $2,500/mo core). The same engine powers three hackathon builds (Strands SDK edition, CockroachDB memory edition, OpenSearch retrieval edition).
 
 ## Repo
-https://github.com/TyrannicAwe/lead-recovery-agent — working classifier, demo dashboard, and the multi-platform architecture.
+https://github.com/jtabsbm/lead-recovery-agent — working classifier, demo dashboard, and the multi-platform architecture.
 
 ## Built with
 Gemini API (gemini-3-flash-preview), Python, Strands Agents SDK, CockroachDB, OpenSearch, Ollama (local fallback)

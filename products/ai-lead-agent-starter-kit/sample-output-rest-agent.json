@@ -1,0 +1,296 @@
+{
+  "report_date": "2026-08-15 07:54",
+  "business": "Northside HVAC",
+  "model": "gemini-3.5-flash-lite",
+  "summary": {
+    "total_leads": 12,
+    "by_category": {
+      "urgent_escalate": 3,
+      "quote_request": 4,
+      "missing_information": 1,
+      "complaint": 1,
+      "scheduling": 1,
+      "spam": 1,
+      "no_fit": 1
+    },
+    "by_status": {
+      "escalated": 4,
+      "responded": 5,
+      "booked": 1,
+      "spam": 1,
+      "closed": 1
+    },
+    "by_urgency": {
+      "emergency": 3,
+      "normal": 3,
+      "low": 4,
+      "high": 2
+    }
+  },
+  "metrics": {
+    "qualified_conversations": 5,
+    "appointments_booked": 1,
+    "escalations": 4,
+    "spam_filtered": 1,
+    "avg_confidence": 0.965,
+    "total_tokens_used": 0,
+    "avg_response_ms": 3627
+  },
+  "leads": [
+    {
+      "id": "9f36af55",
+      "source": "web_form",
+      "caller_name": "Sarah Mitchell",
+      "contact": "sarah@email.com",
+      "message": "My AC stopped working and it's 95 degrees inside. I have a baby and need someone today!",
+      "received_at": "2026-08-15T07:53:34.490376",
+      "status": "escalated",
+      "category": "urgent_escalate",
+      "urgency": "emergency",
+      "missing_info": [
+        "customer name",
+        "service address",
+        "phone number"
+      ],
+      "draft_reply": "We understand this is an emergency with the high temperature and your baby at home. We are prioritizing your call. Please call us immediately at [Phone Number] so we can dispatch a technician to your location in San Diego today.",
+      "confidence": 1.0,
+      "model_used": "gemini-3.5-flash-lite",
+      "tokens_used": 0,
+      "suggested_action": "\u26a0\ufe0f ESCALATE: Immediate human call required",
+      "response_time_ms": 1181
+    },
+    {
+      "id": "c914f7aa",
+      "source": "web_form",
+      "caller_name": "John Davis",
+      "contact": "jdavis@email.com",
+      "message": "How much for a new AC unit? My house is about 1800 sq ft.",
+      "received_at": "2026-08-15T07:53:34.490396",
+      "status": "responded",
+      "category": "quote_request",
+      "urgency": "normal",
+      "missing_info": [
+        "Specific equipment preferences or efficiency ratings",
+        "Current system type and age",
+        "Detailed property address within our service area"
+      ],
+      "draft_reply": "Hello! Thank you for reaching out to Northside HVAC. Because every home has unique cooling requirements, we provide customized quotes after a brief in-home evaluation. Would you like to schedule a free estimate for your 1,800 sq ft home? Please let us know your address and preferred days for an appointment.",
+      "confidence": 0.95,
+      "model_used": "gemini-3.5-flash-lite",
+      "tokens_used": 0,
+      "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
+      "response_time_ms": 1129
+    },
+    {
+      "id": "3b37995e",
+      "source": "missed_call",
+      "caller_name": "Maria Garcia",
+      "contact": "(619) 555-0142",
+      "message": "Missed call \u2014 no voicemail left",
+      "received_at": "2026-08-15T07:53:34.490403",
+      "status": "responded",
+      "category": "missing_information",
+      "urgency": "low",
+      "missing_info": [
+        "customer name",
+        "service address",
+        "nature of the HVAC issue or reason for calling"
+      ],
+      "draft_reply": "Hello, we noticed we missed your call at Northside HVAC. Please reply with a brief description of what you need and your service address so we can assist you.",
+      "confidence": 0.95,
+      "model_used": "gemini-3.5-flash-lite",
+      "tokens_used": 0,
+      "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
+      "response_time_ms": 6104
+    },
+    {
+      "id": "fa585704",
+      "source": "web_form",
+      "caller_name": "Tom Wilson",
+      "contact": "tom@email.com",
+      "message": "Do you service La Mesa? My furnace won't turn on.",
+      "received_at": "2026-08-15T07:53:34.490409",
+      "status": "responded",
+      "category": "quote_request",
+      "urgency": "high",
+      "missing_info": [
+        "customer name",
+        "phone number",
+        "service address"
+      ],
+      "draft_reply": "Yes, we service La Mesa! We can definitely help you get your furnace working again. Could you please provide your name, phone number, and complete address so we can schedule a technician to come out?",
+      "confidence": 0.95,
+      "model_used": "gemini-3.5-flash-lite",
+      "tokens_used": 0,
+      "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
+      "response_time_ms": 1745
+    },
+    {
+      "id": "e51d0e6e",
+      "source": "web_form",
+      "caller_name": "Lisa Chen",
+      "contact": "lchen@email.com",
+      "message": "Your technician was here last week and the problem came back. I'm not happy.",
+      "received_at": "2026-08-15T07:53:34.490415",
+      "status": "escalated",
+      "category": "complaint",
+      "urgency": "high",
+      "missing_info": [
+        "customer name",
+        "service address",
+        "details of the returning problem"
+      ],
+      "draft_reply": "We sincerely apologize that the issue has returned after our visit. We want to make this right immediately. Could you please provide your name, address, and a brief description of the current issue so we can send a technician back out to resolve it?",
+      "confidence": 0.95,
+      "model_used": "gemini-3.5-flash-lite",
+      "tokens_used": 0,
+      "suggested_action": "\u26a0\ufe0f ESCALATE: Immediate human call required",
+      "response_time_ms": 1494
+    },
+    {
+      "id": "9ccf1191",
+      "source": "web_form",
+      "caller_name": "Bob Smith",
+      "contact": "bob@email.com",
+      "message": "I just moved to the area and want to set up annual maintenance.",
+      "received_at": "2026-08-15T07:53:34.490421",
+      "status": "booked",
+      "category": "scheduling",
+      "urgency": "normal",
+      "missing_info": [
+        "customer's address",
+        "type of HVAC system",
+        "preferred date and time"
+      ],
+      "draft_reply": "Welcome to the area! We would be happy to set up your annual HVAC maintenance. Could you please provide your address, the type of system you have, and your preferred dates for the service?",
+      "confidence": 0.95,
+      "model_used": "gemini-3.5-flash-lite",
+      "tokens_used": 0,
+      "suggested_action": "\u2713 BOOKED: Next available appointment",
+      "response_time_ms": 15352
+    },
+    {
+      "id": "04de43a9",
+      "source": "web_form",
+      "caller_name": "Spam Bot",
+      "contact": "spam@bot.com",
+      "message": "Get free Viagra pills!!! Click here for casino bonus!!!",
+      "received_at": "2026-08-15T07:53:34.490426",
+      "status": "spam",
+      "category": "spam",
+      "urgency": "low",
+      "missing_info": [],
+      "draft_reply": "",
+      "confidence": 1.0,
+      "model_used": "gemini-3.5-flash-lite",
+      "tokens_used": 0,
+      "suggested_action": "DISCARD: Spam detected",
+      "response_time_ms": 685
+    },
+    {
+      "id": "85718d4e",
+      "source": "web_form",
+      "caller_name": "Mike Johnson",
+      "contact": "mike@email.com",
+      "message": "I need commercial refrigeration repair for my restaurant.",
+      "received_at": "2026-08-15T07:53:34.490431",
+      "status": "closed",
+      "category": "no_fit",
+      "urgency": "low",
+      "missing_info": [],
+      "draft_reply": "Thank you for contacting Northside HVAC. Unfortunately, we specialize exclusively in residential and light commercial HVAC services and do not service commercial refrigeration. We wish you the best in finding a suitable provider.",
+      "confidence": 0.95,
+      "model_used": "gemini-3.5-flash-lite",
+      "tokens_used": 0,
+      "suggested_action": "CLOSED: Outside scope/area",
+      "response_time_ms": 1116
+    },
+    {
+      "id": "b11a5d10",
+      "source": "after_hours",
+      "caller_name": "Jennifer Park",
+      "contact": "(858) 555-0199",
+      "message": "My heater stopped working at 11pm, I have elderly parents visiting",
+      "received_at": "2026-08-15T07:53:34.490437",
+      "status": "escalated",
+      "category": "urgent_escalate",
+      "urgency": "emergency",
+      "missing_info": [
+        "exact service address",
+        "phone number",
+        "type of heating system"
+      ],
+      "draft_reply": "We understand this is an emergency with your elderly parents visiting. Please call our emergency dispatch line immediately at [Phone Number] so we can prioritize getting a technician out to you right away.",
+      "confidence": 0.98,
+      "model_used": "gemini-3.5-flash-lite",
+      "tokens_used": 0,
+      "suggested_action": "\u26a0\ufe0f ESCALATE: Immediate human call required",
+      "response_time_ms": 1128
+    },
+    {
+      "id": "bdf28d2a",
+      "source": "web_form",
+      "caller_name": "David Brown",
+      "contact": "david@email.com",
+      "message": "Price list please",
+      "received_at": "2026-08-15T07:53:34.490442",
+      "status": "responded",
+      "category": "quote_request",
+      "urgency": "low",
+      "missing_info": [
+        "Specific service or equipment needed",
+        "Make and model or size of system",
+        "Property type and location"
+      ],
+      "draft_reply": "Hello! Thank you for reaching out to Northside HVAC. Because our pricing depends on the specific service or equipment needed and your system's setup, we don't have a standard price list. Could you please share a bit more about what you're looking to have done so we can provide an accurate quote?",
+      "confidence": 0.95,
+      "model_used": "gemini-3.5-flash-lite",
+      "tokens_used": 0,
+      "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
+      "response_time_ms": 11859
+    },
+    {
+      "id": "a389e8b4",
+      "source": "web_form",
+      "caller_name": "Alex Rivera",
+      "contact": "alex@email.com",
+      "message": "I have a gas leak near my furnace, I can smell it!",
+      "received_at": "2026-08-15T07:53:34.490446",
+      "status": "escalated",
+      "category": "urgent_escalate",
+      "urgency": "emergency",
+      "missing_info": [
+        "exact address",
+        "phone number"
+      ],
+      "draft_reply": "Please evacuate the home immediately and call your gas utility company or 911. Once you are safe, please call us right away so we can dispatch an emergency technician.",
+      "confidence": 1.0,
+      "model_used": "gemini-3.5-flash-lite",
+      "tokens_used": 0,
+      "suggested_action": "\u26a0\ufe0f ESCALATE: Immediate human call required",
+      "response_time_ms": 790
+    },
+    {
+      "id": "5c18f72b",
+      "source": "web_form",
+      "caller_name": "Emma Wilson",
+      "contact": "emma@email.com",
+      "message": "Can you install a smart thermostat? I already bought the unit.",
+      "received_at": "2026-08-15T07:53:34.490451",
+      "status": "responded",
+      "category": "quote_request",
+      "urgency": "normal",
+      "missing_info": [
+        "customer's address or zip code",
+        "brand and model of the smart thermostat",
+        "existing HVAC system type"
+      ],
+      "draft_reply": "Hello! Yes, we can help you install your smart thermostat. To provide you with an accurate quote and check our availability, could you please share your address/zip code and the specific model of the thermostat you purchased?",
+      "confidence": 0.95,
+      "model_used": "gemini-3.5-flash-lite",
+      "tokens_used": 0,
+      "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
+      "response_time_ms": 950
+    }
+  ]
+}

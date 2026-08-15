@@ -41,7 +41,7 @@ All months $0. CallbackOps launched during the hackathon (Aug 13-14, 2026). Prod
 
 **Sustainability (10):** $750 pilot converts to $2,500/mo retainer; near-zero marginal cost per client; 12 clients = $30,000/mo.
 
-**GitHub access (18):** Confirmed: github.com/TyrannicAwe/lead-recovery-agent is PUBLIC and readable by all.
+**GitHub access (18):** Confirmed: github.com/jtabsbm/lead-recovery-agent is PUBLIC and readable by all.
 
 ## Why This Matters
 $2M prize pool. Even an honorable mention is a credential for the consulting business. The entry itself (real business, working AI agent, honest numbers) is solid — XPRIZE judges value real operations over slides.

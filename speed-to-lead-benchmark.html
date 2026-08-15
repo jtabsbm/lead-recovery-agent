@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speed-to-Lead Benchmark — CallbackOps</title>
+<style>
+  :root{--bg:#0a0e14;--card:#161b22;--border:#30363d;--txt:#e6edf3;--dim:#8b949e;--acc:#4fc3f7}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--txt);min-height:100vh;display:flex;justify-content:center;padding:40px 16px}
+  .wrap{max-width:600px;width:100%}
+  h1{font-size:1.7rem;margin-bottom:6px;text-align:center}h1 span{color:var(--acc)}
+  .sub{color:var(--dim);text-align:center;margin-bottom:28px;font-size:.95rem}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:16px}
+  .q{font-weight:600;margin-bottom:14px;font-size:1.02rem}
+  .opts{display:grid;gap:8px}
+  .opt{background:#0d1117;border:1px solid var(--border);border-radius:8px;padding:12px 16px;cursor:pointer;transition:all .15s;font-size:.95rem}
+  .opt:hover{border-color:var(--acc)}
+  .opt.sel{border-color:var(--acc);background:#4fc3f722}
+  .grade{font-size:6rem;font-weight:900;text-align:center;margin:8px 0}
+  .A{color:#3fb950}.B{color:#a3d977}.C{color:#e3b341}.D{color:#f0883e}.F{color:#f85149}
+  .verdict{text-align:center;color:var(--dim);font-size:1rem;margin-bottom:20px;max-width:440px;margin-left:auto;margin-right:auto}
+  .stat{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:.92rem}
+  .stat b{color:var(--txt)}
+  .cta{display:block;margin-top:20px;text-align:center;background:var(--acc);color:#001018;font-weight:700;padding:15px;border-radius:10px;text-decoration:none}
+  footer{margin-top:20px;text-align:center;color:var(--dim);font-size:.8rem}
+</style>
+</head>
+<body><div class="wrap">
+<h1>Speed-to-Lead <span>Benchmark</span></h1>
+<p class="sub">How fast does your business respond to new inquiries? Grade yourself in 60 seconds.</p>
+<div class="card" id="quiz">
+  <div class="q">1. When a new lead calls and you miss it, how fast do you call back?</div>
+  <div class="opts" data-q="0">
+    <div class="opt" data-s="10">Within 5 minutes</div>
+    <div class="opt" data-s="7">Within an hour</div>
+    <div class="opt" data-s="4">Same day</div>
+    <div class="opt" data-s="0">Next day or later / often never</div>
+  </div>
+  <div class="q" style="margin-top:20px">2. A web form inquiry comes in at 7pm. When does it get a response?</div>
+  <div class="opts" data-q="1">
+    <div class="opt" data-s="10">Within minutes (automated or on-call)</div>
+    <div class="opt" data-s="6">Same evening</div>
+    <div class="opt" data-s="3">Next morning</div>
+    <div class="opt" data-s="0">Whenever someone checks the inbox</div>
+  </div>
+  <div class="q" style="margin-top:20px">3. How are missed calls currently handled?</div>
+  <div class="opts" data-q="2">
+    <div class="opt" data-s="10">Systematic callback workflow same-day</div>
+    <div class="opt" data-s="6">Someone usually calls back</div>
+    <div class="opt" data-s="2">We check caller ID sometimes</div>
+    <div class="opt" data-s="0">Voicemail, if they leave one</div>
+  </div>
+  <div class="q" style="margin-top:20px">4. On weekends, new inquiries get…</div>
+  <div class="opts" data-q="3">
+    <div class="opt" data-s="10">Same speed as weekdays</div>
+    <div class="opt" data-s="5">Slower, but same day</div>
+    <div class="opt" data-s="2">Monday's problem</div>
+  </div>
+</div>
+<div class="card" id="resultCard" style="display:none">
+  <div class="grade" id="grade">–</div>
+  <p class="verdict" id="verdict"></p>
+  <div class="stat"><span>Leads contacted in 5 min vs 30 min</span><b>8× more likely to convert</b></div>
+  <div class="stat"><span>Your industry's average first-response</span><b>47 hours</b></div>
+  <div class="stat"><span>Leads that go to the first responder</span><b>78%</b></div>
+  <a class="cta" href="mailto:absbm14@gmail.com?subject=Fix%20my%20response%20time%20—%20CallbackOps">Get your leads answered in 5 minutes → CallbackOps</a>
+</div>
+<footer>Built by James Thompson · absbm14@gmail.com · <a href="https://tyrannicawe.github.io/callbackops-tools/" style="color:var(--acc)">All free tools</a></footer>
+</div>
+<script>
+const scores=[null,null,null,null];
+document.querySelectorAll('.opt').forEach(o=>o.addEventListener('click',()=>{
+  const q=+o.parentElement.dataset.q;
+  scores[q]=+o.dataset.s;
+  o.parentElement.querySelectorAll('.opt').forEach(x=>x.classList.remove('sel'));
+  o.classList.add('sel');
+  if(scores.every(s=>s!==null)){
+    const total=scores.reduce((a,b)=>a+b,0);
+    const pct=total/40;
+    let g,cls,v;
+    if(pct>=.85){g='A';cls='A';v='Excellent — you are the first responder almost every time. A recovery layer would still capture the residual 10-15%.'}
+    else if(pct>=.65){g='B';cls='B';v='Good bones, leaky edges. You are losing mostly after-hours and weekend leads — exactly where an automated responder wins.'}
+    else if(pct>=.45){g='C';cls='C';v='Average — and average is 47-hour response in your industry. First-mover competitors are taking your after-hours leads.'}
+    else if(pct>=.25){g='D';cls='D';v='Significant leakage. Each unanswered inquiry is a job your competitor booked. A structured callback workflow typically recovers 20-35% of these.'}
+    else{g='F';cls='F';v='Critical: most of your marketing spend is leaking away after the phone rings. This is exactly what CallbackOps fixes first.'}
+    document.getElementById('quiz').style.display='none';
+    const gc=document.getElementById('resultCard');gc.style.display='block';
+    const ge=document.getElementById('grade');ge.textContent=g;ge.className='grade '+cls;
+    document.getElementById('verdict').textContent=v;
+  }
+}));
+</script>
+</body></html>

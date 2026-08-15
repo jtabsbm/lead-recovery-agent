@@ -1,0 +1,98 @@
+Title: Cyfrin CodeHawks | Competitive Audits
+
+URL Source: https://codehawks.com/
+
+Markdown Content:
+[](https://codehawks.cyfrin.io/)
+
+[Competitive Audits](https://codehawks.com/contests)[First Flights](https://codehawks.com/first-flights)[Leaderboard](https://codehawks.com/leaderboard)[Docs](https://support.cyfrin.io/codehawks/overview)
+
+Toggle theme
+
+Sign up Log in
+
+# Competitive Audits
+
+All Public Private Invite-only
+
+Status 4/4 Sort
+
+*    Public     ![Image 1: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/eproz7rugsccsiosltpu?_a=DATAiZiuZAA0) ##### [BattleChain Confidence Pools](https://codehawks.com/c/2026-07-battlechain-confidence-pools)Cyfrin  Foundry Solidity Layer 2     Public 7.25 ETH     7.25 ETH  Quick actions[View contest](https://codehawks.com/c/2026-07-battlechain-confidence-pools)      
+*   KYC Rewards Private    KYC Rewards ![Image 2: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/g6bhbo69ffriygkh1y7q?_a=DATAiZiuZAA0) ##### [Staking Part 2](https://codehawks.com/c/2025-04-starknet-part-2)Starknet  Cairo Staking     Private 80,000 USDC     80,000 USDC  Quick actions[View contest](https://codehawks.com/c/2025-04-starknet-part-2)      
+*   KYC Rewards Invite-only    KYC Rewards ![Image 3: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/toljih3fx25ilchdfafm?_a=DATAiZiuZAA0) ##### [RWA Part 2](https://codehawks.com/c/2025-03-remora-2)Remora  Real World Assets Solidity     Invite-only 4,000 USDC     4,000 USDC  Quick actions[View contest](https://codehawks.com/c/2025-03-remora-2)      
+*    Public     ![Image 4: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/yucpqrvkrxv5myq9wuqm?_a=DATAiZiuZAA0) ##### [Storage Proofs](https://codehawks.com/c/2025-03-curve)Curve  DeFi Layer 1 Layer 2     Public 14,723 OP     14,723 OP  Quick actions[View contest](https://codehawks.com/c/2025-03-curve)      
+*   KYC Rewards Invite-only    KYC Rewards ![Image 5: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/pf3f785oijzidfst3ynt?_a=DATAiZiuZAA0) ##### [USDO/CCIP](https://codehawks.com/c/openeden)Open Eden  Solidity Bridge     Invite-only 3,200 USDC     3,200 USDC  Quick actions[View contest](https://codehawks.com/c/openeden)      
+*   KYC Rewards Invite-only    KYC Rewards ![Image 6: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/uapdyyxofc4bcjh8ngkt?_a=DATAiZiuZAA0) ##### [Cyfrin Attester](https://codehawks.com/c/2025-03-cyfrin-attester)Cyfrin  Solidity NFT     Invite-only 6,000 USDC     6,000 USDC  Quick actions[View contest](https://codehawks.com/c/2025-03-cyfrin-attester)      
+*    Public     ![Image 7: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/mwfp6qvlkdqfvydigqod?_a=DATAiZiuZAA0) ##### [Liquidity Management](https://codehawks.com/c/2025-02-gamma)Gamma  DeFi Foundry     Public 50,000 USDC     50,000 USDC  Quick actions[View contest](https://codehawks.com/c/2025-02-gamma)      
+*    Public     ![Image 8: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/eecc6ekr2ylkcbjjghni?_a=DATAiZiuZAA0) ##### [Core Contracts](https://codehawks.com/c/2025-02-raac)Regnum Aurum Acquisition Corp  Hardhat Real World Assets NFT     Public 77,280 USDC     77,280 USDC  Quick actions[View contest](https://codehawks.com/c/2025-02-raac)      
+*   KYC Rewards Invite-only    KYC Rewards ![Image 9: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/e5dojh45p4jckeq4y4yy?_a=DATAiZiuZAA0) ##### [RWA](https://codehawks.com/c/2025-02-remora)Remora  Real World Assets Solidity     Invite-only 6,000 USDC     6,000 USDC  Quick actions[View contest](https://codehawks.com/c/2025-02-remora)      
+*    Public     ![Image 10: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/wxt8xbvnfkpyyus2hoz0?_a=DATAiZiuZAA0) ##### [Part 2](https://codehawks.com/c/2025-01-zaros-part-2)Zaros  Perpetuals DEX Foundry Solidity     Public 70,000 USDC     70,000 USDC  Quick actions[View contest](https://codehawks.com/c/2025-01-zaros-part-2)      
+*    Public     ![Image 11: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/p2w03ol2qrqtfzgblnpo?_a=DATAiZiuZAA0) ##### [Aave DIVA Wrapper](https://codehawks.com/c/2025-01-diva)DIVA  Hardhat DeFi     Public 15,000 USDC     15,000 USDC  Quick actions[View contest](https://codehawks.com/c/2025-01-diva)      
+*    Private     ![Image 12: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/df73bhmtoxrirjfya3zo?_a=DATAiZiuZAA0) ##### [Ignite](https://codehawks.com/c/2025-01-benqi)Benqi  Staking Hardhat     Private 33,750 USDC     33,750 USDC  Quick actions[View contest](https://codehawks.com/c/2025-01-benqi)      
+*    Public     ![Image 13: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/fpumuutlv5dyq0e1gnhg?_a=DATAiZiuZAA0) ##### [QuantAMM](https://codehawks.com/c/2024-12-quantamm)QuantAMM      Public 49,600 OP     49,600 OP  Quick actions[View contest](https://codehawks.com/c/2024-12-quantamm)      
+*    Public     ![Image 14: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/yrmbwlhfqlsrrwrgrcfg?_a=DATAiZiuZAA0) ##### [Alchemix Transmuter](https://codehawks.com/c/2024-12-alchemix)Alchemix  DeFi Foundry Solidity     Public 16,653 OP     16,653 OP  Quick actions[View contest](https://codehawks.com/c/2024-12-alchemix)      
+*   KYC Rewards Private    KYC Rewards ![Image 15: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/yuiensvuyxjjqfwrjxyw?_a=DATAiZiuZAA0) ##### [Era](https://codehawks.com/c/2024-10-zksync)ZKsync  Foundry Layer 2     Private 500,000 USDC     500,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-10-zksync)      
+*    Public     ![Image 16: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/qydcadtjacsd5z2ck7b9?_a=DATAiZiuZAA0) ##### [Project](https://codehawks.com/c/2024-11-one-world)One World  NFT DeFi     Public 15,000 USDC     15,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-11-one-world)      
+*    Public     ![Image 17: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/chhoakowiqpelflpwdcr?_a=DATAiZiuZAA0) ##### [Dria](https://codehawks.com/c/2024-10-swan-dria)Swan  NFT Hardhat     Public 21,000 USDC     21,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-10-swan-dria)      
+*    Public     ![Image 18: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/s2cgcm6u8mpjrsfsydo5?_a=DATAiZiuZAA0) ##### [Flow](https://codehawks.com/c/2024-10-sablier)Sablier  Foundry DeFi     Public 20,000 USDC     20,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-10-sablier)      
+*    Public     ![Image 19: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/i1y9fns50hfag91yvewa?_a=DATAiZiuZAA0) ##### [Liquid Staking](https://codehawks.com/c/2024-09-stakelink)Stakelink  DeFi Hardhat Oracle     Public 50,000 USDC     50,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-09-stakelink)      
+*   KYC Rewards Private    KYC Rewards ![Image 20: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/acitigkzam9ijrj4eplb?_a=DATAiZiuZAA0) ##### [Staking](https://codehawks.com/c/2024-09-starknet-staking)Starknet  DeFi     Private 65,000 USDC     65,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-09-starknet-staking)      
+*    Public     ![Image 21: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/wog00zesf32qw2gq0mft?_a=DATAiZiuZAA0) ##### [ArkProject: NFT Bridge](https://codehawks.com/c/2024-07-ark-project)ArkProject  NFT Bridge     Public 60,000 USDC     60,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-07-ark-project)      
+*    Public     ![Image 22: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/u4twycoyiwasxukhaxo7?_a=DATAiZiuZAA0) ##### [Fjord Token Staking](https://codehawks.com/c/2024-08-fjord)Fjord  DeFi Foundry     Public 20,000 USDC     20,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-08-fjord)      
+*    Public     ![Image 23: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/crvpf3cxfjpqwwsufnif?_a=DATAiZiuZAA0) ##### [Tadle](https://codehawks.com/c/2024-08-tadle)Tadle  DeFi Foundry     Public 27,750 USDC     27,750 USDC  Quick actions[View contest](https://codehawks.com/c/2024-08-tadle)      
+*    Public     ![Image 24: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/myxbjmyu1c5rf3nwjiso?_a=DATAiZiuZAA0) ##### [Zaros Part 1](https://codehawks.com/c/2024-07-zaros)Zaros  DeFi Foundry     Public 60,000 USDC     60,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-07-zaros)      
+*   KYC Rewards Private    KYC Rewards ![Image 25: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/n1p5puocte2qgnvzsz2n?_a=DATAiZiuZAA0) ##### [CCIP v1.5](https://codehawks.com/c/2024-07-CL-CCIP)Chainlink  Bridge Foundry DeFi Updates     Private 200,000 USDC     200,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-07-CL-CCIP)      
+*    Public     ![Image 26: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/vyxxhc17ubu9wn1tkfxy?_a=DATAiZiuZAA0) ##### [Biconomy: Nexus](https://codehawks.com/c/2024-07-biconomy)Biconomy  Hardhat Foundry     Public 30,000 USDC     30,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-07-biconomy)      
+*    Public     ![Image 27: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/ovmmfbu9hgikanujugqr?_a=DATAiZiuZAA0) ##### [TempleGold](https://codehawks.com/c/2024-07-templegold)TempleDAO  Foundry     Public 25,000 USDC     25,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-07-templegold)      
+*    Public     ![Image 28: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/m5oacju1uewfxdifcnfb?_a=DATAiZiuZAA0) ##### [Beanstalk: The Finale](https://codehawks.com/c/2024-05-beanstalk-the-finale)Beanstalk  DeFi Hardhat Foundry     Public 250,000 USDC     250,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-05-beanstalk-the-finale)      
+*    Public     ![Image 29: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/obvlapyy82pqssm1gywe?_a=DATAiZiuZAA0) ##### [TSender](https://codehawks.com/c/2024-05-TSender)Cyfrin  DeFi Foundry     Public 15,000 USDC     15,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-05-TSender)      
+*    Public     ![Image 30: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/lmlxsuvaykogjzypmb36?_a=DATAiZiuZAA0) ##### [Sablier](https://codehawks.com/c/2024-05-Sablier)Sablier  DeFi Foundry     Public 53,440 USDC     53,440 USDC  Quick actions[View contest](https://codehawks.com/c/2024-05-Sablier)      
+*    Public     ![Image 31: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/km9b9u4fxgjhmg9e2fhb?_a=DATAiZiuZAA0) ##### [Beanstalk Part 3](https://codehawks.com/c/2024-05-Beanstalk-3)Beanstalk  DeFi Hardhat     Public 21,000 USDC     21,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-05-Beanstalk-3)      
+*    Public     ![Image 32: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/dkpeqjkgetkxsga9v5q6?_a=DATAiZiuZAA0) ##### [Beanstalk: Dive Into Basin](https://codehawks.com/c/2024-04-Beanstalk-DIB)Beanstalk  DeFi Hardhat     Public 12,000 USDC     12,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-04-Beanstalk-DIB)      
+*    Public     ![Image 33: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/vwkqymxqrtutq4rdvf7w?_a=DATAiZiuZAA0) ##### [Beanstalk Part 2](https://codehawks.com/c/2024-04-beanstalk-2)Beanstalk  DeFi Hardhat     Public 35,000 USDC     35,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-04-beanstalk-2)      
+*    Public     ![Image 34: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/ycg7ldplxqc2yj7vvqlr?_a=DATAiZiuZAA0) ##### [Beanstalk Part 1](https://codehawks.com/c/2024-02-Beanstalk-1)Beanstalk  DeFi Hardhat Oracle Proxy Updates     Public 100,000 USDC     100,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-02-Beanstalk-1)      
+*    Public     ![Image 35: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/tudqydfv5fhvxtn1xfrl?_a=DATAiZiuZAA0) ##### [Moonwell](https://codehawks.com/c/2024-03-Moonwell)Moonwell  DeFi Foundry     Public 15,000 USDC     15,000 USDC  Quick actions[View contest](https://codehawks.com/c/2024-03-Moonwell)      
+*    Public     ![Image 36: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/ijvtzoor5kydcvzxugpk?_a=DATAiZiuZAA0) ##### [MorpheusAI](https://codehawks.com/c/2024-01-Morpheus)MorpheusAI  Foundry     Public 22,500 USDC     22,500 USDC  Quick actions[View contest](https://codehawks.com/c/2024-01-Morpheus)      
+*    Public     ![Image 37: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/dnhijrp0zjbt3uubr3sy?_a=DATAiZiuZAA0) ##### [stake.link](https://codehawks.com/c/2023-12-stake-link)stake.link  DeFi Hardhat Bridge     Public 27,500 USDC     27,500 USDC  Quick actions[View contest](https://codehawks.com/c/2023-12-stake-link)      
+*    Public     ![Image 38: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/sccyr0ug1iccwj7kpgjc?_a=DATAiZiuZAA0) ##### [The Standard](https://codehawks.com/c/2023-12-the-standard)The Standard  DeFi Hardhat     Public 20,000 USDC     20,000 USDC  Quick actions[View contest](https://codehawks.com/c/2023-12-the-standard)      
+*    Public     ![Image 39: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/bs9olaklaihbrwutmmfn?_a=DATAiZiuZAA0) ##### [Steadefi](https://codehawks.com/c/2023-10-SteadeFi)Steadefi  DeFi Hardhat Foundry Oracle     Public 35,000 USDC     35,000 USDC  Quick actions[View contest](https://codehawks.com/c/2023-10-SteadeFi)      
+*    Private     ![Image 40: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/qpc8y6fvd80duslzmk8k?_a=DATAiZiuZAA0) ##### [Vyper - Compiler](https://codehawks.com/c/2023-09-vyper-compiler)Vyper  Updates     Private 160,000 USDC     160,000 USDC  Quick actions[View contest](https://codehawks.com/c/2023-09-vyper-compiler)      
+*    Public     ![Image 41: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/ltz8kv2hxjeiphxrxwhi?_a=DATAiZiuZAA0) ##### [DittoETH](https://codehawks.com/c/2023-09-ditto)Ditto  DeFi Foundry Oracle     Public 55,000 USDC     55,000 USDC  Quick actions[View contest](https://codehawks.com/c/2023-09-ditto)      
+*    Public     ![Image 42: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/pvl7t7gkply4zqj9kbum?_a=DATAiZiuZAA0) ##### [Sparkn](https://codehawks.com/c/2023-08-sparkn)CodeFox Inc.  DeFi Foundry Proxy     Public 15,000 USDC     15,000 USDC  Quick actions[View contest](https://codehawks.com/c/2023-08-sparkn)      
+*    Public     ![Image 43: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/upc2ow2fgp0kdsgxxnyt?_a=DATAiZiuZAA0) ##### [Beedle - Oracle free perpetual lending](https://codehawks.com/c/2023-07-beedle)BeedleFi  DeFi Foundry     Public 20,000 USDC     20,000 USDC  Quick actions[View contest](https://codehawks.com/c/2023-07-beedle)      
+*    Public     ![Image 44: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/v2pdne7zfd9ja6mqk3qb?_a=DATAiZiuZAA0) ##### [CodeHawks Escrow Contract - Competition Details](https://codehawks.com/c/2023-07-escrow)Cyfrin  Foundry     Public 40,000 USDC     40,000 USDC  Quick actions[View contest](https://codehawks.com/c/2023-07-escrow)      
+*    Public     ![Image 45: Contest logo](https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/ha8pzblcinwogcirgbxi?_a=DATAiZiuZAA0) ##### [Foundry DeFi Stablecoin CodeHawks Audit Contest](https://codehawks.com/c/2023-07-foundry-defi-stablecoin)Cyfrin  DeFi Foundry     Public 15,000 USDC     15,000 USDC  Quick actions[View contest](https://codehawks.com/c/2023-07-foundry-defi-stablecoin)      
+
+For auditors
+#### Start earning rewards
+
+Join the world's best auditors and register to participate in our competitions. Report protocol vulnerabilities to receive rewards and climb the leaderboard to become a top security researcher.
+
+Sign up
+
+For companies
+#### The most reliable way to strengthen your codebase security
+
+Access hundreds of security researchers uncovering critical vulnerabilities in your codebase while our proprietary judging and triage system speeds up auditing at scale.
+
+[Secure your protocol](https://cyfrin.typeform.com/contact-expert)
+
+[](https://codehawks.com/)
+
+[](https://x.com/CodeHawks)[](https://github.com/Cyfrin)[](http://discord.gg/cyfrin)
+
+[Cyfrin](https://cyfrin.io/)Private Audits Public Reports Pricing Aderyn
+
+[Updraft](https://cyfrin.io/updraft)Blockchain Basics Solidity 101 Foundry 101 All courses
+
+[CodeHawks](https://cyfrin.io/codehawks)Competitions First Flights Leaderboard
+
+[Solodit](https://solodit.cyfrin.io/)Docs Findings Audits Checklist
+
+[Resources](https://cyfrin.io/)Blog Case Studies Success Stories Glossary Support
+
+[Powered by Cyfrin](https://www.cyfrin.io/)
+
+[Powered by Cyfrin](https://www.cyfrin.io/)
+
+[Give us feedback!](https://discord.gg/JpVMvFhmNQ)

@@ -1,0 +1,3 @@
+# Optional — enables the structured-output SDK path in gemini_sdk_agent.py.
+# Both agents also run dependency-free via REST or keyword fallback.
+google-genai>=2.0

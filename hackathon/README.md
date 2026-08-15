@@ -10,7 +10,7 @@
 ## Quick start (a stranger can run this)
 
 ```bash
-git clone https://github.com/TyrannicAwe/lead-recovery-agent
+git clone https://github.com/jtabsbm/lead-recovery-agent
 cd lead-recovery-agent
 
 # Option A — no API key needed (keyword fallback classifier)

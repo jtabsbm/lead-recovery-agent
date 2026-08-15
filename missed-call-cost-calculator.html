@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Missed-Call Cost Calculator — CallbackOps</title>
+<style>
+  :root{--bg:#0a0e14;--card:#161b22;--border:#30363d;--txt:#e6edf3;--dim:#8b949e;--acc:#4fc3f7;--red:#f85149;--grn:#3fb950}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--txt);min-height:100vh;display:flex;justify-content:center;padding:40px 16px}
+  .wrap{max-width:640px;width:100%}
+  h1{font-size:1.8rem;margin-bottom:6px;text-align:center}
+  h1 span{color:var(--acc)}
+  .sub{color:var(--dim);text-align:center;margin-bottom:32px;font-size:.95rem}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:16px}
+  label{display:block;color:var(--dim);font-size:.85rem;margin-bottom:8px;font-weight:600}
+  .row{display:flex;gap:16px;flex-wrap:wrap}
+  .field{flex:1;min-width:140px}
+  input[type=number]{width:100%;background:#0d1117;border:1px solid var(--border);border-radius:8px;color:var(--txt);padding:12px;font-size:1.1rem}
+  input:focus{outline:none;border-color:var(--acc)}
+  .result{margin-top:24px;text-align:center;padding:32px;border-radius:12px;background:linear-gradient(135deg,#1a0f0f,#161b22);border:1px solid #f8514944}
+  .result-label{color:var(--dim);font-size:.9rem;text-transform:uppercase;letter-spacing:.08em}
+  .big{font-size:3.2rem;font-weight:800;color:var(--red);margin:8px 0;font-variant-numeric:tabular-nums}
+  .breakdown{color:var(--dim);font-size:.9rem;margin-top:8px}
+  .cta{display:block;margin-top:24px;text-align:center;background:var(--acc);color:#001018;font-weight:700;padding:16px;border-radius:10px;text-decoration:none;font-size:1.05rem}
+  .cta:hover{filter:brightness(1.1)}
+  footer{margin-top:24px;text-align:center;color:var(--dim);font-size:.8rem}
+  .per-month{color:var(--txt);font-size:1.3rem;font-weight:600}
+</style>
+</head>
+<body><div class="wrap">
+<h1>Missed-Call <span>Cost Calculator</span></h1>
+<p class="sub">Unanswered calls are quietly your biggest expense. Find your number.</p>
+<div class="card">
+<div class="row">
+<div class="field"><label>Calls per week</label><input type="number" id="calls" value="40" min="1"></div>
+<div class="field"><label>% missed / unanswered</label><input type="number" id="missed" value="30" min="1" max="95"></div>
+</div>
+<div class="row" style="margin-top:16px">
+<div class="field"><label>Average job value ($)</label><input type="number" id="jobval" value="450" min="1"></div>
+<div class="field"><label>Close rate on answered (%)</label><input type="number" id="close" value="35" min="1" max="100"></div>
+</div>
+</div>
+<div class="result">
+<div class="result-label">Estimated revenue lost per year</div>
+<div class="big" id="annual">$0</div>
+<div class="per-month" id="monthly">— per month</div>
+<div class="breakdown" id="breakdown"></div>
+</div>
+<a class="cta" href="mailto:absbm14@gmail.com?subject=Recover%20my%20missed%20calls%20—%20CallbackOps">Recover these leads → CallbackOps $750 Recovery Sprint</a>
+<footer>Built by James Thompson · absbm14@gmail.com · San Diego · <a href="https://tyrannicawe.github.io/callbackops-tools/" style="color:var(--acc)">All free tools</a></footer>
+</div>
+<script>
+function fmt(n){return '$'+Math.round(n).toLocaleString()}
+function calc(){
+  const calls=+document.getElementById('calls').value||0;
+  const missedPct=(+document.getElementById('missed').value||0)/100;
+  const job=+document.getElementById('jobval').value||0;
+  const close=(+document.getElementById('close').value||0)/100;
+  const missedMonth=calls*4.33*missedPct;
+  const lostMonth=missedMonth*job*close*0.45; // 45% of missed callers don't call back
+  const annual=lostMonth*12;
+  animateTo('annual',annual);
+  document.getElementById('monthly').textContent=fmt(lostMonth)+' per month';
+  document.getElementById('breakdown').textContent=Math.round(missedMonth)+' calls missed monthly × '+fmt(job)+' job value × '+Math.round(close*100)+'% close × 45% never retry';
+}
+const anim={};
+function animateTo(id,target){
+  const el=document.getElementById(id);
+  const start=anim[id]||0;const t0=performance.now();const dur=800;
+  cancelAnimationFrame(anim[id+'r']);
+  function step(t){
+    const p=Math.min(1,(t-t0)/dur);
+    const eased=1-Math.pow(1-p,3);
+    el.textContent=fmt(start+(target-start)*eased);
+    if(p<1)anim[id+'r']=requestAnimationFrame(step);else anim[id]=target;
+  }
+  anim[id+'r']=requestAnimationFrame(step);
+}
+['calls','missed','jobval','close'].forEach(i=>document.getElementById(i).addEventListener('input',calc));
+calc();
+</script>
+</body></html>

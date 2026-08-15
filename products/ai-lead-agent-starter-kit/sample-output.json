@@ -1,0 +1,149 @@
+{
+  "business": "Northside HVAC",
+  "engine": "google-genai-sdk",
+  "model": "gemini-3.5-flash",
+  "sdk_version": "2.18.1",
+  "generated_at": "2026-08-15T08:14:54-0700",
+  "total_leads": 12,
+  "qualified": 10,
+  "escalated": 3,
+  "scheduling": 3,
+  "spam_filtered": 1,
+  "avg_confidence": 0.947,
+  "avg_latency_ms": 12375,
+  "total_elapsed_s": 148.5,
+  "leads": [
+    {
+      "id": 1,
+      "name": "Sarah Mitchell",
+      "category": "emergency",
+      "confidence": 1.0,
+      "reply": "Sarah, please leave your home immediately with your baby and call 911 or SDG&E from a safe distance to report the gas leak. Once you are in a safe location, please call us directly at this number so we can dispatch our emergency technician to assist you.",
+      "reason": "A gas odor in a home with an infant poses an immediate life-safety hazard, requiring instant evacuation guidance and emergency service escalation.",
+      "engine": "google-genai-sdk",
+      "model": "gemini-3.5-flash",
+      "latency_ms": 5803
+    },
+    {
+      "id": 2,
+      "name": "Tom Wilson",
+      "category": "emergency",
+      "confidence": 0.95,
+      "reply": "Hi Tom, yes, we service La Mesa! Since your furnace won't turn on in the cold, we want to get this resolved for you immediately. What is your street address and the best phone number to reach you? We can get a technician out to help you today.",
+      "reason": "The customer has no heating during cold weather, which constitutes an emergency. La Mesa is within our San Diego service area, so we need to escalate and get their contact/address info immediately.",
+      "engine": "google-genai-sdk",
+      "model": "gemini-3.5-flash",
+      "latency_ms": 13507
+    },
+    {
+      "id": 3,
+      "name": "Mike Johnson",
+      "category": "no_fit",
+      "confidence": 1.0,
+      "reply": "Hi Mike, thanks for reaching out to Northside HVAC! Since we specialize exclusively in residential heating and cooling services here in San Diego, we won't be able to help with your restaurant's commercial rooftop unit. We recommend reaching out to a local commercial HVAC specialist. Best of luck with your business!",
+      "reason": "The lead is asking for a quote on a commercial rooftop unit for a restaurant, but Northside HVAC only services residential properties.",
+      "engine": "google-genai-sdk",
+      "model": "gemini-3.5-flash",
+      "latency_ms": 3099
+    },
+    {
+      "id": 4,
+      "name": "Elena Rodriguez",
+      "category": "scheduling",
+      "confidence": 0.98,
+      "reply": "Hi Elena, this is Northside HVAC. We can certainly help get your cooling back on! We have Tuesday afternoon openings at 1:00 PM or 3:30 PM. Which of those works best for you?",
+      "reason": "The lead has a clear intent to book service for Tuesday afternoon.",
+      "engine": "google-genai-sdk",
+      "model": "gemini-3.5-flash-lite",
+      "latency_ms": 44221
+    },
+    {
+      "id": 5,
+      "name": "Spam Bot",
+      "category": "spam",
+      "confidence": 1.0,
+      "reply": "",
+      "reason": "The inbound message is a generic SEO solicitation email, which is classified as spam.",
+      "engine": "google-genai-sdk",
+      "model": "gemini-3.5-flash",
+      "latency_ms": 11586
+    },
+    {
+      "id": 6,
+      "name": "Karen Lee",
+      "category": "quote",
+      "confidence": 0.7,
+      "reply": "Thanks for reaching out \u2014 we'd be happy to give an estimate.",
+      "reason": "keyword fallback",
+      "engine": "keyword-fallback",
+      "model": null,
+      "latency_ms": 47657
+    },
+    {
+      "id": 7,
+      "name": "David Park",
+      "category": "emergency",
+      "confidence": 0.95,
+      "reply": "Hi David, we are sorry to hear about your leaking cooler causing a potential safety hazard. We are escalating this right away and a technician will call you immediately to dispatch emergency help.",
+      "reason": "Water leaking from a roof-mounted unit poses active property damage and safety risks, requiring immediate escalation.",
+      "engine": "google-genai-sdk",
+      "model": "gemini-3.5-flash-lite",
+      "latency_ms": 1559
+    },
+    {
+      "id": 8,
+      "name": "Amanda Foster",
+      "category": "scheduling",
+      "confidence": 0.95,
+      "reply": "Hi Amanda, we would be happy to help with a furnace inspection certificate for your home sale! We have availability this Thursday morning or Friday afternoon. Which works best for you?",
+      "reason": "The lead clearly requests a furnace inspection service for selling a home, which fits booking an appointment.",
+      "engine": "google-genai-sdk",
+      "model": "gemini-3.5-flash-lite",
+      "latency_ms": 1021
+    },
+    {
+      "id": 9,
+      "name": "Robert Chen",
+      "category": "missing_information",
+      "confidence": 0.95,
+      "reply": "Hi Robert! Yes, we offer comprehensive maintenance plans starting at $150/year that include bi-annual tune-ups and priority service. Are you looking to cover an AC unit, a furnace, or both? Would you like us to email you the full brochure?",
+      "reason": "The lead is asking about maintenance plans, which requires providing information about our offerings and asking clarifying questions about their system.",
+      "engine": "google-genai-sdk",
+      "model": "gemini-3.5-flash-lite",
+      "latency_ms": 1594
+    },
+    {
+      "id": 10,
+      "name": "Lisa Wang",
+      "category": "scheduling",
+      "confidence": 0.95,
+      "reply": "Hi Lisa! We can definitely help get that heater fixed for your tenant in El Cajon. We have service slots open this Tuesday morning or Thursday afternoon. Could you please provide the property address and the best contact number for your tenant so we can coordinate?",
+      "reason": "The customer needs a heater repaired at a rental property in our service area. Proposing scheduling slots while asking for necessary tenant coordination details.",
+      "engine": "google-genai-sdk",
+      "model": "gemini-3.5-flash",
+      "latency_ms": 7384
+    },
+    {
+      "id": 11,
+      "name": "Mark Davis",
+      "category": "quote",
+      "confidence": 0.95,
+      "reply": "Hi Mark! We would love to help comfort-control your garage workshop. Mini-split installations in San Diego typically range from $3,500 to $7,000 depending on the size and layout. Would you be open to a quick, free on-site visit this week so we can give you an exact estimate?",
+      "reason": "The customer is asking about a new installation project, which falls under quotes. I provided a standard price range for a mini-split install and invited them to book an on-site visit.",
+      "engine": "google-genai-sdk",
+      "model": "gemini-3.5-flash",
+      "latency_ms": 6148
+    },
+    {
+      "id": 12,
+      "name": "Nina Patel",
+      "category": "quote",
+      "confidence": 0.98,
+      "reply": "Hi Nina, thanks for reaching out! A typical system swap in San Diego ranges from $6,000 to $12,000 depending on your home's size and equipment. To give you an accurate, competitive quote, could we schedule a free on-site visit? What day this week works best for you?",
+      "reason": "The customer is asking for a price comparison for a system swap, which qualifies as a quote request. We provided a general range and invited them for an on-site visit.",
+      "engine": "google-genai-sdk",
+      "model": "gemini-3.5-flash",
+      "latency_ms": 4931
+    }
+  ]
+}
