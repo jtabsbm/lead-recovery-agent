@@ -1,5 +1,5 @@
 {
-  "report_date": "2026-08-15 07:51",
+  "report_date": "2026-08-15 07:54",
   "business": "Northside HVAC",
   "model": "gemini-3.5-flash-lite",
   "summary": {
@@ -22,9 +22,9 @@
     },
     "by_urgency": {
       "emergency": 3,
-      "normal": 5,
-      "low": 3,
-      "high": 1
+      "normal": 3,
+      "low": 4,
+      "high": 2
     }
   },
   "metrics": {
@@ -32,18 +32,18 @@
     "appointments_booked": 1,
     "escalations": 4,
     "spam_filtered": 1,
-    "avg_confidence": 0.961,
+    "avg_confidence": 0.965,
     "total_tokens_used": 0,
-    "avg_response_ms": 2775
+    "avg_response_ms": 3627
   },
   "leads": [
     {
-      "id": "13b54c76",
+      "id": "9f36af55",
       "source": "web_form",
       "caller_name": "Sarah Mitchell",
       "contact": "sarah@email.com",
       "message": "My AC stopped working and it's 95 degrees inside. I have a baby and need someone today!",
-      "received_at": "2026-08-15T07:50:33.012352",
+      "received_at": "2026-08-15T07:53:34.490376",
       "status": "escalated",
       "category": "urgent_escalate",
       "urgency": "emergency",
@@ -52,130 +52,130 @@
         "service address",
         "phone number"
       ],
-      "draft_reply": "We understand this is an emergency with the high temperature and your baby at home. We are prioritizing your request and will have someone contact you immediately to dispatch a technician today.",
+      "draft_reply": "We understand this is an emergency with the high temperature and your baby at home. We are prioritizing your call. Please call us immediately at [Phone Number] so we can dispatch a technician to your location in San Diego today.",
       "confidence": 1.0,
       "model_used": "gemini-3.5-flash-lite",
       "tokens_used": 0,
       "suggested_action": "\u26a0\ufe0f ESCALATE: Immediate human call required",
-      "response_time_ms": 3254
+      "response_time_ms": 1181
     },
     {
-      "id": "1f0221f7",
+      "id": "c914f7aa",
       "source": "web_form",
       "caller_name": "John Davis",
       "contact": "jdavis@email.com",
       "message": "How much for a new AC unit? My house is about 1800 sq ft.",
-      "received_at": "2026-08-15T07:50:33.012368",
+      "received_at": "2026-08-15T07:53:34.490396",
       "status": "responded",
       "category": "quote_request",
       "urgency": "normal",
       "missing_info": [
-        "preferred brand or efficiency rating",
-        "current HVAC system setup",
-        "property address to confirm service area"
+        "Specific equipment preferences or efficiency ratings",
+        "Current system type and age",
+        "Detailed property address within our service area"
       ],
-      "draft_reply": "Hello! Thank you for contacting Northside HVAC. Because every home is unique, we provide customized quotes after a brief in-home evaluation to ensure you get the right size unit for your 1,800 sq ft home. Could you please share your service address so we can confirm you are in our San Diego area and schedule a free estimate?",
+      "draft_reply": "Hello! Thank you for reaching out to Northside HVAC. Because every home has unique cooling requirements, we provide customized quotes after a brief in-home evaluation. Would you like to schedule a free estimate for your 1,800 sq ft home? Please let us know your address and preferred days for an appointment.",
       "confidence": 0.95,
       "model_used": "gemini-3.5-flash-lite",
       "tokens_used": 0,
       "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
-      "response_time_ms": 1193
+      "response_time_ms": 1129
     },
     {
-      "id": "d685c89c",
+      "id": "3b37995e",
       "source": "missed_call",
       "caller_name": "Maria Garcia",
       "contact": "(619) 555-0142",
       "message": "Missed call \u2014 no voicemail left",
-      "received_at": "2026-08-15T07:50:33.012374",
+      "received_at": "2026-08-15T07:53:34.490403",
       "status": "responded",
       "category": "missing_information",
       "urgency": "low",
       "missing_info": [
         "customer name",
-        "nature of the service needed",
-        "callback number"
+        "service address",
+        "nature of the HVAC issue or reason for calling"
       ],
-      "draft_reply": "Hello, this is Northside HVAC. We noticed we missed your call. Please let us know how we can help you with your heating or cooling needs today, or call us back at your convenience.",
-      "confidence": 0.9,
+      "draft_reply": "Hello, we noticed we missed your call at Northside HVAC. Please reply with a brief description of what you need and your service address so we can assist you.",
+      "confidence": 0.95,
       "model_used": "gemini-3.5-flash-lite",
       "tokens_used": 0,
       "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
-      "response_time_ms": 912
+      "response_time_ms": 6104
     },
     {
-      "id": "7251127b",
+      "id": "fa585704",
       "source": "web_form",
       "caller_name": "Tom Wilson",
       "contact": "tom@email.com",
       "message": "Do you service La Mesa? My furnace won't turn on.",
-      "received_at": "2026-08-15T07:50:33.012383",
+      "received_at": "2026-08-15T07:53:34.490409",
       "status": "responded",
       "category": "quote_request",
-      "urgency": "normal",
+      "urgency": "high",
       "missing_info": [
         "customer name",
         "phone number",
-        "specific address in La Mesa"
+        "service address"
       ],
-      "draft_reply": "Hello! Yes, we do service La Mesa and would be happy to help with your furnace. Could you please provide your name, best contact number, and your full address so we can schedule a technician to take a look?",
+      "draft_reply": "Yes, we service La Mesa! We can definitely help you get your furnace working again. Could you please provide your name, phone number, and complete address so we can schedule a technician to come out?",
       "confidence": 0.95,
       "model_used": "gemini-3.5-flash-lite",
       "tokens_used": 0,
       "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
-      "response_time_ms": 791
+      "response_time_ms": 1745
     },
     {
-      "id": "cc239461",
+      "id": "e51d0e6e",
       "source": "web_form",
       "caller_name": "Lisa Chen",
       "contact": "lchen@email.com",
       "message": "Your technician was here last week and the problem came back. I'm not happy.",
-      "received_at": "2026-08-15T07:50:33.012388",
+      "received_at": "2026-08-15T07:53:34.490415",
       "status": "escalated",
       "category": "complaint",
       "urgency": "high",
       "missing_info": [
-        "Customer name",
-        "Service address",
-        "Details of the recurring problem"
+        "customer name",
+        "service address",
+        "details of the returning problem"
       ],
-      "draft_reply": "We sincerely apologize that the issue has returned. We take this very seriously and want to make it right immediately. A service manager will contact you shortly to review your situation and dispatch a technician to resolve this at no additional diagnostic cost.",
+      "draft_reply": "We sincerely apologize that the issue has returned after our visit. We want to make this right immediately. Could you please provide your name, address, and a brief description of the current issue so we can send a technician back out to resolve it?",
       "confidence": 0.95,
       "model_used": "gemini-3.5-flash-lite",
       "tokens_used": 0,
       "suggested_action": "\u26a0\ufe0f ESCALATE: Immediate human call required",
-      "response_time_ms": 1052
+      "response_time_ms": 1494
     },
     {
-      "id": "38d4287d",
+      "id": "9ccf1191",
       "source": "web_form",
       "caller_name": "Bob Smith",
       "contact": "bob@email.com",
       "message": "I just moved to the area and want to set up annual maintenance.",
-      "received_at": "2026-08-15T07:50:33.012393",
+      "received_at": "2026-08-15T07:53:34.490421",
       "status": "booked",
       "category": "scheduling",
       "urgency": "normal",
       "missing_info": [
-        "system type",
-        "address or specific location",
-        "preferred date and time for service"
+        "customer's address",
+        "type of HVAC system",
+        "preferred date and time"
       ],
-      "draft_reply": "Welcome to the area! We would be happy to help you set up annual maintenance for your HVAC system. To get you on the schedule, could you please let us know your address, the type of system you have, and your preferred dates and times?",
+      "draft_reply": "Welcome to the area! We would be happy to set up your annual HVAC maintenance. Could you please provide your address, the type of system you have, and your preferred dates for the service?",
       "confidence": 0.95,
       "model_used": "gemini-3.5-flash-lite",
       "tokens_used": 0,
       "suggested_action": "\u2713 BOOKED: Next available appointment",
-      "response_time_ms": 875
+      "response_time_ms": 15352
     },
     {
-      "id": "c762c0af",
+      "id": "04de43a9",
       "source": "web_form",
       "caller_name": "Spam Bot",
       "contact": "spam@bot.com",
       "message": "Get free Viagra pills!!! Click here for casino bonus!!!",
-      "received_at": "2026-08-15T07:50:33.012397",
+      "received_at": "2026-08-15T07:53:34.490426",
       "status": "spam",
       "category": "spam",
       "urgency": "low",
@@ -185,77 +185,77 @@
       "model_used": "gemini-3.5-flash-lite",
       "tokens_used": 0,
       "suggested_action": "DISCARD: Spam detected",
-      "response_time_ms": 825
+      "response_time_ms": 685
     },
     {
-      "id": "99209a6d",
+      "id": "85718d4e",
       "source": "web_form",
       "caller_name": "Mike Johnson",
       "contact": "mike@email.com",
       "message": "I need commercial refrigeration repair for my restaurant.",
-      "received_at": "2026-08-15T07:50:33.012408",
+      "received_at": "2026-08-15T07:53:34.490431",
       "status": "closed",
       "category": "no_fit",
       "urgency": "low",
       "missing_info": [],
-      "draft_reply": "Thank you for reaching out to Northside HVAC. We currently specialize exclusively in residential HVAC and refrigeration services and do not service commercial properties. We wish you the best in finding a commercial contractor.",
+      "draft_reply": "Thank you for contacting Northside HVAC. Unfortunately, we specialize exclusively in residential and light commercial HVAC services and do not service commercial refrigeration. We wish you the best in finding a suitable provider.",
       "confidence": 0.95,
       "model_used": "gemini-3.5-flash-lite",
       "tokens_used": 0,
       "suggested_action": "CLOSED: Outside scope/area",
-      "response_time_ms": 20405
+      "response_time_ms": 1116
     },
     {
-      "id": "052c3c3b",
+      "id": "b11a5d10",
       "source": "after_hours",
       "caller_name": "Jennifer Park",
       "contact": "(858) 555-0199",
       "message": "My heater stopped working at 11pm, I have elderly parents visiting",
-      "received_at": "2026-08-15T07:50:33.012413",
+      "received_at": "2026-08-15T07:53:34.490437",
       "status": "escalated",
       "category": "urgent_escalate",
       "urgency": "emergency",
       "missing_info": [
         "exact service address",
-        "contact phone number",
+        "phone number",
         "type of heating system"
       ],
-      "draft_reply": "I am so sorry to hear your heater went out with your elderly parents visiting. We understand this is an emergency. Please call us immediately at our emergency dispatch line so we can get a technician out to your home right away.",
+      "draft_reply": "We understand this is an emergency with your elderly parents visiting. Please call our emergency dispatch line immediately at [Phone Number] so we can prioritize getting a technician out to you right away.",
       "confidence": 0.98,
       "model_used": "gemini-3.5-flash-lite",
       "tokens_used": 0,
       "suggested_action": "\u26a0\ufe0f ESCALATE: Immediate human call required",
-      "response_time_ms": 1172
+      "response_time_ms": 1128
     },
     {
-      "id": "faa71e89",
+      "id": "bdf28d2a",
       "source": "web_form",
       "caller_name": "David Brown",
       "contact": "david@email.com",
       "message": "Price list please",
-      "received_at": "2026-08-15T07:50:33.012417",
+      "received_at": "2026-08-15T07:53:34.490442",
       "status": "responded",
       "category": "quote_request",
-      "urgency": "normal",
+      "urgency": "low",
       "missing_info": [
-        "specific HVAC service or equipment needed",
-        "property type (residential/commercial)",
-        "location/zip code"
+        "Specific service or equipment needed",
+        "Make and model or size of system",
+        "Property type and location"
       ],
-      "draft_reply": "Hello! Thank you for contacting Northside HVAC. Because every home and system is unique, we provide customized quotes rather than a standard price list. Could you please let us know what specific service you are looking for and your location in the San Diego area so we can assist you better?",
+      "draft_reply": "Hello! Thank you for reaching out to Northside HVAC. Because our pricing depends on the specific service or equipment needed and your system's setup, we don't have a standard price list. Could you please share a bit more about what you're looking to have done so we can provide an accurate quote?",
       "confidence": 0.95,
       "model_used": "gemini-3.5-flash-lite",
       "tokens_used": 0,
       "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
-      "response_time_ms": 1137
+      "response_time_ms": 11859
     },
     {
-      "id": "85b3e2dd",
+      "id": "a389e8b4",
       "source": "web_form",
       "caller_name": "Alex Rivera",
       "contact": "alex@email.com",
       "message": "I have a gas leak near my furnace, I can smell it!",
-      "received_at": "2026-08-15T07:50:33.012420",
+      "received_at": "2026-08-15T07:53:34.490446",
       "status": "escalated",
       "category": "urgent_escalate",
       "urgency": "emergency",
@@ -263,34 +263,34 @@
         "exact address",
         "phone number"
       ],
-      "draft_reply": "Please evacuate the house immediately and call your gas utility company or 911. Once you are safe, please call us right away at our emergency line so we can dispatch a technician.",
+      "draft_reply": "Please evacuate the home immediately and call your gas utility company or 911. Once you are safe, please call us right away so we can dispatch an emergency technician.",
       "confidence": 1.0,
       "model_used": "gemini-3.5-flash-lite",
       "tokens_used": 0,
       "suggested_action": "\u26a0\ufe0f ESCALATE: Immediate human call required",
-      "response_time_ms": 802
+      "response_time_ms": 790
     },
     {
-      "id": "97064e84",
+      "id": "5c18f72b",
       "source": "web_form",
       "caller_name": "Emma Wilson",
       "contact": "emma@email.com",
       "message": "Can you install a smart thermostat? I already bought the unit.",
-      "received_at": "2026-08-15T07:50:33.012423",
+      "received_at": "2026-08-15T07:53:34.490451",
       "status": "responded",
       "category": "quote_request",
       "urgency": "normal",
       "missing_info": [
-        "customer's address or location",
+        "customer's address or zip code",
         "brand and model of the smart thermostat",
         "existing HVAC system type"
       ],
-      "draft_reply": "Hello! Yes, we can certainly help install your smart thermostat. To get you an accurate quote and check scheduling for your area, could you please share your address and the model of the thermostat you purchased?",
+      "draft_reply": "Hello! Yes, we can help you install your smart thermostat. To provide you with an accurate quote and check our availability, could you please share your address/zip code and the specific model of the thermostat you purchased?",
       "confidence": 0.95,
       "model_used": "gemini-3.5-flash-lite",
       "tokens_used": 0,
       "suggested_action": "\u2713 RESPONDED: Draft ready for owner review",
-      "response_time_ms": 887
+      "response_time_ms": 950
     }
   ]
 }
