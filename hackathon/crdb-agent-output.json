@@ -1,0 +1,17 @@
+{
+  "total_leads": 6,
+  "by_category": {
+    "urgent_escalate": 2,
+    "quote_request": 1,
+    "complaint": 1,
+    "spam": 1,
+    "missing_information": 1
+  },
+  "by_status": {
+    "escalated": 3,
+    "responded": 2,
+    "spam": 1
+  },
+  "memory_events": 18,
+  "backend": "in-memory-fallback"
+}
