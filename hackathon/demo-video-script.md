@@ -1,4 +1,5 @@
 # Demo Video Script — Lead Recovery Agent
+# LIVE MODEL: gemini-3.5-flash (verified working, 0.9+ confidence)
 # For: All Things Agentic Hackathon (Aug 31, 2026 deadline)
 # Duration: ~3 minutes
 
